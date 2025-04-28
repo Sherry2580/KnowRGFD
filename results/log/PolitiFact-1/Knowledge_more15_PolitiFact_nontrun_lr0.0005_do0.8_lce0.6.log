@@ -1,0 +1,1269 @@
+/home/blueee/KnowRGFD/utils.py:6: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  graph = torch.load(f'/home/blueee/KnowRGFD/Data/{args.dataset}/graph/{args.dataset}_{args.num_topics}.pt')
+(Training KnowRGFD):   0%|          | 0/80 [00:00<?, ?it/s](Training KnowRGFD):   0%|          | 0/80 [00:01<?, ?it/s, loss=0.711](Training KnowRGFD):   1%|▏         | 1/80 [00:01<02:31,  1.92s/it, loss=0.711](Training KnowRGFD):   1%|▏         | 1/80 [00:02<02:31,  1.92s/it, loss=0.868](Training KnowRGFD):   2%|▎         | 2/80 [00:02<01:06,  1.17it/s, loss=0.868](Training KnowRGFD):   2%|▎         | 2/80 [00:02<01:06,  1.17it/s, loss=0.676](Training KnowRGFD):   4%|▍         | 3/80 [00:02<00:39,  1.95it/s, loss=0.676](Training KnowRGFD):   4%|▍         | 3/80 [00:02<00:39,  1.95it/s, loss=0.55] (Training KnowRGFD):   5%|▌         | 4/80 [00:02<00:26,  2.84it/s, loss=0.55](Training KnowRGFD):   5%|▌         | 4/80 [00:02<00:26,  2.84it/s, loss=0.527](Training KnowRGFD):   6%|▋         | 5/80 [00:02<00:19,  3.78it/s, loss=0.527](Training KnowRGFD):   6%|▋         | 5/80 [00:02<00:19,  3.78it/s, loss=0.491](Training KnowRGFD):   8%|▊         | 6/80 [00:02<00:15,  4.73it/s, loss=0.491](Training KnowRGFD):   8%|▊         | 6/80 [00:02<00:15,  4.73it/s, loss=0.48] (Training KnowRGFD):   9%|▉         | 7/80 [00:02<00:13,  5.59it/s, loss=0.48](Training KnowRGFD):   9%|▉         | 7/80 [00:02<00:13,  5.59it/s, loss=0.453](Training KnowRGFD):  10%|█         | 8/80 [00:02<00:11,  6.31it/s, loss=0.453](Training KnowRGFD):  10%|█         | 8/80 [00:02<00:11,  6.31it/s, loss=0.41] (Training KnowRGFD):  11%|█▏        | 9/80 [00:02<00:10,  6.89it/s, loss=0.41](Training KnowRGFD):  11%|█▏        | 9/80 [00:02<00:10,  6.89it/s, loss=0.417](Training KnowRGFD):  12%|█▎        | 10/80 [00:02<00:09,  7.29it/s, loss=0.417](Training KnowRGFD):  12%|█▎        | 10/80 [00:03<00:09,  7.29it/s, loss=0.42] (Training KnowRGFD):  14%|█▍        | 11/80 [00:03<00:09,  7.55it/s, loss=0.42](Training KnowRGFD):  14%|█▍        | 11/80 [00:03<00:09,  7.55it/s, loss=0.382](Training KnowRGFD):  15%|█▌        | 12/80 [00:03<00:08,  7.75it/s, loss=0.382](Training KnowRGFD):  15%|█▌        | 12/80 [00:03<00:08,  7.75it/s, loss=0.357](Training KnowRGFD):  16%|█▋        | 13/80 [00:03<00:08,  7.89it/s, loss=0.357](Training KnowRGFD):  16%|█▋        | 13/80 [00:03<00:08,  7.89it/s, loss=0.357](Training KnowRGFD):  18%|█▊        | 14/80 [00:03<00:08,  7.96it/s, loss=0.357](Training KnowRGFD):  18%|█▊        | 14/80 [00:03<00:08,  7.96it/s, loss=0.34] (Training KnowRGFD):  19%|█▉        | 15/80 [00:03<00:08,  8.03it/s, loss=0.34](Training KnowRGFD):  19%|█▉        | 15/80 [00:03<00:08,  8.03it/s, loss=0.327](Training KnowRGFD):  20%|██        | 16/80 [00:03<00:07,  8.10it/s, loss=0.327](Training KnowRGFD):  20%|██        | 16/80 [00:03<00:07,  8.10it/s, loss=0.321](Training KnowRGFD):  21%|██▏       | 17/80 [00:03<00:07,  8.15it/s, loss=0.321](Training KnowRGFD):  21%|██▏       | 17/80 [00:03<00:07,  8.15it/s, loss=0.305](Training KnowRGFD):  22%|██▎       | 18/80 [00:03<00:07,  8.18it/s, loss=0.305](Training KnowRGFD):  22%|██▎       | 18/80 [00:04<00:07,  8.18it/s, loss=0.297](Training KnowRGFD):  24%|██▍       | 19/80 [00:04<00:07,  8.20it/s, loss=0.297](Training KnowRGFD):  24%|██▍       | 19/80 [00:04<00:07,  8.20it/s, loss=0.29] (Training KnowRGFD):  25%|██▌       | 20/80 [00:04<00:07,  8.21it/s, loss=0.29](Training KnowRGFD):  25%|██▌       | 20/80 [00:04<00:07,  8.21it/s, loss=0.275](Training KnowRGFD):  26%|██▋       | 21/80 [00:04<00:07,  8.22it/s, loss=0.275](Training KnowRGFD):  26%|██▋       | 21/80 [00:04<00:07,  8.22it/s, loss=0.272](Training KnowRGFD):  28%|██▊       | 22/80 [00:04<00:07,  8.23it/s, loss=0.272](Training KnowRGFD):  28%|██▊       | 22/80 [00:04<00:07,  8.23it/s, loss=0.261](Training KnowRGFD):  29%|██▉       | 23/80 [00:04<00:06,  8.24it/s, loss=0.261](Training KnowRGFD):  29%|██▉       | 23/80 [00:04<00:06,  8.24it/s, loss=0.253](Training KnowRGFD):  30%|███       | 24/80 [00:04<00:06,  8.25it/s, loss=0.253](Training KnowRGFD):  30%|███       | 24/80 [00:04<00:06,  8.25it/s, loss=0.249](Training KnowRGFD):  31%|███▏      | 25/80 [00:04<00:06,  8.26it/s, loss=0.249](Training KnowRGFD):  31%|███▏      | 25/80 [00:04<00:06,  8.26it/s, loss=0.237](Training KnowRGFD):  32%|███▎      | 26/80 [00:04<00:06,  8.26it/s, loss=0.237](Training KnowRGFD):  32%|███▎      | 26/80 [00:04<00:06,  8.26it/s, loss=0.233](Training KnowRGFD):  34%|███▍      | 27/80 [00:04<00:06,  8.27it/s, loss=0.233](Training KnowRGFD):  34%|███▍      | 27/80 [00:05<00:06,  8.27it/s, loss=0.225](Training KnowRGFD):  35%|███▌      | 28/80 [00:05<00:06,  8.27it/s, loss=0.225](Training KnowRGFD):  35%|███▌      | 28/80 [00:05<00:06,  8.27it/s, loss=0.219](Training KnowRGFD):  36%|███▋      | 29/80 [00:05<00:06,  8.27it/s, loss=0.219](Training KnowRGFD):  36%|███▋      | 29/80 [00:05<00:06,  8.27it/s, loss=0.213](Training KnowRGFD):  38%|███▊      | 30/80 [00:05<00:06,  8.28it/s, loss=0.213](Training KnowRGFD):  38%|███▊      | 30/80 [00:05<00:06,  8.28it/s, loss=0.207](Training KnowRGFD):  39%|███▉      | 31/80 [00:05<00:05,  8.28it/s, loss=0.207](Training KnowRGFD):  39%|███▉      | 31/80 [00:05<00:05,  8.28it/s, loss=0.199](Training KnowRGFD):  40%|████      | 32/80 [00:05<00:05,  8.28it/s, loss=0.199](Training KnowRGFD):  40%|████      | 32/80 [00:05<00:05,  8.28it/s, loss=0.196](Training KnowRGFD):  41%|████▏     | 33/80 [00:05<00:05,  8.29it/s, loss=0.196](Training KnowRGFD):  41%|████▏     | 33/80 [00:05<00:05,  8.29it/s, loss=0.187](Training KnowRGFD):  42%|████▎     | 34/80 [00:05<00:05,  8.29it/s, loss=0.187](Training KnowRGFD):  42%|████▎     | 34/80 [00:05<00:05,  8.29it/s, loss=0.183](Training KnowRGFD):  44%|████▍     | 35/80 [00:05<00:05,  8.29it/s, loss=0.183](Training KnowRGFD):  44%|████▍     | 35/80 [00:06<00:05,  8.29it/s, loss=0.177](Training KnowRGFD):  45%|████▌     | 36/80 [00:06<00:05,  8.29it/s, loss=0.177](Training KnowRGFD):  45%|████▌     | 36/80 [00:06<00:05,  8.29it/s, loss=0.171](Training KnowRGFD):  46%|████▋     | 37/80 [00:06<00:05,  8.29it/s, loss=0.171](Training KnowRGFD):  46%|████▋     | 37/80 [00:06<00:05,  8.29it/s, loss=0.166](Training KnowRGFD):  48%|████▊     | 38/80 [00:06<00:05,  8.29it/s, loss=0.166](Training KnowRGFD):  48%|████▊     | 38/80 [00:06<00:05,  8.29it/s, loss=0.16] (Training KnowRGFD):  49%|████▉     | 39/80 [00:06<00:04,  8.26it/s, loss=0.16](Training KnowRGFD):  49%|████▉     | 39/80 [00:06<00:04,  8.26it/s, loss=0.155](Training KnowRGFD):  50%|█████     | 40/80 [00:06<00:04,  8.27it/s, loss=0.155](Training KnowRGFD):  50%|█████     | 40/80 [00:06<00:04,  8.27it/s, loss=0.151](Training KnowRGFD):  51%|█████▏    | 41/80 [00:06<00:04,  8.28it/s, loss=0.151](Training KnowRGFD):  51%|█████▏    | 41/80 [00:06<00:04,  8.28it/s, loss=0.144](Training KnowRGFD):  52%|█████▎    | 42/80 [00:06<00:04,  8.29it/s, loss=0.144](Training KnowRGFD):  52%|█████▎    | 42/80 [00:06<00:04,  8.29it/s, loss=0.14] (Training KnowRGFD):  54%|█████▍    | 43/80 [00:06<00:04,  8.29it/s, loss=0.14](Training KnowRGFD):  54%|█████▍    | 43/80 [00:07<00:04,  8.29it/s, loss=0.135](Training KnowRGFD):  55%|█████▌    | 44/80 [00:07<00:04,  8.30it/s, loss=0.135](Training KnowRGFD):  55%|█████▌    | 44/80 [00:07<00:04,  8.30it/s, loss=0.13] (Training KnowRGFD):  56%|█████▋    | 45/80 [00:07<00:04,  8.30it/s, loss=0.13](Training KnowRGFD):  56%|█████▋    | 45/80 [00:07<00:04,  8.30it/s, loss=0.125](Training KnowRGFD):  57%|█████▊    | 46/80 [00:07<00:04,  8.30it/s, loss=0.125][Epoch 1] Predicted label distribution: tensor([5316, 1846], device='cuda:0')
+Epoch 1, CE loss: 1.2489, CR loss: -0.0952
+Train acc: 0.4352, Val acc: 0.5417, Test acc: 0.4286
+[Epoch 2] Predicted label distribution: tensor([5803, 1359], device='cuda:0')
+Epoch 2, CE loss: 1.5471, CR loss: -0.1516
+Train acc: 0.7694, Val acc: 0.7917, Test acc: 0.7755
+[Epoch 3] Predicted label distribution: tensor([6271,  891], device='cuda:0')
+Epoch 3, CE loss: 1.2170, CR loss: -0.1346
+Train acc: 0.7047, Val acc: 0.7292, Test acc: 0.6939
+[Epoch 4] Predicted label distribution: tensor([6476,  686], device='cuda:0')
+Epoch 4, CE loss: 0.9261, CR loss: -0.0137
+Train acc: 0.7876, Val acc: 0.7500, Test acc: 0.7551
+[Epoch 5] Predicted label distribution: tensor([6506,  656], device='cuda:0')
+Epoch 5, CE loss: 0.8939, CR loss: -0.0243
+Train acc: 0.7746, Val acc: 0.7708, Test acc: 0.6735
+[Epoch 6] Predicted label distribution: tensor([6444,  718], device='cuda:0')
+Epoch 6, CE loss: 0.8587, CR loss: -0.0596
+Train acc: 0.6321, Val acc: 0.7083, Test acc: 0.5306
+[Epoch 7] Predicted label distribution: tensor([6462,  700], device='cuda:0')
+Epoch 7, CE loss: 0.8194, CR loss: -0.0296
+Train acc: 0.6917, Val acc: 0.7500, Test acc: 0.6327
+[Epoch 8] Predicted label distribution: tensor([6558,  604], device='cuda:0')
+Epoch 8, CE loss: 0.7620, CR loss: -0.0113
+Train acc: 0.8161, Val acc: 0.7083, Test acc: 0.8163
+[Epoch 9] Predicted label distribution: tensor([6646,  516], device='cuda:0')
+Epoch 9, CE loss: 0.6902, CR loss: -0.0097
+Train acc: 0.8264, Val acc: 0.7708, Test acc: 0.7959
+[Epoch 10] Predicted label distribution: tensor([6661,  501], device='cuda:0')
+Epoch 10, CE loss: 0.7016, CR loss: -0.0087
+Train acc: 0.8238, Val acc: 0.7917, Test acc: 0.7959
+[Epoch 11] Predicted label distribution: tensor([6651,  511], device='cuda:0')
+Epoch 11, CE loss: 0.7050, CR loss: -0.0082
+Train acc: 0.8549, Val acc: 0.7708, Test acc: 0.8980
+[Epoch 12] Predicted label distribution: tensor([6650,  512], device='cuda:0')
+Epoch 12, CE loss: 0.6430, CR loss: -0.0083
+Train acc: 0.8342, Val acc: 0.7292, Test acc: 0.8163
+[Epoch 13] Predicted label distribution: tensor([6653,  509], device='cuda:0')
+Epoch 13, CE loss: 0.6010, CR loss: -0.0088
+Train acc: 0.8212, Val acc: 0.7500, Test acc: 0.7755
+[Epoch 14] Predicted label distribution: tensor([6672,  490], device='cuda:0')
+Epoch 14, CE loss: 0.6023, CR loss: -0.0105
+Train acc: 0.8368, Val acc: 0.7500, Test acc: 0.7755
+[Epoch 15] Predicted label distribution: tensor([6689,  473], device='cuda:0')
+Epoch 15, CE loss: 0.5778, CR loss: -0.0156
+Train acc: 0.8627, Val acc: 0.7500, Test acc: 0.8571
+[Epoch 16] Predicted label distribution: tensor([6661,  501], device='cuda:0')
+Epoch 16, CE loss: 0.5545, CR loss: -0.0149
+Train acc: 0.8782, Val acc: 0.7708, Test acc: 0.8980
+[Epoch 17] Predicted label distribution: tensor([6609,  553], device='cuda:0')
+Epoch 17, CE loss: 0.5401, CR loss: -0.0085
+Train acc: 0.8808, Val acc: 0.8125, Test acc: 0.8776
+[Epoch 18] Predicted label distribution: tensor([6580,  582], device='cuda:0')
+Epoch 18, CE loss: 0.5131, CR loss: -0.0074
+Train acc: 0.8679, Val acc: 0.7708, Test acc: 0.8571
+[Epoch 19] Predicted label distribution: tensor([6565,  597], device='cuda:0')
+Epoch 19, CE loss: 0.5007, CR loss: -0.0076
+Train acc: 0.8653, Val acc: 0.8125, Test acc: 0.7959
+[Epoch 20] Predicted label distribution: tensor([6531,  631], device='cuda:0')
+Epoch 20, CE loss: 0.4893, CR loss: -0.0096
+Train acc: 0.8912, Val acc: 0.7708, Test acc: 0.8571
+[Epoch 21] Predicted label distribution: tensor([6428,  734], device='cuda:0')
+Epoch 21, CE loss: 0.4684, CR loss: -0.0145
+Train acc: 0.9016, Val acc: 0.7917, Test acc: 0.8776
+[Epoch 22] Predicted label distribution: tensor([6342,  820], device='cuda:0')
+Epoch 22, CE loss: 0.4623, CR loss: -0.0140
+Train acc: 0.9041, Val acc: 0.7917, Test acc: 0.8776
+[Epoch 23] Predicted label distribution: tensor([6312,  850], device='cuda:0')
+Epoch 23, CE loss: 0.4419, CR loss: -0.0111
+Train acc: 0.8990, Val acc: 0.8125, Test acc: 0.8776
+[Epoch 24] Predicted label distribution: tensor([6247,  915], device='cuda:0')
+Epoch 24, CE loss: 0.4280, CR loss: -0.0100
+Train acc: 0.9041, Val acc: 0.7917, Test acc: 0.8571
+[Epoch 25] Predicted label distribution: tensor([6136, 1026], device='cuda:0')
+Epoch 25, CE loss: 0.4217, CR loss: -0.0098
+Train acc: 0.9067, Val acc: 0.7708, Test acc: 0.8776
+[Epoch 26] Predicted label distribution: tensor([6050, 1112], device='cuda:0')
+Epoch 26, CE loss: 0.4014, CR loss: -0.0102
+Train acc: 0.9119, Val acc: 0.8125, Test acc: 0.8776
+[Epoch 27] Predicted label distribution: tensor([6054, 1108], device='cuda:0')
+Epoch 27, CE loss: 0.3969, CR loss: -0.0126
+Train acc: 0.9145, Val acc: 0.7917, Test acc: 0.8776
+[Epoch 28] Predicted label distribution: tensor([5984, 1178], device='cuda:0')
+Epoch 28, CE loss: 0.3869, CR loss: -0.0178
+Train acc: 0.9145, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 29] Predicted label distribution: tensor([5784, 1378], device='cuda:0')
+Epoch 29, CE loss: 0.3752, CR loss: -0.0156
+Train acc: 0.9249, Val acc: 0.8125, Test acc: 0.8776
+[Epoch 30] Predicted label distribution: tensor([5621, 1541], device='cuda:0')
+Epoch 30, CE loss: 0.3620, CR loss: -0.0106
+Train acc: 0.9197, Val acc: 0.8125, Test acc: 0.8776
+[Epoch 31] Predicted label distribution: tensor([5680, 1482], device='cuda:0')
+Epoch 31, CE loss: 0.3523, CR loss: -0.0107
+Train acc: 0.9249, Val acc: 0.8333, Test acc: 0.8776
+[Epoch 32] Predicted label distribution: tensor([5744, 1418], device='cuda:0')
+Epoch 32, CE loss: 0.3419, CR loss: -0.0161
+Train acc: 0.9275, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 33] Predicted label distribution: tensor([5611, 1551], device='cuda:0')
+Epoch 33, CE loss: 0.3443, CR loss: -0.0272
+Train acc: 0.9275, Val acc: 0.8542, Test acc: 0.8571
+[Epoch 34] Predicted label distribution: tensor([5401, 1761], device='cuda:0')
+Epoch 34, CE loss: 0.3240, CR loss: -0.0190
+Train acc: 0.9249, Val acc: 0.8125, Test acc: 0.8776
+[Epoch 35] Predicted label distribution: tensor([5389, 1773], device='cuda:0')
+Epoch 35, CE loss: 0.3142, CR loss: -0.0138
+Train acc: 0.9301, Val acc: 0.8125, Test acc: 0.8776
+[Epoch 36] Predicted label distribution: tensor([5447, 1715], device='cuda:0')
+Epoch 36, CE loss: 0.3048, CR loss: -0.0155
+Train acc: 0.9326, Val acc: 0.8333, Test acc: 0.8571
+[Epoch 37] Predicted label distribution: tensor([5392, 1770], device='cuda:0')
+Epoch 37, CE loss: 0.3007, CR loss: -0.0244
+Train acc: 0.9352, Val acc: 0.8333, Test acc: 0.8571
+[Epoch 38] Predicted label distribution: tensor([5248, 1914], device='cuda:0')
+Epoch 38, CE loss: 0.2960, CR loss: -0.0299
+Train acc: 0.9378, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 39] Predicted label distribution: tensor([5152, 2010], device='cuda:0')
+Epoch 39, CE loss: 0.2827, CR loss: -0.0244
+Train acc: 0.9430, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 40] Predicted label distribution: tensor([5120, 2042], device='cuda:0')
+Epoch 40, CE loss: 0.2735, CR loss: -0.0229
+Train acc: 0.9404, Val acc: 0.7917, Test acc: 0.8571
+[Epoch 41] Predicted label distribution: tensor([5043, 2119], device='cuda:0')
+Epoch 41, CE loss: 0.2687, CR loss: -0.0266
+Train acc: 0.9456, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 42] Predicted label distribution: tensor([4919, 2243], device='cuda:0')
+Epoch 42, CE loss: 0.2618, CR loss: -0.0315
+Train acc: 0.9534, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 43] Predicted label distribution: tensor([4876, 2286], device='cuda:0')
+Epoch 43, CE loss: 0.2567, CR loss: -0.0349
+Train acc: 0.9534, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 44] Predicted label distribution: tensor([4856, 2306], device='cuda:0')
+Epoch 44, CE loss: 0.2500, CR loss: -0.0385
+Train acc: 0.9508, Val acc: 0.8333, Test acc: 0.8367
+[Epoch 45] Predicted label distribution: tensor([4783, 2379], device='cuda:0')
+Epoch 45, CE loss: 0.2432, CR loss: -0.0395
+Train acc: 0.9560, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 46] Predicted label distribution: tensor([4766, 2396], device='cuda:0')
+Epoch 46, CE loss: 0.2350, CR loss: -0.0392
+Train acc: 0.9611, Val acc: 0.8125, Test acc: 0.8776
+[Epoch 47] Predicted label distribution: tensor([4812, 2350], device='cuda:0')
+(Training KnowRGFD):  57%|█████▊    | 46/80 [00:07<00:04,  8.30it/s, loss=0.12] (Training KnowRGFD):  59%|█████▉    | 47/80 [00:07<00:03,  8.29it/s, loss=0.12](Training KnowRGFD):  59%|█████▉    | 47/80 [00:07<00:03,  8.29it/s, loss=0.115](Training KnowRGFD):  60%|██████    | 48/80 [00:07<00:03,  8.30it/s, loss=0.115](Training KnowRGFD):  60%|██████    | 48/80 [00:07<00:03,  8.30it/s, loss=0.109](Training KnowRGFD):  61%|██████▏   | 49/80 [00:07<00:03,  8.30it/s, loss=0.109](Training KnowRGFD):  61%|██████▏   | 49/80 [00:07<00:03,  8.30it/s, loss=0.105](Training KnowRGFD):  62%|██████▎   | 50/80 [00:07<00:03,  8.30it/s, loss=0.105](Training KnowRGFD):  62%|██████▎   | 50/80 [00:07<00:03,  8.30it/s, loss=0.0991](Training KnowRGFD):  64%|██████▍   | 51/80 [00:07<00:03,  8.30it/s, loss=0.0991](Training KnowRGFD):  64%|██████▍   | 51/80 [00:07<00:03,  8.30it/s, loss=0.093] (Training KnowRGFD):  65%|██████▌   | 52/80 [00:07<00:03,  8.30it/s, loss=0.093](Training KnowRGFD):  65%|██████▌   | 52/80 [00:08<00:03,  8.30it/s, loss=0.0873](Training KnowRGFD):  66%|██████▋   | 53/80 [00:08<00:03,  8.30it/s, loss=0.0873](Training KnowRGFD):  66%|██████▋   | 53/80 [00:08<00:03,  8.30it/s, loss=0.081] (Training KnowRGFD):  68%|██████▊   | 54/80 [00:08<00:03,  8.30it/s, loss=0.081](Training KnowRGFD):  68%|██████▊   | 54/80 [00:08<00:03,  8.30it/s, loss=0.0751](Training KnowRGFD):  69%|██████▉   | 55/80 [00:08<00:03,  8.30it/s, loss=0.0751](Training KnowRGFD):  69%|██████▉   | 55/80 [00:08<00:03,  8.30it/s, loss=0.0687](Training KnowRGFD):  70%|███████   | 56/80 [00:08<00:02,  8.30it/s, loss=0.0687](Training KnowRGFD):  70%|███████   | 56/80 [00:08<00:02,  8.30it/s, loss=0.0612](Training KnowRGFD):  71%|███████▏  | 57/80 [00:08<00:02,  8.30it/s, loss=0.0612](Training KnowRGFD):  71%|███████▏  | 57/80 [00:08<00:02,  8.30it/s, loss=0.0544](Training KnowRGFD):  72%|███████▎  | 58/80 [00:08<00:02,  8.31it/s, loss=0.0544](Training KnowRGFD):  72%|███████▎  | 58/80 [00:08<00:02,  8.31it/s, loss=0.047] (Training KnowRGFD):  74%|███████▍  | 59/80 [00:08<00:02,  8.31it/s, loss=0.047](Training KnowRGFD):  74%|███████▍  | 59/80 [00:08<00:02,  8.31it/s, loss=0.0412](Training KnowRGFD):  75%|███████▌  | 60/80 [00:08<00:02,  8.31it/s, loss=0.0412](Training KnowRGFD):  75%|███████▌  | 60/80 [00:09<00:02,  8.31it/s, loss=0.0325](Training KnowRGFD):  76%|███████▋  | 61/80 [00:09<00:02,  8.31it/s, loss=0.0325](Training KnowRGFD):  76%|███████▋  | 61/80 [00:09<00:02,  8.31it/s, loss=0.0249](Training KnowRGFD):  78%|███████▊  | 62/80 [00:09<00:02,  8.31it/s, loss=0.0249](Training KnowRGFD):  78%|███████▊  | 62/80 [00:09<00:02,  8.31it/s, loss=0.0139](Training KnowRGFD):  79%|███████▉  | 63/80 [00:09<00:02,  8.24it/s, loss=0.0139](Training KnowRGFD):  79%|███████▉  | 63/80 [00:09<00:02,  8.24it/s, loss=0.00457](Training KnowRGFD):  80%|████████  | 64/80 [00:09<00:01,  8.22it/s, loss=0.00457](Training KnowRGFD):  80%|████████  | 64/80 [00:09<00:01,  8.22it/s, loss=-0.00425](Training KnowRGFD):  81%|████████▏ | 65/80 [00:09<00:01,  8.25it/s, loss=-0.00425](Training KnowRGFD):  81%|████████▏ | 65/80 [00:09<00:01,  8.25it/s, loss=-0.0141] (Training KnowRGFD):  82%|████████▎ | 66/80 [00:09<00:01,  8.26it/s, loss=-0.0141](Training KnowRGFD):  82%|████████▎ | 66/80 [00:09<00:01,  8.26it/s, loss=-0.0199](Training KnowRGFD):  84%|████████▍ | 67/80 [00:09<00:01,  8.28it/s, loss=-0.0199](Training KnowRGFD):  84%|████████▍ | 67/80 [00:09<00:01,  8.28it/s, loss=-0.0355](Training KnowRGFD):  85%|████████▌ | 68/80 [00:09<00:01,  8.28it/s, loss=-0.0355](Training KnowRGFD):  85%|████████▌ | 68/80 [00:10<00:01,  8.28it/s, loss=-0.0471](Training KnowRGFD):  86%|████████▋ | 69/80 [00:10<00:01,  8.28it/s, loss=-0.0471](Training KnowRGFD):  86%|████████▋ | 69/80 [00:10<00:01,  8.28it/s, loss=-0.0606](Training KnowRGFD):  88%|████████▊ | 70/80 [00:10<00:01,  8.30it/s, loss=-0.0606](Training KnowRGFD):  88%|████████▊ | 70/80 [00:10<00:01,  8.30it/s, loss=-0.0738](Training KnowRGFD):  89%|████████▉ | 71/80 [00:10<00:01,  8.30it/s, loss=-0.0738](Training KnowRGFD):  89%|████████▉ | 71/80 [00:10<00:01,  8.30it/s, loss=-0.0867](Training KnowRGFD):  90%|█████████ | 72/80 [00:10<00:00,  8.30it/s, loss=-0.0867](Training KnowRGFD):  90%|█████████ | 72/80 [00:10<00:00,  8.30it/s, loss=-0.0995](Training KnowRGFD):  91%|█████████▏| 73/80 [00:10<00:00,  8.31it/s, loss=-0.0995](Training KnowRGFD):  91%|█████████▏| 73/80 [00:10<00:00,  8.31it/s, loss=-0.1]   (Training KnowRGFD):  92%|█████████▎| 74/80 [00:10<00:00,  8.31it/s, loss=-0.1](Training KnowRGFD):  92%|█████████▎| 74/80 [00:10<00:00,  8.31it/s, loss=-0.13](Training KnowRGFD):  94%|█████████▍| 75/80 [00:10<00:00,  8.31it/s, loss=-0.13](Training KnowRGFD):  94%|█████████▍| 75/80 [00:10<00:00,  8.31it/s, loss=-0.11](Training KnowRGFD):  95%|█████████▌| 76/80 [00:10<00:00,  8.31it/s, loss=-0.11](Training KnowRGFD):  95%|█████████▌| 76/80 [00:11<00:00,  8.31it/s, loss=-0.141](Training KnowRGFD):  96%|█████████▋| 77/80 [00:11<00:00,  8.31it/s, loss=-0.141](Training KnowRGFD):  96%|█████████▋| 77/80 [00:11<00:00,  8.31it/s, loss=-0.152](Training KnowRGFD):  98%|█████████▊| 78/80 [00:11<00:00,  8.31it/s, loss=-0.152](Training KnowRGFD):  98%|█████████▊| 78/80 [00:11<00:00,  8.31it/s, loss=-0.16] (Training KnowRGFD):  99%|█████████▉| 79/80 [00:11<00:00,  8.31it/s, loss=-0.16](Training KnowRGFD):  99%|█████████▉| 79/80 [00:11<00:00,  8.31it/s, loss=-0.197](Training KnowRGFD): 100%|██████████| 80/80 [00:11<00:00,  8.31it/s, loss=-0.197](Training KnowRGFD): 100%|██████████| 80/80 [00:11<00:00,  7.03it/s, loss=-0.197]
+Epoch 47, CE loss: 0.2298, CR loss: -0.0454
+Train acc: 0.9611, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 48] Predicted label distribution: tensor([4806, 2356], device='cuda:0')
+Epoch 48, CE loss: 0.2307, CR loss: -0.0595
+Train acc: 0.9611, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 49] Predicted label distribution: tensor([4737, 2425], device='cuda:0')
+Epoch 49, CE loss: 0.2231, CR loss: -0.0616
+Train acc: 0.9637, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 50] Predicted label distribution: tensor([4760, 2402], device='cuda:0')
+Epoch 50, CE loss: 0.2137, CR loss: -0.0588
+Train acc: 0.9663, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 51] Predicted label distribution: tensor([4760, 2402], device='cuda:0')
+Epoch 51, CE loss: 0.2113, CR loss: -0.0692
+Train acc: 0.9663, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 52] Predicted label distribution: tensor([4715, 2447], device='cuda:0')
+Epoch 52, CE loss: 0.2098, CR loss: -0.0821
+Train acc: 0.9663, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 53] Predicted label distribution: tensor([4745, 2417], device='cuda:0')
+Epoch 53, CE loss: 0.2037, CR loss: -0.0871
+Train acc: 0.9689, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 54] Predicted label distribution: tensor([4716, 2446], device='cuda:0')
+Epoch 54, CE loss: 0.2013, CR loss: -0.0995
+Train acc: 0.9689, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 55] Predicted label distribution: tensor([4623, 2539], device='cuda:0')
+Epoch 55, CE loss: 0.1962, CR loss: -0.1065
+Train acc: 0.9689, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 56] Predicted label distribution: tensor([4666, 2496], device='cuda:0')
+Epoch 56, CE loss: 0.1899, CR loss: -0.1132
+Train acc: 0.9689, Val acc: 0.8333, Test acc: 0.8367
+[Epoch 57] Predicted label distribution: tensor([4531, 2631], device='cuda:0')
+Epoch 57, CE loss: 0.1951, CR loss: -0.1396
+Train acc: 0.9715, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 58] Predicted label distribution: tensor([4655, 2507], device='cuda:0')
+Epoch 58, CE loss: 0.1840, CR loss: -0.1399
+Train acc: 0.9663, Val acc: 0.8333, Test acc: 0.8367
+[Epoch 59] Predicted label distribution: tensor([4485, 2677], device='cuda:0')
+Epoch 59, CE loss: 0.1919, CR loss: -0.1703
+Train acc: 0.9715, Val acc: 0.8125, Test acc: 0.8367
+[Epoch 60] Predicted label distribution: tensor([4701, 2461], device='cuda:0')
+Epoch 60, CE loss: 0.1742, CR loss: -0.1582
+Train acc: 0.9715, Val acc: 0.8333, Test acc: 0.8367
+[Epoch 61] Predicted label distribution: tensor([4525, 2637], device='cuda:0')
+Epoch 61, CE loss: 0.1925, CR loss: -0.2076
+Train acc: 0.9741, Val acc: 0.8125, Test acc: 0.8367
+[Epoch 62] Predicted label distribution: tensor([4697, 2465], device='cuda:0')
+Epoch 62, CE loss: 0.1695, CR loss: -0.1919
+Train acc: 0.9715, Val acc: 0.8333, Test acc: 0.8367
+[Epoch 63] Predicted label distribution: tensor([4659, 2503], device='cuda:0')
+Epoch 63, CE loss: 0.1823, CR loss: -0.2387
+Train acc: 0.9741, Val acc: 0.8333, Test acc: 0.8367
+[Epoch 64] Predicted label distribution: tensor([4643, 2519], device='cuda:0')
+Epoch 64, CE loss: 0.1688, CR loss: -0.2418
+Train acc: 0.9741, Val acc: 0.8125, Test acc: 0.8367
+[Epoch 65] Predicted label distribution: tensor([4790, 2372], device='cuda:0')
+Epoch 65, CE loss: 0.1630, CR loss: -0.2552
+Train acc: 0.9715, Val acc: 0.8333, Test acc: 0.8163
+[Epoch 66] Predicted label distribution: tensor([4600, 2562], device='cuda:0')
+Epoch 66, CE loss: 0.1841, CR loss: -0.3113
+Train acc: 0.9767, Val acc: 0.7917, Test acc: 0.8571
+[Epoch 67] Predicted label distribution: tensor([4820, 2342], device='cuda:0')
+Epoch 67, CE loss: 0.1590, CR loss: -0.2883
+Train acc: 0.9741, Val acc: 0.8125, Test acc: 0.7959
+[Epoch 68] Predicted label distribution: tensor([4691, 2471], device='cuda:0')
+Epoch 68, CE loss: 0.1842, CR loss: -0.3651
+Train acc: 0.9793, Val acc: 0.7917, Test acc: 0.8571
+[Epoch 69] Predicted label distribution: tensor([4737, 2425], device='cuda:0')
+Epoch 69, CE loss: 0.1573, CR loss: -0.3539
+Train acc: 0.9767, Val acc: 0.7917, Test acc: 0.7959
+[Epoch 70] Predicted label distribution: tensor([4685, 2477], device='cuda:0')
+Epoch 70, CE loss: 0.1663, CR loss: -0.4010
+Train acc: 0.9767, Val acc: 0.7917, Test acc: 0.7959
+[Epoch 71] Predicted label distribution: tensor([4597, 2565], device='cuda:0')
+Epoch 71, CE loss: 0.1651, CR loss: -0.4322
+Train acc: 0.9767, Val acc: 0.7917, Test acc: 0.8367
+[Epoch 72] Predicted label distribution: tensor([4660, 2502], device='cuda:0')
+Epoch 72, CE loss: 0.1593, CR loss: -0.4558
+Train acc: 0.9741, Val acc: 0.7708, Test acc: 0.7755
+[Epoch 73] Predicted label distribution: tensor([4311, 2851], device='cuda:0')
+Epoch 73, CE loss: 0.1871, CR loss: -0.5295
+Train acc: 0.9793, Val acc: 0.7917, Test acc: 0.7959
+[Epoch 74] Predicted label distribution: tensor([4428, 2734], device='cuda:0')
+Epoch 74, CE loss: 0.1592, CR loss: -0.4887
+Train acc: 0.9793, Val acc: 0.7917, Test acc: 0.7959
+[Epoch 75] Predicted label distribution: tensor([4715, 2447], device='cuda:0')
+Epoch 75, CE loss: 0.1576, CR loss: -0.5604
+Train acc: 0.9482, Val acc: 0.7083, Test acc: 0.7755
+[Epoch 76] Predicted label distribution: tensor([4610, 2552], device='cuda:0')
+Epoch 76, CE loss: 0.3064, CR loss: -0.7342
+Train acc: 0.9560, Val acc: 0.7500, Test acc: 0.7755
+[Epoch 77] Predicted label distribution: tensor([4125, 3037], device='cuda:0')
+Epoch 77, CE loss: 0.2585, CR loss: -0.7407
+Train acc: 0.9793, Val acc: 0.7500, Test acc: 0.7959
+[Epoch 78] Predicted label distribution: tensor([4037, 3125], device='cuda:0')
+Epoch 78, CE loss: 0.1641, CR loss: -0.6267
+Train acc: 0.9793, Val acc: 0.7500, Test acc: 0.7959
+[Epoch 79] Predicted label distribution: tensor([4294, 2868], device='cuda:0')
+Epoch 79, CE loss: 0.1675, CR loss: -0.6513
+Train acc: 0.9741, Val acc: 0.7708, Test acc: 0.7551
+[Epoch 80] Predicted label distribution: tensor([4159, 3003], device='cuda:0')
+Epoch 80, CE loss: 0.1933, CR loss: -0.7812
+Train acc: 0.9767, Val acc: 0.7708, Test acc: 0.7551
+------------------------------------------------------------
+[FOLD 0 BEST] val acc: 0.8542, test acc: 0.8571
+(Training KnowRGFD):   0%|          | 0/80 [00:00<?, ?it/s]/home/blueee/miniconda3/envs/knowrgfd/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/blueee/miniconda3/envs/knowrgfd/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+(Training KnowRGFD):   0%|          | 0/80 [00:00<?, ?it/s, loss=0.793](Training KnowRGFD):   1%|▏         | 1/80 [00:00<00:09,  8.18it/s, loss=0.793](Training KnowRGFD):   1%|▏         | 1/80 [00:00<00:09,  8.18it/s, loss=0.808](Training KnowRGFD):   2%|▎         | 2/80 [00:00<00:09,  8.24it/s, loss=0.808](Training KnowRGFD):   2%|▎         | 2/80 [00:00<00:09,  8.24it/s, loss=0.733](Training KnowRGFD):   4%|▍         | 3/80 [00:00<00:09,  8.26it/s, loss=0.733](Training KnowRGFD):   4%|▍         | 3/80 [00:00<00:09,  8.26it/s, loss=0.558](Training KnowRGFD):   5%|▌         | 4/80 [00:00<00:09,  8.27it/s, loss=0.558](Training KnowRGFD):   5%|▌         | 4/80 [00:00<00:09,  8.27it/s, loss=0.538](Training KnowRGFD):   6%|▋         | 5/80 [00:00<00:09,  8.28it/s, loss=0.538](Training KnowRGFD):   6%|▋         | 5/80 [00:00<00:09,  8.28it/s, loss=0.549](Training KnowRGFD):   8%|▊         | 6/80 [00:00<00:08,  8.28it/s, loss=0.549](Training KnowRGFD):   8%|▊         | 6/80 [00:00<00:08,  8.28it/s, loss=0.481](Training KnowRGFD):   9%|▉         | 7/80 [00:00<00:08,  8.28it/s, loss=0.481](Training KnowRGFD):   9%|▉         | 7/80 [00:00<00:08,  8.28it/s, loss=0.452](Training KnowRGFD):  10%|█         | 8/80 [00:00<00:08,  8.29it/s, loss=0.452](Training KnowRGFD):  10%|█         | 8/80 [00:01<00:08,  8.29it/s, loss=0.453](Training KnowRGFD):  11%|█▏        | 9/80 [00:01<00:08,  8.29it/s, loss=0.453](Training KnowRGFD):  11%|█▏        | 9/80 [00:01<00:08,  8.29it/s, loss=0.437](Training KnowRGFD):  12%|█▎        | 10/80 [00:01<00:08,  8.29it/s, loss=0.437](Training KnowRGFD):  12%|█▎        | 10/80 [00:01<00:08,  8.29it/s, loss=0.4]  (Training KnowRGFD):  14%|█▍        | 11/80 [00:01<00:08,  8.29it/s, loss=0.4](Training KnowRGFD):  14%|█▍        | 11/80 [00:01<00:08,  8.29it/s, loss=0.373](Training KnowRGFD):  15%|█▌        | 12/80 [00:01<00:08,  8.29it/s, loss=0.373](Training KnowRGFD):  15%|█▌        | 12/80 [00:01<00:08,  8.29it/s, loss=0.376](Training KnowRGFD):  16%|█▋        | 13/80 [00:01<00:08,  8.29it/s, loss=0.376](Training KnowRGFD):  16%|█▋        | 13/80 [00:01<00:08,  8.29it/s, loss=0.354](Training KnowRGFD):  18%|█▊        | 14/80 [00:01<00:07,  8.29it/s, loss=0.354](Training KnowRGFD):  18%|█▊        | 14/80 [00:01<00:07,  8.29it/s, loss=0.334](Training KnowRGFD):  19%|█▉        | 15/80 [00:01<00:07,  8.29it/s, loss=0.334](Training KnowRGFD):  19%|█▉        | 15/80 [00:01<00:07,  8.29it/s, loss=0.334](Training KnowRGFD):  20%|██        | 16/80 [00:01<00:07,  8.29it/s, loss=0.334](Training KnowRGFD):  20%|██        | 16/80 [00:02<00:07,  8.29it/s, loss=0.313](Training KnowRGFD):  21%|██▏       | 17/80 [00:02<00:07,  8.29it/s, loss=0.313](Training KnowRGFD):  21%|██▏       | 17/80 [00:02<00:07,  8.29it/s, loss=0.31] (Training KnowRGFD):  22%|██▎       | 18/80 [00:02<00:07,  8.29it/s, loss=0.31](Training KnowRGFD):  22%|██▎       | 18/80 [00:02<00:07,  8.29it/s, loss=0.3] (Training KnowRGFD):  24%|██▍       | 19/80 [00:02<00:07,  8.23it/s, loss=0.3](Training KnowRGFD):  24%|██▍       | 19/80 [00:02<00:07,  8.23it/s, loss=0.287](Training KnowRGFD):  25%|██▌       | 20/80 [00:02<00:07,  8.25it/s, loss=0.287](Training KnowRGFD):  25%|██▌       | 20/80 [00:02<00:07,  8.25it/s, loss=0.281](Training KnowRGFD):  26%|██▋       | 21/80 [00:02<00:07,  8.27it/s, loss=0.281](Training KnowRGFD):  26%|██▋       | 21/80 [00:02<00:07,  8.27it/s, loss=0.269](Training KnowRGFD):  28%|██▊       | 22/80 [00:02<00:07,  8.27it/s, loss=0.269](Training KnowRGFD):  28%|██▊       | 22/80 [00:02<00:07,  8.27it/s, loss=0.263](Training KnowRGFD):  29%|██▉       | 23/80 [00:02<00:06,  8.28it/s, loss=0.263](Training KnowRGFD):  29%|██▉       | 23/80 [00:02<00:06,  8.28it/s, loss=0.253](Training KnowRGFD):  30%|███       | 24/80 [00:02<00:06,  8.29it/s, loss=0.253](Training KnowRGFD):  30%|███       | 24/80 [00:03<00:06,  8.29it/s, loss=0.247](Training KnowRGFD):  31%|███▏      | 25/80 [00:03<00:06,  8.29it/s, loss=0.247](Training KnowRGFD):  31%|███▏      | 25/80 [00:03<00:06,  8.29it/s, loss=0.236](Training KnowRGFD):  32%|███▎      | 26/80 [00:03<00:06,  8.30it/s, loss=0.236](Training KnowRGFD):  32%|███▎      | 26/80 [00:03<00:06,  8.30it/s, loss=0.231](Training KnowRGFD):  34%|███▍      | 27/80 [00:03<00:06,  8.30it/s, loss=0.231](Training KnowRGFD):  34%|███▍      | 27/80 [00:03<00:06,  8.30it/s, loss=0.221](Training KnowRGFD):  35%|███▌      | 28/80 [00:03<00:06,  8.30it/s, loss=0.221](Training KnowRGFD):  35%|███▌      | 28/80 [00:03<00:06,  8.30it/s, loss=0.217](Training KnowRGFD):  36%|███▋      | 29/80 [00:03<00:06,  8.30it/s, loss=0.217](Training KnowRGFD):  36%|███▋      | 29/80 [00:03<00:06,  8.30it/s, loss=0.208](Training KnowRGFD):  38%|███▊      | 30/80 [00:03<00:06,  8.30it/s, loss=0.208](Training KnowRGFD):  38%|███▊      | 30/80 [00:03<00:06,  8.30it/s, loss=0.203](Training KnowRGFD):  39%|███▉      | 31/80 [00:03<00:05,  8.30it/s, loss=0.203](Training KnowRGFD):  39%|███▉      | 31/80 [00:03<00:05,  8.30it/s, loss=0.196](Training KnowRGFD):  40%|████      | 32/80 [00:03<00:05,  8.30it/s, loss=0.196](Training KnowRGFD):  40%|████      | 32/80 [00:03<00:05,  8.30it/s, loss=0.191](Training KnowRGFD):  41%|████▏     | 33/80 [00:03<00:05,  8.30it/s, loss=0.191](Training KnowRGFD):  41%|████▏     | 33/80 [00:04<00:05,  8.30it/s, loss=0.184](Training KnowRGFD):  42%|████▎     | 34/80 [00:04<00:05,  8.30it/s, loss=0.184](Training KnowRGFD):  42%|████▎     | 34/80 [00:04<00:05,  8.30it/s, loss=0.179](Training KnowRGFD):  44%|████▍     | 35/80 [00:04<00:05,  8.31it/s, loss=0.179](Training KnowRGFD):  44%|████▍     | 35/80 [00:04<00:05,  8.31it/s, loss=0.172](Training KnowRGFD):  45%|████▌     | 36/80 [00:04<00:05,  8.31it/s, loss=0.172](Training KnowRGFD):  45%|████▌     | 36/80 [00:04<00:05,  8.31it/s, loss=0.168](Training KnowRGFD):  46%|████▋     | 37/80 [00:04<00:05,  8.23it/s, loss=0.168](Training KnowRGFD):  46%|████▋     | 37/80 [00:04<00:05,  8.23it/s, loss=0.16] (Training KnowRGFD):  48%|████▊     | 38/80 [00:04<00:05,  8.26it/s, loss=0.16](Training KnowRGFD):  48%|████▊     | 38/80 [00:04<00:05,  8.26it/s, loss=0.156](Training KnowRGFD):  49%|████▉     | 39/80 [00:04<00:04,  8.27it/s, loss=0.156](Training KnowRGFD):  49%|████▉     | 39/80 [00:04<00:04,  8.27it/s, loss=0.15] (Training KnowRGFD):  50%|█████     | 40/80 [00:04<00:04,  8.28it/s, loss=0.15](Training KnowRGFD):  50%|█████     | 40/80 [00:04<00:04,  8.28it/s, loss=0.145](Training KnowRGFD):  51%|█████▏    | 41/80 [00:04<00:04,  8.29it/s, loss=0.145](Training KnowRGFD):  51%|█████▏    | 41/80 [00:05<00:04,  8.29it/s, loss=0.139](Training KnowRGFD):  52%|█████▎    | 42/80 [00:05<00:04,  8.29it/s, loss=0.139](Training KnowRGFD):  52%|█████▎    | 42/80 [00:05<00:04,  8.29it/s, loss=0.134](Training KnowRGFD):  54%|█████▍    | 43/80 [00:05<00:04,  8.30it/s, loss=0.134](Training KnowRGFD):  54%|█████▍    | 43/80 [00:05<00:04,  8.30it/s, loss=0.129](Training KnowRGFD):  55%|█████▌    | 44/80 [00:05<00:04,  8.30it/s, loss=0.129](Training KnowRGFD):  55%|█████▌    | 44/80 [00:05<00:04,  8.30it/s, loss=0.124](Training KnowRGFD):  56%|█████▋    | 45/80 [00:05<00:04,  8.30it/s, loss=0.124](Training KnowRGFD):  56%|█████▋    | 45/80 [00:05<00:04,  8.30it/s, loss=0.119](Training KnowRGFD):  57%|█████▊    | 46/80 [00:05<00:04,  8.31it/s, loss=0.119][Epoch 1] Predicted label distribution: tensor([  60, 7102], device='cuda:0')
+Epoch 1, CE loss: 1.3708, CR loss: -0.0736
+Train acc: 0.3368, Val acc: 0.4375, Test acc: 0.2449
+[Epoch 2] Predicted label distribution: tensor([ 252, 6910], device='cuda:0')
+Epoch 2, CE loss: 1.4060, CR loss: -0.0878
+Train acc: 0.5699, Val acc: 0.7083, Test acc: 0.5102
+[Epoch 3] Predicted label distribution: tensor([ 347, 6815], device='cuda:0')
+Epoch 3, CE loss: 1.3861, CR loss: -0.2470
+Train acc: 0.6891, Val acc: 0.7083, Test acc: 0.7143
+[Epoch 4] Predicted label distribution: tensor([ 293, 6869], device='cuda:0')
+Epoch 4, CE loss: 0.9807, CR loss: -0.0761
+Train acc: 0.6839, Val acc: 0.7500, Test acc: 0.6939
+[Epoch 5] Predicted label distribution: tensor([ 369, 6793], device='cuda:0')
+Epoch 5, CE loss: 0.9143, CR loss: -0.0265
+Train acc: 0.7668, Val acc: 0.7083, Test acc: 0.7755
+[Epoch 6] Predicted label distribution: tensor([ 428, 6734], device='cuda:0')
+Epoch 6, CE loss: 0.9583, CR loss: -0.0639
+Train acc: 0.8238, Val acc: 0.7292, Test acc: 0.8163
+[Epoch 7] Predicted label distribution: tensor([ 419, 6743], device='cuda:0')
+Epoch 7, CE loss: 0.8182, CR loss: -0.0239
+Train acc: 0.8109, Val acc: 0.7708, Test acc: 0.8163
+[Epoch 8] Predicted label distribution: tensor([ 346, 6816], device='cuda:0')
+Epoch 8, CE loss: 0.7670, CR loss: -0.0197
+Train acc: 0.7694, Val acc: 0.8125, Test acc: 0.7551
+[Epoch 9] Predicted label distribution: tensor([ 273, 6889], device='cuda:0')
+Epoch 9, CE loss: 0.8000, CR loss: -0.0680
+Train acc: 0.6943, Val acc: 0.7500, Test acc: 0.7551
+[Epoch 10] Predicted label distribution: tensor([ 284, 6878], device='cuda:0')
+Epoch 10, CE loss: 0.7639, CR loss: -0.0525
+Train acc: 0.7617, Val acc: 0.7917, Test acc: 0.7551
+[Epoch 11] Predicted label distribution: tensor([ 356, 6806], device='cuda:0')
+Epoch 11, CE loss: 0.6769, CR loss: -0.0141
+Train acc: 0.8368, Val acc: 0.8333, Test acc: 0.8571
+[Epoch 12] Predicted label distribution: tensor([ 391, 6771], device='cuda:0')
+Epoch 12, CE loss: 0.6292, CR loss: -0.0116
+Train acc: 0.8549, Val acc: 0.7500, Test acc: 0.8980
+[Epoch 13] Predicted label distribution: tensor([ 376, 6786], device='cuda:0')
+Epoch 13, CE loss: 0.6329, CR loss: -0.0091
+Train acc: 0.8446, Val acc: 0.7917, Test acc: 0.8980
+[Epoch 14] Predicted label distribution: tensor([ 326, 6836], device='cuda:0')
+Epoch 14, CE loss: 0.5962, CR loss: -0.0083
+Train acc: 0.8497, Val acc: 0.8333, Test acc: 0.8776
+[Epoch 15] Predicted label distribution: tensor([ 300, 6862], device='cuda:0')
+Epoch 15, CE loss: 0.5665, CR loss: -0.0147
+Train acc: 0.8238, Val acc: 0.8542, Test acc: 0.8571
+[Epoch 16] Predicted label distribution: tensor([ 327, 6835], device='cuda:0')
+Epoch 16, CE loss: 0.5668, CR loss: -0.0158
+Train acc: 0.8705, Val acc: 0.8542, Test acc: 0.8776
+[Epoch 17] Predicted label distribution: tensor([ 361, 6801], device='cuda:0')
+Epoch 17, CE loss: 0.5310, CR loss: -0.0129
+Train acc: 0.8808, Val acc: 0.7917, Test acc: 0.8776
+[Epoch 18] Predicted label distribution: tensor([ 358, 6804], device='cuda:0')
+Epoch 18, CE loss: 0.5227, CR loss: -0.0086
+Train acc: 0.8834, Val acc: 0.7917, Test acc: 0.8776
+[Epoch 19] Predicted label distribution: tensor([ 327, 6835], device='cuda:0')
+Epoch 19, CE loss: 0.5054, CR loss: -0.0077
+Train acc: 0.8756, Val acc: 0.8750, Test acc: 0.8776
+[Epoch 20] Predicted label distribution: tensor([ 321, 6841], device='cuda:0')
+Epoch 20, CE loss: 0.4841, CR loss: -0.0085
+Train acc: 0.8808, Val acc: 0.8542, Test acc: 0.8776
+[Epoch 21] Predicted label distribution: tensor([ 342, 6820], device='cuda:0')
+Epoch 21, CE loss: 0.4773, CR loss: -0.0135
+Train acc: 0.8964, Val acc: 0.8333, Test acc: 0.9184
+[Epoch 22] Predicted label distribution: tensor([ 349, 6813], device='cuda:0')
+Epoch 22, CE loss: 0.4584, CR loss: -0.0145
+Train acc: 0.8938, Val acc: 0.7917, Test acc: 0.8980
+[Epoch 23] Predicted label distribution: tensor([ 334, 6828], device='cuda:0')
+Epoch 23, CE loss: 0.4439, CR loss: -0.0092
+Train acc: 0.8912, Val acc: 0.8542, Test acc: 0.9184
+[Epoch 24] Predicted label distribution: tensor([ 325, 6837], device='cuda:0')
+Epoch 24, CE loss: 0.4267, CR loss: -0.0084
+Train acc: 0.8964, Val acc: 0.8542, Test acc: 0.8776
+[Epoch 25] Predicted label distribution: tensor([ 338, 6824], device='cuda:0')
+Epoch 25, CE loss: 0.4184, CR loss: -0.0094
+Train acc: 0.8990, Val acc: 0.8542, Test acc: 0.9184
+[Epoch 26] Predicted label distribution: tensor([ 344, 6818], device='cuda:0')
+Epoch 26, CE loss: 0.4010, CR loss: -0.0115
+Train acc: 0.9067, Val acc: 0.8333, Test acc: 0.9184
+[Epoch 27] Predicted label distribution: tensor([ 340, 6822], device='cuda:0')
+Epoch 27, CE loss: 0.3938, CR loss: -0.0126
+Train acc: 0.9067, Val acc: 0.8542, Test acc: 0.9184
+[Epoch 28] Predicted label distribution: tensor([ 332, 6830], device='cuda:0')
+Epoch 28, CE loss: 0.3768, CR loss: -0.0118
+Train acc: 0.9093, Val acc: 0.8542, Test acc: 0.9184
+[Epoch 29] Predicted label distribution: tensor([ 342, 6820], device='cuda:0')
+Epoch 29, CE loss: 0.3690, CR loss: -0.0107
+Train acc: 0.9093, Val acc: 0.8333, Test acc: 0.9388
+[Epoch 30] Predicted label distribution: tensor([ 352, 6810], device='cuda:0')
+Epoch 30, CE loss: 0.3546, CR loss: -0.0108
+Train acc: 0.9301, Val acc: 0.8333, Test acc: 0.9592
+[Epoch 31] Predicted label distribution: tensor([ 349, 6813], device='cuda:0')
+Epoch 31, CE loss: 0.3461, CR loss: -0.0121
+Train acc: 0.9197, Val acc: 0.8333, Test acc: 0.9388
+[Epoch 32] Predicted label distribution: tensor([ 338, 6824], device='cuda:0')
+Epoch 32, CE loss: 0.3382, CR loss: -0.0173
+Train acc: 0.9301, Val acc: 0.8542, Test acc: 0.9184
+[Epoch 33] Predicted label distribution: tensor([ 352, 6810], device='cuda:0')
+Epoch 33, CE loss: 0.3293, CR loss: -0.0172
+Train acc: 0.9301, Val acc: 0.8333, Test acc: 0.9592
+[Epoch 34] Predicted label distribution: tensor([ 353, 6809], device='cuda:0')
+Epoch 34, CE loss: 0.3153, CR loss: -0.0138
+Train acc: 0.9326, Val acc: 0.8333, Test acc: 0.9388
+[Epoch 35] Predicted label distribution: tensor([ 347, 6815], device='cuda:0')
+Epoch 35, CE loss: 0.3078, CR loss: -0.0143
+Train acc: 0.9456, Val acc: 0.8333, Test acc: 0.9388
+[Epoch 36] Predicted label distribution: tensor([ 348, 6814], device='cuda:0')
+Epoch 36, CE loss: 0.2987, CR loss: -0.0187
+Train acc: 0.9456, Val acc: 0.8333, Test acc: 0.9388
+[Epoch 37] Predicted label distribution: tensor([ 350, 6812], device='cuda:0')
+Epoch 37, CE loss: 0.2956, CR loss: -0.0238
+Train acc: 0.9482, Val acc: 0.8333, Test acc: 0.9388
+[Epoch 38] Predicted label distribution: tensor([ 353, 6809], device='cuda:0')
+Epoch 38, CE loss: 0.2798, CR loss: -0.0191
+Train acc: 0.9508, Val acc: 0.8333, Test acc: 0.9388
+[Epoch 39] Predicted label distribution: tensor([ 354, 6808], device='cuda:0')
+Epoch 39, CE loss: 0.2735, CR loss: -0.0191
+Train acc: 0.9560, Val acc: 0.8333, Test acc: 0.9184
+[Epoch 40] Predicted label distribution: tensor([ 355, 6807], device='cuda:0')
+Epoch 40, CE loss: 0.2642, CR loss: -0.0224
+Train acc: 0.9534, Val acc: 0.8125, Test acc: 0.9388
+[Epoch 41] Predicted label distribution: tensor([ 359, 6803], device='cuda:0')
+Epoch 41, CE loss: 0.2618, CR loss: -0.0293
+Train acc: 0.9585, Val acc: 0.8333, Test acc: 0.9388
+[Epoch 42] Predicted label distribution: tensor([ 360, 6802], device='cuda:0')
+Epoch 42, CE loss: 0.2515, CR loss: -0.0288
+Train acc: 0.9611, Val acc: 0.8333, Test acc: 0.9184
+[Epoch 43] Predicted label distribution: tensor([ 356, 6806], device='cuda:0')
+Epoch 43, CE loss: 0.2429, CR loss: -0.0284
+Train acc: 0.9585, Val acc: 0.8125, Test acc: 0.8980
+[Epoch 44] Predicted label distribution: tensor([ 357, 6805], device='cuda:0')
+Epoch 44, CE loss: 0.2366, CR loss: -0.0321
+Train acc: 0.9585, Val acc: 0.7917, Test acc: 0.8980
+[Epoch 45] Predicted label distribution: tensor([ 361, 6801], device='cuda:0')
+Epoch 45, CE loss: 0.2306, CR loss: -0.0364
+Train acc: 0.9611, Val acc: 0.8333, Test acc: 0.9388
+[Epoch 46] Predicted label distribution: tensor([ 358, 6804], device='cuda:0')
+Epoch 46, CE loss: 0.2238, CR loss: -0.0387
+Train acc: 0.9611, Val acc: 0.7917, Test acc: 0.8980
+[Epoch 47] Predicted label distribution: tensor([ 359, 6803], device='cuda:0')
+(Training KnowRGFD):  57%|█████▊    | 46/80 [00:05<00:04,  8.31it/s, loss=0.113](Training KnowRGFD):  59%|█████▉    | 47/80 [00:05<00:03,  8.31it/s, loss=0.113](Training KnowRGFD):  59%|█████▉    | 47/80 [00:05<00:03,  8.31it/s, loss=0.108](Training KnowRGFD):  60%|██████    | 48/80 [00:05<00:03,  8.31it/s, loss=0.108](Training KnowRGFD):  60%|██████    | 48/80 [00:05<00:03,  8.31it/s, loss=0.103](Training KnowRGFD):  61%|██████▏   | 49/80 [00:05<00:03,  8.31it/s, loss=0.103](Training KnowRGFD):  61%|██████▏   | 49/80 [00:06<00:03,  8.31it/s, loss=0.0974](Training KnowRGFD):  62%|██████▎   | 50/80 [00:06<00:03,  8.31it/s, loss=0.0974](Training KnowRGFD):  62%|██████▎   | 50/80 [00:06<00:03,  8.31it/s, loss=0.0922](Training KnowRGFD):  64%|██████▍   | 51/80 [00:06<00:03,  8.31it/s, loss=0.0922](Training KnowRGFD):  64%|██████▍   | 51/80 [00:06<00:03,  8.31it/s, loss=0.086] (Training KnowRGFD):  65%|██████▌   | 52/80 [00:06<00:03,  8.31it/s, loss=0.086](Training KnowRGFD):  65%|██████▌   | 52/80 [00:06<00:03,  8.31it/s, loss=0.0804](Training KnowRGFD):  66%|██████▋   | 53/80 [00:06<00:03,  8.31it/s, loss=0.0804](Training KnowRGFD):  66%|██████▋   | 53/80 [00:06<00:03,  8.31it/s, loss=0.0739](Training KnowRGFD):  68%|██████▊   | 54/80 [00:06<00:03,  8.28it/s, loss=0.0739](Training KnowRGFD):  68%|██████▊   | 54/80 [00:06<00:03,  8.28it/s, loss=0.0671](Training KnowRGFD):  69%|██████▉   | 55/80 [00:06<00:03,  8.28it/s, loss=0.0671](Training KnowRGFD):  69%|██████▉   | 55/80 [00:06<00:03,  8.28it/s, loss=0.0603](Training KnowRGFD):  70%|███████   | 56/80 [00:06<00:02,  8.29it/s, loss=0.0603](Training KnowRGFD):  70%|███████   | 56/80 [00:06<00:02,  8.29it/s, loss=0.0533](Training KnowRGFD):  71%|███████▏  | 57/80 [00:06<00:02,  8.29it/s, loss=0.0533](Training KnowRGFD):  71%|███████▏  | 57/80 [00:06<00:02,  8.29it/s, loss=0.0457](Training KnowRGFD):  72%|███████▎  | 58/80 [00:06<00:02,  8.30it/s, loss=0.0457](Training KnowRGFD):  72%|███████▎  | 58/80 [00:07<00:02,  8.30it/s, loss=0.0372](Training KnowRGFD):  74%|███████▍  | 59/80 [00:07<00:02,  8.30it/s, loss=0.0372](Training KnowRGFD):  74%|███████▍  | 59/80 [00:07<00:02,  8.30it/s, loss=0.0286](Training KnowRGFD):  75%|███████▌  | 60/80 [00:07<00:02,  8.30it/s, loss=0.0286](Training KnowRGFD):  75%|███████▌  | 60/80 [00:07<00:02,  8.30it/s, loss=0.0198](Training KnowRGFD):  76%|███████▋  | 61/80 [00:07<00:02,  8.30it/s, loss=0.0198](Training KnowRGFD):  76%|███████▋  | 61/80 [00:07<00:02,  8.30it/s, loss=0.012] (Training KnowRGFD):  78%|███████▊  | 62/80 [00:07<00:02,  8.30it/s, loss=0.012](Training KnowRGFD):  78%|███████▊  | 62/80 [00:07<00:02,  8.30it/s, loss=0.00346](Training KnowRGFD):  79%|███████▉  | 63/80 [00:07<00:02,  8.30it/s, loss=0.00346](Training KnowRGFD):  79%|███████▉  | 63/80 [00:07<00:02,  8.30it/s, loss=-0.0109](Training KnowRGFD):  80%|████████  | 64/80 [00:07<00:01,  8.31it/s, loss=-0.0109](Training KnowRGFD):  80%|████████  | 64/80 [00:07<00:01,  8.31it/s, loss=-0.0229](Training KnowRGFD):  81%|████████▏ | 65/80 [00:07<00:01,  8.31it/s, loss=-0.0229](Training KnowRGFD):  81%|████████▏ | 65/80 [00:07<00:01,  8.31it/s, loss=-0.0336](Training KnowRGFD):  82%|████████▎ | 66/80 [00:07<00:01,  8.31it/s, loss=-0.0336](Training KnowRGFD):  82%|████████▎ | 66/80 [00:08<00:01,  8.31it/s, loss=-0.0397](Training KnowRGFD):  84%|████████▍ | 67/80 [00:08<00:01,  8.31it/s, loss=-0.0397](Training KnowRGFD):  84%|████████▍ | 67/80 [00:08<00:01,  8.31it/s, loss=-0.0603](Training KnowRGFD):  85%|████████▌ | 68/80 [00:08<00:01,  8.31it/s, loss=-0.0603](Training KnowRGFD):  85%|████████▌ | 68/80 [00:08<00:01,  8.31it/s, loss=-0.0742](Training KnowRGFD):  86%|████████▋ | 69/80 [00:08<00:01,  8.31it/s, loss=-0.0742](Training KnowRGFD):  86%|████████▋ | 69/80 [00:08<00:01,  8.31it/s, loss=-0.083] (Training KnowRGFD):  88%|████████▊ | 70/80 [00:08<00:01,  8.31it/s, loss=-0.083](Training KnowRGFD):  88%|████████▊ | 70/80 [00:08<00:01,  8.31it/s, loss=-0.0974](Training KnowRGFD):  89%|████████▉ | 71/80 [00:08<00:01,  8.31it/s, loss=-0.0974](Training KnowRGFD):  89%|████████▉ | 71/80 [00:08<00:01,  8.31it/s, loss=-0.118] (Training KnowRGFD):  90%|█████████ | 72/80 [00:08<00:00,  8.26it/s, loss=-0.118](Training KnowRGFD):  90%|█████████ | 72/80 [00:08<00:00,  8.26it/s, loss=-0.132](Training KnowRGFD):  91%|█████████▏| 73/80 [00:08<00:00,  8.26it/s, loss=-0.132](Training KnowRGFD):  91%|█████████▏| 73/80 [00:08<00:00,  8.26it/s, loss=-0.13] (Training KnowRGFD):  92%|█████████▎| 74/80 [00:08<00:00,  8.28it/s, loss=-0.13](Training KnowRGFD):  92%|█████████▎| 74/80 [00:09<00:00,  8.28it/s, loss=-0.162](Training KnowRGFD):  94%|█████████▍| 75/80 [00:09<00:00,  8.28it/s, loss=-0.162](Training KnowRGFD):  94%|█████████▍| 75/80 [00:09<00:00,  8.28it/s, loss=-0.136](Training KnowRGFD):  95%|█████████▌| 76/80 [00:09<00:00,  8.29it/s, loss=-0.136](Training KnowRGFD):  95%|█████████▌| 76/80 [00:09<00:00,  8.29it/s, loss=-0.138](Training KnowRGFD):  96%|█████████▋| 77/80 [00:09<00:00,  8.29it/s, loss=-0.138](Training KnowRGFD):  96%|█████████▋| 77/80 [00:09<00:00,  8.29it/s, loss=-0.214](Training KnowRGFD):  98%|█████████▊| 78/80 [00:09<00:00,  8.30it/s, loss=-0.214](Training KnowRGFD):  98%|█████████▊| 78/80 [00:09<00:00,  8.30it/s, loss=-0.135](Training KnowRGFD):  99%|█████████▉| 79/80 [00:09<00:00,  8.30it/s, loss=-0.135](Training KnowRGFD):  99%|█████████▉| 79/80 [00:09<00:00,  8.30it/s, loss=-0.103](Training KnowRGFD): 100%|██████████| 80/80 [00:09<00:00,  8.30it/s, loss=-0.103](Training KnowRGFD): 100%|██████████| 80/80 [00:09<00:00,  8.29it/s, loss=-0.103]
+Epoch 47, CE loss: 0.2176, CR loss: -0.0431
+Train acc: 0.9611, Val acc: 0.7917, Test acc: 0.9184
+[Epoch 48] Predicted label distribution: tensor([ 363, 6799], device='cuda:0')
+Epoch 48, CE loss: 0.2127, CR loss: -0.0480
+Train acc: 0.9637, Val acc: 0.7917, Test acc: 0.8980
+[Epoch 49] Predicted label distribution: tensor([ 368, 6794], device='cuda:0')
+Epoch 49, CE loss: 0.2050, CR loss: -0.0505
+Train acc: 0.9663, Val acc: 0.8125, Test acc: 0.9184
+[Epoch 50] Predicted label distribution: tensor([ 367, 6795], device='cuda:0')
+Epoch 50, CE loss: 0.2006, CR loss: -0.0573
+Train acc: 0.9663, Val acc: 0.7708, Test acc: 0.8776
+[Epoch 51] Predicted label distribution: tensor([ 368, 6794], device='cuda:0')
+Epoch 51, CE loss: 0.2013, CR loss: -0.0715
+Train acc: 0.9663, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 52] Predicted label distribution: tensor([ 375, 6787], device='cuda:0')
+Epoch 52, CE loss: 0.1929, CR loss: -0.0745
+Train acc: 0.9663, Val acc: 0.7917, Test acc: 0.8776
+[Epoch 53] Predicted label distribution: tensor([ 374, 6788], device='cuda:0')
+Epoch 53, CE loss: 0.1854, CR loss: -0.0772
+Train acc: 0.9663, Val acc: 0.7708, Test acc: 0.8776
+[Epoch 54] Predicted label distribution: tensor([ 379, 6783], device='cuda:0')
+Epoch 54, CE loss: 0.1871, CR loss: -0.0959
+Train acc: 0.9689, Val acc: 0.7708, Test acc: 0.8776
+[Epoch 55] Predicted label distribution: tensor([ 383, 6779], device='cuda:0')
+Epoch 55, CE loss: 0.1826, CR loss: -0.1063
+Train acc: 0.9741, Val acc: 0.7708, Test acc: 0.8776
+[Epoch 56] Predicted label distribution: tensor([ 394, 6768], device='cuda:0')
+Epoch 56, CE loss: 0.1775, CR loss: -0.1155
+Train acc: 0.9715, Val acc: 0.7708, Test acc: 0.8776
+[Epoch 57] Predicted label distribution: tensor([ 402, 6760], device='cuda:0')
+Epoch 57, CE loss: 0.1810, CR loss: -0.1382
+Train acc: 0.9793, Val acc: 0.7708, Test acc: 0.8776
+[Epoch 58] Predicted label distribution: tensor([ 411, 6751], device='cuda:0')
+Epoch 58, CE loss: 0.1699, CR loss: -0.1406
+Train acc: 0.9741, Val acc: 0.7708, Test acc: 0.8776
+[Epoch 59] Predicted label distribution: tensor([ 417, 6745], device='cuda:0')
+Epoch 59, CE loss: 0.1817, CR loss: -0.1795
+Train acc: 0.9819, Val acc: 0.7708, Test acc: 0.8571
+[Epoch 60] Predicted label distribution: tensor([ 433, 6729], device='cuda:0')
+Epoch 60, CE loss: 0.1680, CR loss: -0.1805
+Train acc: 0.9767, Val acc: 0.7292, Test acc: 0.8367
+[Epoch 61] Predicted label distribution: tensor([ 433, 6729], device='cuda:0')
+Epoch 61, CE loss: 0.1843, CR loss: -0.2271
+Train acc: 0.9845, Val acc: 0.7708, Test acc: 0.8571
+[Epoch 62] Predicted label distribution: tensor([ 479, 6683], device='cuda:0')
+Epoch 62, CE loss: 0.1620, CR loss: -0.2131
+Train acc: 0.9715, Val acc: 0.7500, Test acc: 0.7959
+[Epoch 63] Predicted label distribution: tensor([ 472, 6690], device='cuda:0')
+Epoch 63, CE loss: 0.2015, CR loss: -0.2935
+Train acc: 0.9845, Val acc: 0.7292, Test acc: 0.8163
+[Epoch 64] Predicted label distribution: tensor([ 501, 6661], device='cuda:0')
+Epoch 64, CE loss: 0.1637, CR loss: -0.2727
+Train acc: 0.9870, Val acc: 0.7292, Test acc: 0.7755
+[Epoch 65] Predicted label distribution: tensor([ 539, 6623], device='cuda:0')
+Epoch 65, CE loss: 0.1676, CR loss: -0.3087
+Train acc: 0.9767, Val acc: 0.7292, Test acc: 0.7755
+[Epoch 66] Predicted label distribution: tensor([ 534, 6628], device='cuda:0')
+Epoch 66, CE loss: 0.1855, CR loss: -0.3622
+Train acc: 0.9845, Val acc: 0.7083, Test acc: 0.7959
+[Epoch 67] Predicted label distribution: tensor([ 613, 6549], device='cuda:0')
+Epoch 67, CE loss: 0.1613, CR loss: -0.3411
+Train acc: 0.9845, Val acc: 0.7083, Test acc: 0.7551
+[Epoch 68] Predicted label distribution: tensor([ 638, 6524], device='cuda:0')
+Epoch 68, CE loss: 0.1880, CR loss: -0.4328
+Train acc: 0.9845, Val acc: 0.7083, Test acc: 0.7347
+[Epoch 69] Predicted label distribution: tensor([ 632, 6530], device='cuda:0')
+Epoch 69, CE loss: 0.1867, CR loss: -0.4656
+Train acc: 0.9845, Val acc: 0.6875, Test acc: 0.7347
+[Epoch 70] Predicted label distribution: tensor([ 772, 6390], device='cuda:0')
+Epoch 70, CE loss: 0.1674, CR loss: -0.4586
+Train acc: 0.9611, Val acc: 0.6875, Test acc: 0.7551
+[Epoch 71] Predicted label distribution: tensor([ 758, 6404], device='cuda:0')
+Epoch 71, CE loss: 0.2306, CR loss: -0.5894
+Train acc: 0.9819, Val acc: 0.6667, Test acc: 0.7347
+[Epoch 72] Predicted label distribution: tensor([ 801, 6361], device='cuda:0')
+Epoch 72, CE loss: 0.1847, CR loss: -0.5725
+Train acc: 0.9845, Val acc: 0.6667, Test acc: 0.7551
+[Epoch 73] Predicted label distribution: tensor([1048, 6114], device='cuda:0')
+Epoch 73, CE loss: 0.1812, CR loss: -0.6030
+Train acc: 0.9456, Val acc: 0.6875, Test acc: 0.7551
+[Epoch 74] Predicted label distribution: tensor([1081, 6081], device='cuda:0')
+Epoch 74, CE loss: 0.3059, CR loss: -0.7848
+Train acc: 0.9611, Val acc: 0.6875, Test acc: 0.7347
+[Epoch 75] Predicted label distribution: tensor([ 909, 6253], device='cuda:0')
+Epoch 75, CE loss: 0.2548, CR loss: -0.7884
+Train acc: 0.9819, Val acc: 0.6458, Test acc: 0.7347
+[Epoch 76] Predicted label distribution: tensor([ 960, 6202], device='cuda:0')
+Epoch 76, CE loss: 0.2116, CR loss: -0.6582
+Train acc: 0.9819, Val acc: 0.6667, Test acc: 0.7347
+[Epoch 77] Predicted label distribution: tensor([1204, 5958], device='cuda:0')
+Epoch 77, CE loss: 0.2246, CR loss: -0.6815
+Train acc: 0.9767, Val acc: 0.6667, Test acc: 0.7143
+[Epoch 78] Predicted label distribution: tensor([1681, 5481], device='cuda:0')
+Epoch 78, CE loss: 0.1971, CR loss: -0.8311
+Train acc: 0.8964, Val acc: 0.6250, Test acc: 0.7143
+[Epoch 79] Predicted label distribution: tensor([1852, 5310], device='cuda:0')
+Epoch 79, CE loss: 0.5285, CR loss: -1.1298
+Train acc: 0.8523, Val acc: 0.6042, Test acc: 0.7143
+[Epoch 80] Predicted label distribution: tensor([1706, 5456], device='cuda:0')
+Epoch 80, CE loss: 0.6517, CR loss: -1.2345
+Train acc: 0.9301, Val acc: 0.6667, Test acc: 0.7347
+------------------------------------------------------------
+[FOLD 1 BEST] val acc: 0.8750, test acc: 0.8776
+(Training KnowRGFD):   0%|          | 0/80 [00:00<?, ?it/s](Training KnowRGFD):   0%|          | 0/80 [00:00<?, ?it/s, loss=0.673](Training KnowRGFD):   1%|▏         | 1/80 [00:00<00:09,  8.27it/s, loss=0.673](Training KnowRGFD):   1%|▏         | 1/80 [00:00<00:09,  8.27it/s, loss=0.96] (Training KnowRGFD):   2%|▎         | 2/80 [00:00<00:09,  8.29it/s, loss=0.96](Training KnowRGFD):   2%|▎         | 2/80 [00:00<00:09,  8.29it/s, loss=0.759](Training KnowRGFD):   4%|▍         | 3/80 [00:00<00:09,  8.30it/s, loss=0.759](Training KnowRGFD):   4%|▍         | 3/80 [00:00<00:09,  8.30it/s, loss=0.54] (Training KnowRGFD):   5%|▌         | 4/80 [00:00<00:09,  8.30it/s, loss=0.54](Training KnowRGFD):   5%|▌         | 4/80 [00:00<00:09,  8.30it/s, loss=0.54](Training KnowRGFD):   6%|▋         | 5/80 [00:00<00:09,  8.31it/s, loss=0.54](Training KnowRGFD):   6%|▋         | 5/80 [00:00<00:09,  8.31it/s, loss=0.591](Training KnowRGFD):   8%|▊         | 6/80 [00:00<00:08,  8.31it/s, loss=0.591](Training KnowRGFD):   8%|▊         | 6/80 [00:00<00:08,  8.31it/s, loss=0.51] (Training KnowRGFD):   9%|▉         | 7/80 [00:00<00:08,  8.31it/s, loss=0.51](Training KnowRGFD):   9%|▉         | 7/80 [00:00<00:08,  8.31it/s, loss=0.431](Training KnowRGFD):  10%|█         | 8/80 [00:00<00:08,  8.18it/s, loss=0.431](Training KnowRGFD):  10%|█         | 8/80 [00:01<00:08,  8.18it/s, loss=0.423](Training KnowRGFD):  11%|█▏        | 9/80 [00:01<00:08,  8.21it/s, loss=0.423](Training KnowRGFD):  11%|█▏        | 9/80 [00:01<00:08,  8.21it/s, loss=0.456](Training KnowRGFD):  12%|█▎        | 10/80 [00:01<00:08,  8.24it/s, loss=0.456](Training KnowRGFD):  12%|█▎        | 10/80 [00:01<00:08,  8.24it/s, loss=0.435](Training KnowRGFD):  14%|█▍        | 11/80 [00:01<00:08,  8.26it/s, loss=0.435](Training KnowRGFD):  14%|█▍        | 11/80 [00:01<00:08,  8.26it/s, loss=0.371](Training KnowRGFD):  15%|█▌        | 12/80 [00:01<00:08,  8.27it/s, loss=0.371](Training KnowRGFD):  15%|█▌        | 12/80 [00:01<00:08,  8.27it/s, loss=0.364](Training KnowRGFD):  16%|█▋        | 13/80 [00:01<00:08,  8.28it/s, loss=0.364](Training KnowRGFD):  16%|█▋        | 13/80 [00:01<00:08,  8.28it/s, loss=0.374](Training KnowRGFD):  18%|█▊        | 14/80 [00:01<00:07,  8.29it/s, loss=0.374](Training KnowRGFD):  18%|█▊        | 14/80 [00:01<00:07,  8.29it/s, loss=0.354](Training KnowRGFD):  19%|█▉        | 15/80 [00:01<00:07,  8.30it/s, loss=0.354](Training KnowRGFD):  19%|█▉        | 15/80 [00:01<00:07,  8.30it/s, loss=0.326](Training KnowRGFD):  20%|██        | 16/80 [00:01<00:07,  8.30it/s, loss=0.326](Training KnowRGFD):  20%|██        | 16/80 [00:02<00:07,  8.30it/s, loss=0.322](Training KnowRGFD):  21%|██▏       | 17/80 [00:02<00:07,  8.30it/s, loss=0.322](Training KnowRGFD):  21%|██▏       | 17/80 [00:02<00:07,  8.30it/s, loss=0.33] (Training KnowRGFD):  22%|██▎       | 18/80 [00:02<00:07,  8.31it/s, loss=0.33](Training KnowRGFD):  22%|██▎       | 18/80 [00:02<00:07,  8.31it/s, loss=0.314](Training KnowRGFD):  24%|██▍       | 19/80 [00:02<00:07,  8.31it/s, loss=0.314](Training KnowRGFD):  24%|██▍       | 19/80 [00:02<00:07,  8.31it/s, loss=0.293](Training KnowRGFD):  25%|██▌       | 20/80 [00:02<00:07,  8.31it/s, loss=0.293](Training KnowRGFD):  25%|██▌       | 20/80 [00:02<00:07,  8.31it/s, loss=0.292](Training KnowRGFD):  26%|██▋       | 21/80 [00:02<00:07,  8.31it/s, loss=0.292](Training KnowRGFD):  26%|██▋       | 21/80 [00:02<00:07,  8.31it/s, loss=0.293](Training KnowRGFD):  28%|██▊       | 22/80 [00:02<00:06,  8.31it/s, loss=0.293](Training KnowRGFD):  28%|██▊       | 22/80 [00:02<00:06,  8.31it/s, loss=0.276](Training KnowRGFD):  29%|██▉       | 23/80 [00:02<00:06,  8.31it/s, loss=0.276](Training KnowRGFD):  29%|██▉       | 23/80 [00:02<00:06,  8.31it/s, loss=0.268](Training KnowRGFD):  30%|███       | 24/80 [00:02<00:06,  8.31it/s, loss=0.268](Training KnowRGFD):  30%|███       | 24/80 [00:03<00:06,  8.31it/s, loss=0.269](Training KnowRGFD):  31%|███▏      | 25/80 [00:03<00:06,  8.31it/s, loss=0.269](Training KnowRGFD):  31%|███▏      | 25/80 [00:03<00:06,  8.31it/s, loss=0.259](Training KnowRGFD):  32%|███▎      | 26/80 [00:03<00:06,  8.31it/s, loss=0.259](Training KnowRGFD):  32%|███▎      | 26/80 [00:03<00:06,  8.31it/s, loss=0.246](Training KnowRGFD):  34%|███▍      | 27/80 [00:03<00:06,  8.31it/s, loss=0.246](Training KnowRGFD):  34%|███▍      | 27/80 [00:03<00:06,  8.31it/s, loss=0.245](Training KnowRGFD):  35%|███▌      | 28/80 [00:03<00:06,  8.31it/s, loss=0.245](Training KnowRGFD):  35%|███▌      | 28/80 [00:03<00:06,  8.31it/s, loss=0.239](Training KnowRGFD):  36%|███▋      | 29/80 [00:03<00:06,  8.31it/s, loss=0.239](Training KnowRGFD):  36%|███▋      | 29/80 [00:03<00:06,  8.31it/s, loss=0.227](Training KnowRGFD):  38%|███▊      | 30/80 [00:03<00:06,  8.32it/s, loss=0.227](Training KnowRGFD):  38%|███▊      | 30/80 [00:03<00:06,  8.32it/s, loss=0.227](Training KnowRGFD):  39%|███▉      | 31/80 [00:03<00:05,  8.32it/s, loss=0.227](Training KnowRGFD):  39%|███▉      | 31/80 [00:03<00:05,  8.32it/s, loss=0.219](Training KnowRGFD):  40%|████      | 32/80 [00:03<00:05,  8.32it/s, loss=0.219](Training KnowRGFD):  40%|████      | 32/80 [00:03<00:05,  8.32it/s, loss=0.21] (Training KnowRGFD):  41%|████▏     | 33/80 [00:03<00:05,  8.32it/s, loss=0.21](Training KnowRGFD):  41%|████▏     | 33/80 [00:04<00:05,  8.32it/s, loss=0.207](Training KnowRGFD):  42%|████▎     | 34/80 [00:04<00:05,  8.32it/s, loss=0.207](Training KnowRGFD):  42%|████▎     | 34/80 [00:04<00:05,  8.32it/s, loss=0.2]  (Training KnowRGFD):  44%|████▍     | 35/80 [00:04<00:05,  8.32it/s, loss=0.2](Training KnowRGFD):  44%|████▍     | 35/80 [00:04<00:05,  8.32it/s, loss=0.193](Training KnowRGFD):  45%|████▌     | 36/80 [00:04<00:05,  8.32it/s, loss=0.193](Training KnowRGFD):  45%|████▌     | 36/80 [00:04<00:05,  8.32it/s, loss=0.19] (Training KnowRGFD):  46%|████▋     | 37/80 [00:04<00:05,  8.32it/s, loss=0.19](Training KnowRGFD):  46%|████▋     | 37/80 [00:04<00:05,  8.32it/s, loss=0.183](Training KnowRGFD):  48%|████▊     | 38/80 [00:04<00:05,  8.32it/s, loss=0.183](Training KnowRGFD):  48%|████▊     | 38/80 [00:04<00:05,  8.32it/s, loss=0.176](Training KnowRGFD):  49%|████▉     | 39/80 [00:04<00:04,  8.24it/s, loss=0.176](Training KnowRGFD):  49%|████▉     | 39/80 [00:04<00:04,  8.24it/s, loss=0.172](Training KnowRGFD):  50%|█████     | 40/80 [00:04<00:04,  8.26it/s, loss=0.172](Training KnowRGFD):  50%|█████     | 40/80 [00:04<00:04,  8.26it/s, loss=0.166](Training KnowRGFD):  51%|█████▏    | 41/80 [00:04<00:04,  8.28it/s, loss=0.166](Training KnowRGFD):  51%|█████▏    | 41/80 [00:05<00:04,  8.28it/s, loss=0.161](Training KnowRGFD):  52%|█████▎    | 42/80 [00:05<00:04,  8.29it/s, loss=0.161](Training KnowRGFD):  52%|█████▎    | 42/80 [00:05<00:04,  8.29it/s, loss=0.156](Training KnowRGFD):  54%|█████▍    | 43/80 [00:05<00:04,  8.29it/s, loss=0.156](Training KnowRGFD):  54%|█████▍    | 43/80 [00:05<00:04,  8.29it/s, loss=0.15] (Training KnowRGFD):  55%|█████▌    | 44/80 [00:05<00:04,  8.30it/s, loss=0.15](Training KnowRGFD):  55%|█████▌    | 44/80 [00:05<00:04,  8.30it/s, loss=0.144](Training KnowRGFD):  56%|█████▋    | 45/80 [00:05<00:04,  8.30it/s, loss=0.144](Training KnowRGFD):  56%|█████▋    | 45/80 [00:05<00:04,  8.30it/s, loss=0.139](Training KnowRGFD):  57%|█████▊    | 46/80 [00:05<00:04,  8.30it/s, loss=0.139][Epoch 1] Predicted label distribution: tensor([1887, 5275], device='cuda:0')
+Epoch 1, CE loss: 1.1411, CR loss: -0.0288
+Train acc: 0.6580, Val acc: 0.6250, Test acc: 0.6735
+[Epoch 2] Predicted label distribution: tensor([1930, 5232], device='cuda:0')
+Epoch 2, CE loss: 1.8218, CR loss: -0.3330
+Train acc: 0.7772, Val acc: 0.8125, Test acc: 0.7551
+[Epoch 3] Predicted label distribution: tensor([1656, 5506], device='cuda:0')
+Epoch 3, CE loss: 1.3598, CR loss: -0.1426
+Train acc: 0.7694, Val acc: 0.7917, Test acc: 0.7551
+[Epoch 4] Predicted label distribution: tensor([ 884, 6278], device='cuda:0')
+Epoch 4, CE loss: 0.9084, CR loss: -0.0115
+Train acc: 0.6503, Val acc: 0.5833, Test acc: 0.6735
+[Epoch 5] Predicted label distribution: tensor([ 685, 6477], device='cuda:0')
+Epoch 5, CE loss: 0.9184, CR loss: -0.0278
+Train acc: 0.6140, Val acc: 0.5208, Test acc: 0.5918
+[Epoch 6] Predicted label distribution: tensor([ 748, 6414], device='cuda:0')
+Epoch 6, CE loss: 1.0080, CR loss: -0.0352
+Train acc: 0.7098, Val acc: 0.7292, Test acc: 0.6531
+[Epoch 7] Predicted label distribution: tensor([ 932, 6230], device='cuda:0')
+Epoch 7, CE loss: 0.8782, CR loss: -0.0427
+Train acc: 0.8238, Val acc: 0.8542, Test acc: 0.8163
+[Epoch 8] Predicted label distribution: tensor([ 895, 6267], device='cuda:0')
+Epoch 8, CE loss: 0.7387, CR loss: -0.0304
+Train acc: 0.8316, Val acc: 0.8542, Test acc: 0.8163
+[Epoch 9] Predicted label distribution: tensor([ 793, 6369], device='cuda:0')
+Epoch 9, CE loss: 0.7153, CR loss: -0.0156
+Train acc: 0.8212, Val acc: 0.8333, Test acc: 0.8163
+[Epoch 10] Predicted label distribution: tensor([ 726, 6436], device='cuda:0')
+Epoch 10, CE loss: 0.8036, CR loss: -0.0659
+Train acc: 0.8212, Val acc: 0.8333, Test acc: 0.7755
+[Epoch 11] Predicted label distribution: tensor([ 718, 6444], device='cuda:0')
+Epoch 11, CE loss: 0.7696, CR loss: -0.0665
+Train acc: 0.8342, Val acc: 0.8333, Test acc: 0.8163
+[Epoch 12] Predicted label distribution: tensor([ 754, 6408], device='cuda:0')
+Epoch 12, CE loss: 0.6300, CR loss: -0.0173
+Train acc: 0.8627, Val acc: 0.8958, Test acc: 0.8163
+[Epoch 13] Predicted label distribution: tensor([ 700, 6462], device='cuda:0')
+Epoch 13, CE loss: 0.6242, CR loss: -0.0275
+Train acc: 0.8575, Val acc: 0.8958, Test acc: 0.7959
+[Epoch 14] Predicted label distribution: tensor([ 638, 6524], device='cuda:0')
+Epoch 14, CE loss: 0.6559, CR loss: -0.0487
+Train acc: 0.8446, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 15] Predicted label distribution: tensor([ 612, 6550], device='cuda:0')
+Epoch 15, CE loss: 0.6099, CR loss: -0.0290
+Train acc: 0.8549, Val acc: 0.8333, Test acc: 0.8367
+[Epoch 16] Predicted label distribution: tensor([ 711, 6451], device='cuda:0')
+Epoch 16, CE loss: 0.5501, CR loss: -0.0099
+Train acc: 0.8808, Val acc: 0.8958, Test acc: 0.8367
+[Epoch 17] Predicted label distribution: tensor([ 751, 6411], device='cuda:0')
+Epoch 17, CE loss: 0.5425, CR loss: -0.0085
+Train acc: 0.8860, Val acc: 0.8958, Test acc: 0.8367
+[Epoch 18] Predicted label distribution: tensor([ 748, 6414], device='cuda:0')
+Epoch 18, CE loss: 0.5564, CR loss: -0.0102
+Train acc: 0.8860, Val acc: 0.8958, Test acc: 0.8571
+[Epoch 19] Predicted label distribution: tensor([ 709, 6453], device='cuda:0')
+Epoch 19, CE loss: 0.5309, CR loss: -0.0115
+Train acc: 0.8808, Val acc: 0.8750, Test acc: 0.8776
+[Epoch 20] Predicted label distribution: tensor([ 763, 6399], device='cuda:0')
+Epoch 20, CE loss: 0.4944, CR loss: -0.0083
+Train acc: 0.8834, Val acc: 0.8958, Test acc: 0.8980
+[Epoch 21] Predicted label distribution: tensor([ 793, 6369], device='cuda:0')
+Epoch 21, CE loss: 0.4978, CR loss: -0.0166
+Train acc: 0.8938, Val acc: 0.8958, Test acc: 0.8980
+[Epoch 22] Predicted label distribution: tensor([ 752, 6410], device='cuda:0')
+Epoch 22, CE loss: 0.5051, CR loss: -0.0258
+Train acc: 0.8990, Val acc: 0.8958, Test acc: 0.8980
+[Epoch 23] Predicted label distribution: tensor([ 690, 6472], device='cuda:0')
+Epoch 23, CE loss: 0.4679, CR loss: -0.0128
+Train acc: 0.9016, Val acc: 0.8958, Test acc: 0.8980
+[Epoch 24] Predicted label distribution: tensor([ 709, 6453], device='cuda:0')
+Epoch 24, CE loss: 0.4534, CR loss: -0.0090
+Train acc: 0.9067, Val acc: 0.8958, Test acc: 0.8776
+[Epoch 25] Predicted label distribution: tensor([ 684, 6478], device='cuda:0')
+Epoch 25, CE loss: 0.4541, CR loss: -0.0095
+Train acc: 0.9145, Val acc: 0.8958, Test acc: 0.8776
+[Epoch 26] Predicted label distribution: tensor([ 608, 6554], device='cuda:0')
+Epoch 26, CE loss: 0.4367, CR loss: -0.0078
+Train acc: 0.9171, Val acc: 0.8958, Test acc: 0.8980
+[Epoch 27] Predicted label distribution: tensor([ 573, 6589], device='cuda:0')
+Epoch 27, CE loss: 0.4162, CR loss: -0.0087
+Train acc: 0.9093, Val acc: 0.8750, Test acc: 0.8776
+[Epoch 28] Predicted label distribution: tensor([ 578, 6584], device='cuda:0')
+Epoch 28, CE loss: 0.4179, CR loss: -0.0140
+Train acc: 0.9249, Val acc: 0.8958, Test acc: 0.8776
+[Epoch 29] Predicted label distribution: tensor([ 546, 6616], device='cuda:0')
+Epoch 29, CE loss: 0.4106, CR loss: -0.0186
+Train acc: 0.9249, Val acc: 0.8958, Test acc: 0.8980
+[Epoch 30] Predicted label distribution: tensor([ 530, 6632], device='cuda:0')
+Epoch 30, CE loss: 0.3856, CR loss: -0.0103
+Train acc: 0.9275, Val acc: 0.8958, Test acc: 0.8980
+[Epoch 31] Predicted label distribution: tensor([ 537, 6625], device='cuda:0')
+Epoch 31, CE loss: 0.3862, CR loss: -0.0126
+Train acc: 0.9301, Val acc: 0.8958, Test acc: 0.8980
+[Epoch 32] Predicted label distribution: tensor([ 513, 6649], device='cuda:0')
+Epoch 32, CE loss: 0.3729, CR loss: -0.0113
+Train acc: 0.9378, Val acc: 0.8958, Test acc: 0.8980
+[Epoch 33] Predicted label distribution: tensor([ 485, 6677], device='cuda:0')
+Epoch 33, CE loss: 0.3589, CR loss: -0.0135
+Train acc: 0.9301, Val acc: 0.8750, Test acc: 0.8980
+[Epoch 34] Predicted label distribution: tensor([ 480, 6682], device='cuda:0')
+Epoch 34, CE loss: 0.3560, CR loss: -0.0165
+Train acc: 0.9378, Val acc: 0.8958, Test acc: 0.8980
+[Epoch 35] Predicted label distribution: tensor([ 473, 6689], device='cuda:0')
+Epoch 35, CE loss: 0.3465, CR loss: -0.0192
+Train acc: 0.9430, Val acc: 0.8958, Test acc: 0.8980
+[Epoch 36] Predicted label distribution: tensor([ 476, 6686], device='cuda:0')
+Epoch 36, CE loss: 0.3323, CR loss: -0.0164
+Train acc: 0.9430, Val acc: 0.8958, Test acc: 0.8980
+[Epoch 37] Predicted label distribution: tensor([ 475, 6687], device='cuda:0')
+Epoch 37, CE loss: 0.3294, CR loss: -0.0182
+Train acc: 0.9482, Val acc: 0.8750, Test acc: 0.8980
+[Epoch 38] Predicted label distribution: tensor([ 463, 6699], device='cuda:0')
+Epoch 38, CE loss: 0.3176, CR loss: -0.0190
+Train acc: 0.9456, Val acc: 0.8750, Test acc: 0.8980
+[Epoch 39] Predicted label distribution: tensor([ 458, 6704], device='cuda:0')
+Epoch 39, CE loss: 0.3080, CR loss: -0.0222
+Train acc: 0.9482, Val acc: 0.8542, Test acc: 0.8980
+[Epoch 40] Predicted label distribution: tensor([ 465, 6697], device='cuda:0')
+Epoch 40, CE loss: 0.3035, CR loss: -0.0257
+Train acc: 0.9508, Val acc: 0.8750, Test acc: 0.8980
+[Epoch 41] Predicted label distribution: tensor([ 462, 6700], device='cuda:0')
+Epoch 41, CE loss: 0.2947, CR loss: -0.0280
+Train acc: 0.9508, Val acc: 0.8750, Test acc: 0.8980
+[Epoch 42] Predicted label distribution: tensor([ 468, 6694], device='cuda:0')
+Epoch 42, CE loss: 0.2858, CR loss: -0.0269
+Train acc: 0.9534, Val acc: 0.8958, Test acc: 0.8980
+[Epoch 43] Predicted label distribution: tensor([ 462, 6700], device='cuda:0')
+Epoch 43, CE loss: 0.2797, CR loss: -0.0283
+Train acc: 0.9508, Val acc: 0.8750, Test acc: 0.8980
+[Epoch 44] Predicted label distribution: tensor([ 457, 6705], device='cuda:0')
+Epoch 44, CE loss: 0.2701, CR loss: -0.0313
+Train acc: 0.9534, Val acc: 0.8542, Test acc: 0.8980
+[Epoch 45] Predicted label distribution: tensor([ 461, 6701], device='cuda:0')
+Epoch 45, CE loss: 0.2639, CR loss: -0.0360
+Train acc: 0.9585, Val acc: 0.8958, Test acc: 0.8980
+[Epoch 46] Predicted label distribution: tensor([ 449, 6713], device='cuda:0')
+Epoch 46, CE loss: 0.2594, CR loss: -0.0409
+Train acc: 0.9585, Val acc: 0.8333, Test acc: 0.8980
+[Epoch 47] Predicted label distribution: tensor([ 462, 6700], device='cuda:0')
+(Training KnowRGFD):  57%|█████▊    | 46/80 [00:05<00:04,  8.30it/s, loss=0.134](Training KnowRGFD):  59%|█████▉    | 47/80 [00:05<00:03,  8.31it/s, loss=0.134](Training KnowRGFD):  59%|█████▉    | 47/80 [00:05<00:03,  8.31it/s, loss=0.13] (Training KnowRGFD):  60%|██████    | 48/80 [00:05<00:03,  8.31it/s, loss=0.13](Training KnowRGFD):  60%|██████    | 48/80 [00:05<00:03,  8.31it/s, loss=0.125](Training KnowRGFD):  61%|██████▏   | 49/80 [00:05<00:03,  8.31it/s, loss=0.125](Training KnowRGFD):  61%|██████▏   | 49/80 [00:06<00:03,  8.31it/s, loss=0.119](Training KnowRGFD):  62%|██████▎   | 50/80 [00:06<00:03,  8.30it/s, loss=0.119](Training KnowRGFD):  62%|██████▎   | 50/80 [00:06<00:03,  8.30it/s, loss=0.114](Training KnowRGFD):  64%|██████▍   | 51/80 [00:06<00:03,  8.30it/s, loss=0.114](Training KnowRGFD):  64%|██████▍   | 51/80 [00:06<00:03,  8.30it/s, loss=0.108](Training KnowRGFD):  65%|██████▌   | 52/80 [00:06<00:03,  8.31it/s, loss=0.108](Training KnowRGFD):  65%|██████▌   | 52/80 [00:06<00:03,  8.31it/s, loss=0.103](Training KnowRGFD):  66%|██████▋   | 53/80 [00:06<00:03,  8.31it/s, loss=0.103](Training KnowRGFD):  66%|██████▋   | 53/80 [00:06<00:03,  8.31it/s, loss=0.0984](Training KnowRGFD):  68%|██████▊   | 54/80 [00:06<00:03,  8.31it/s, loss=0.0984](Training KnowRGFD):  68%|██████▊   | 54/80 [00:06<00:03,  8.31it/s, loss=0.0922](Training KnowRGFD):  69%|██████▉   | 55/80 [00:06<00:03,  8.30it/s, loss=0.0922](Training KnowRGFD):  69%|██████▉   | 55/80 [00:06<00:03,  8.30it/s, loss=0.0862](Training KnowRGFD):  70%|███████   | 56/80 [00:06<00:02,  8.30it/s, loss=0.0862](Training KnowRGFD):  70%|███████   | 56/80 [00:06<00:02,  8.30it/s, loss=0.0811](Training KnowRGFD):  71%|███████▏  | 57/80 [00:06<00:02,  8.30it/s, loss=0.0811](Training KnowRGFD):  71%|███████▏  | 57/80 [00:06<00:02,  8.30it/s, loss=0.0789](Training KnowRGFD):  72%|███████▎  | 58/80 [00:06<00:02,  8.30it/s, loss=0.0789](Training KnowRGFD):  72%|███████▎  | 58/80 [00:07<00:02,  8.30it/s, loss=0.0821](Training KnowRGFD):  74%|███████▍  | 59/80 [00:07<00:02,  8.30it/s, loss=0.0821](Training KnowRGFD):  74%|███████▍  | 59/80 [00:07<00:02,  8.30it/s, loss=0.0641](Training KnowRGFD):  75%|███████▌  | 60/80 [00:07<00:02,  8.31it/s, loss=0.0641](Training KnowRGFD):  75%|███████▌  | 60/80 [00:07<00:02,  8.31it/s, loss=0.072] (Training KnowRGFD):  76%|███████▋  | 61/80 [00:07<00:02,  8.31it/s, loss=0.072](Training KnowRGFD):  76%|███████▋  | 61/80 [00:07<00:02,  8.31it/s, loss=0.0509](Training KnowRGFD):  78%|███████▊  | 62/80 [00:07<00:02,  8.29it/s, loss=0.0509](Training KnowRGFD):  78%|███████▊  | 62/80 [00:07<00:02,  8.29it/s, loss=0.0708](Training KnowRGFD):  79%|███████▉  | 63/80 [00:07<00:02,  8.30it/s, loss=0.0708](Training KnowRGFD):  79%|███████▉  | 63/80 [00:07<00:02,  8.30it/s, loss=0.0439](Training KnowRGFD):  80%|████████  | 64/80 [00:07<00:01,  8.30it/s, loss=0.0439](Training KnowRGFD):  80%|████████  | 64/80 [00:07<00:01,  8.30it/s, loss=0.0829](Training KnowRGFD):  81%|████████▏ | 65/80 [00:07<00:01,  8.30it/s, loss=0.0829](Training KnowRGFD):  81%|████████▏ | 65/80 [00:07<00:01,  8.30it/s, loss=0.097] (Training KnowRGFD):  82%|████████▎ | 66/80 [00:07<00:01,  8.31it/s, loss=0.097](Training KnowRGFD):  82%|████████▎ | 66/80 [00:08<00:01,  8.31it/s, loss=0.0346](Training KnowRGFD):  84%|████████▍ | 67/80 [00:08<00:01,  8.31it/s, loss=0.0346](Training KnowRGFD):  84%|████████▍ | 67/80 [00:08<00:01,  8.31it/s, loss=0.0868](Training KnowRGFD):  85%|████████▌ | 68/80 [00:08<00:01,  8.31it/s, loss=0.0868](Training KnowRGFD):  85%|████████▌ | 68/80 [00:08<00:01,  8.31it/s, loss=0.162] (Training KnowRGFD):  86%|████████▋ | 69/80 [00:08<00:01,  8.31it/s, loss=0.162](Training KnowRGFD):  86%|████████▋ | 69/80 [00:08<00:01,  8.31it/s, loss=0.0829](Training KnowRGFD):  88%|████████▊ | 70/80 [00:08<00:01,  8.31it/s, loss=0.0829](Training KnowRGFD):  88%|████████▊ | 70/80 [00:08<00:01,  8.31it/s, loss=0.0081](Training KnowRGFD):  89%|████████▉ | 71/80 [00:08<00:01,  8.31it/s, loss=0.0081](Training KnowRGFD):  89%|████████▉ | 71/80 [00:08<00:01,  8.31it/s, loss=0.0373](Training KnowRGFD):  90%|█████████ | 72/80 [00:08<00:00,  8.31it/s, loss=0.0373](Training KnowRGFD):  90%|█████████ | 72/80 [00:08<00:00,  8.31it/s, loss=0.0301](Training KnowRGFD):  91%|█████████▏| 73/80 [00:08<00:00,  8.31it/s, loss=0.0301](Training KnowRGFD):  91%|█████████▏| 73/80 [00:08<00:00,  8.31it/s, loss=-0.000836](Training KnowRGFD):  92%|█████████▎| 74/80 [00:08<00:00,  8.31it/s, loss=-0.000836](Training KnowRGFD):  92%|█████████▎| 74/80 [00:09<00:00,  8.31it/s, loss=0.0143]   (Training KnowRGFD):  94%|█████████▍| 75/80 [00:09<00:00,  8.30it/s, loss=0.0143](Training KnowRGFD):  94%|█████████▍| 75/80 [00:09<00:00,  8.30it/s, loss=0.000986](Training KnowRGFD):  95%|█████████▌| 76/80 [00:09<00:00,  8.30it/s, loss=0.000986](Training KnowRGFD):  95%|█████████▌| 76/80 [00:09<00:00,  8.30it/s, loss=-0.0154] (Training KnowRGFD):  96%|█████████▋| 77/80 [00:09<00:00,  8.30it/s, loss=-0.0154](Training KnowRGFD):  96%|█████████▋| 77/80 [00:09<00:00,  8.30it/s, loss=-0.0187](Training KnowRGFD):  98%|█████████▊| 78/80 [00:09<00:00,  8.31it/s, loss=-0.0187](Training KnowRGFD):  98%|█████████▊| 78/80 [00:09<00:00,  8.31it/s, loss=-0.0209](Training KnowRGFD):  99%|█████████▉| 79/80 [00:09<00:00,  8.31it/s, loss=-0.0209](Training KnowRGFD):  99%|█████████▉| 79/80 [00:09<00:00,  8.31it/s, loss=-0.0313](Training KnowRGFD): 100%|██████████| 80/80 [00:09<00:00,  8.31it/s, loss=-0.0313](Training KnowRGFD): 100%|██████████| 80/80 [00:09<00:00,  8.30it/s, loss=-0.0313]
+Epoch 47, CE loss: 0.2500, CR loss: -0.0405
+Train acc: 0.9637, Val acc: 0.8958, Test acc: 0.9184
+[Epoch 48] Predicted label distribution: tensor([ 451, 6711], device='cuda:0')
+Epoch 48, CE loss: 0.2454, CR loss: -0.0427
+Train acc: 0.9663, Val acc: 0.8333, Test acc: 0.8980
+[Epoch 49] Predicted label distribution: tensor([ 456, 6706], device='cuda:0')
+Epoch 49, CE loss: 0.2405, CR loss: -0.0472
+Train acc: 0.9663, Val acc: 0.8958, Test acc: 0.9184
+[Epoch 50] Predicted label distribution: tensor([ 443, 6719], device='cuda:0')
+Epoch 50, CE loss: 0.2337, CR loss: -0.0529
+Train acc: 0.9689, Val acc: 0.8333, Test acc: 0.8980
+[Epoch 51] Predicted label distribution: tensor([ 448, 6714], device='cuda:0')
+Epoch 51, CE loss: 0.2270, CR loss: -0.0567
+Train acc: 0.9689, Val acc: 0.8750, Test acc: 0.8980
+[Epoch 52] Predicted label distribution: tensor([ 439, 6723], device='cuda:0')
+Epoch 52, CE loss: 0.2218, CR loss: -0.0625
+Train acc: 0.9689, Val acc: 0.8750, Test acc: 0.8980
+[Epoch 53] Predicted label distribution: tensor([ 431, 6731], device='cuda:0')
+Epoch 53, CE loss: 0.2153, CR loss: -0.0649
+Train acc: 0.9715, Val acc: 0.8750, Test acc: 0.8980
+[Epoch 54] Predicted label distribution: tensor([ 421, 6741], device='cuda:0')
+Epoch 54, CE loss: 0.2109, CR loss: -0.0703
+Train acc: 0.9741, Val acc: 0.8750, Test acc: 0.8980
+[Epoch 55] Predicted label distribution: tensor([ 411, 6751], device='cuda:0')
+Epoch 55, CE loss: 0.2058, CR loss: -0.0782
+Train acc: 0.9715, Val acc: 0.8750, Test acc: 0.8980
+[Epoch 56] Predicted label distribution: tensor([ 410, 6752], device='cuda:0')
+Epoch 56, CE loss: 0.2019, CR loss: -0.0875
+Train acc: 0.9767, Val acc: 0.8542, Test acc: 0.8980
+[Epoch 57] Predicted label distribution: tensor([ 391, 6771], device='cuda:0')
+Epoch 57, CE loss: 0.2004, CR loss: -0.0979
+Train acc: 0.9689, Val acc: 0.8750, Test acc: 0.8980
+[Epoch 58] Predicted label distribution: tensor([ 408, 6754], device='cuda:0')
+Epoch 58, CE loss: 0.2019, CR loss: -0.1056
+Train acc: 0.9637, Val acc: 0.8542, Test acc: 0.9184
+[Epoch 59] Predicted label distribution: tensor([ 387, 6775], device='cuda:0')
+Epoch 59, CE loss: 0.2140, CR loss: -0.1157
+Train acc: 0.9767, Val acc: 0.8750, Test acc: 0.8980
+[Epoch 60] Predicted label distribution: tensor([ 358, 6804], device='cuda:0')
+Epoch 60, CE loss: 0.1870, CR loss: -0.1203
+Train acc: 0.9637, Val acc: 0.8333, Test acc: 0.8776
+[Epoch 61] Predicted label distribution: tensor([ 372, 6790], device='cuda:0')
+Epoch 61, CE loss: 0.2126, CR loss: -0.1390
+Train acc: 0.9741, Val acc: 0.8333, Test acc: 0.8980
+[Epoch 62] Predicted label distribution: tensor([ 392, 6770], device='cuda:0')
+Epoch 62, CE loss: 0.1805, CR loss: -0.1436
+Train acc: 0.9689, Val acc: 0.8542, Test acc: 0.9184
+[Epoch 63] Predicted label distribution: tensor([ 375, 6787], device='cuda:0')
+Epoch 63, CE loss: 0.2276, CR loss: -0.1645
+Train acc: 0.9741, Val acc: 0.8542, Test acc: 0.8980
+[Epoch 64] Predicted label distribution: tensor([ 332, 6830], device='cuda:0')
+Epoch 64, CE loss: 0.1816, CR loss: -0.1627
+Train acc: 0.9301, Val acc: 0.8333, Test acc: 0.8571
+[Epoch 65] Predicted label distribution: tensor([ 320, 6842], device='cuda:0')
+Epoch 65, CE loss: 0.2704, CR loss: -0.1983
+Train acc: 0.9171, Val acc: 0.8542, Test acc: 0.8163
+[Epoch 66] Predicted label distribution: tensor([ 354, 6808], device='cuda:0')
+Epoch 66, CE loss: 0.3083, CR loss: -0.2198
+Train acc: 0.9715, Val acc: 0.8333, Test acc: 0.8776
+[Epoch 67] Predicted label distribution: tensor([ 391, 6771], device='cuda:0')
+Epoch 67, CE loss: 0.1869, CR loss: -0.1939
+Train acc: 0.9585, Val acc: 0.8125, Test acc: 0.8980
+[Epoch 68] Predicted label distribution: tensor([ 420, 6742], device='cuda:0')
+Epoch 68, CE loss: 0.2885, CR loss: -0.2157
+Train acc: 0.9093, Val acc: 0.7917, Test acc: 0.8163
+[Epoch 69] Predicted label distribution: tensor([ 391, 6771], device='cuda:0')
+Epoch 69, CE loss: 0.4407, CR loss: -0.2562
+Train acc: 0.9611, Val acc: 0.8125, Test acc: 0.8980
+[Epoch 70] Predicted label distribution: tensor([ 360, 6802], device='cuda:0')
+Epoch 70, CE loss: 0.2973, CR loss: -0.2386
+Train acc: 0.9767, Val acc: 0.8333, Test acc: 0.8776
+[Epoch 71] Predicted label distribution: tensor([ 344, 6818], device='cuda:0')
+Epoch 71, CE loss: 0.1584, CR loss: -0.2173
+Train acc: 0.9585, Val acc: 0.8125, Test acc: 0.8367
+[Epoch 72] Predicted label distribution: tensor([ 349, 6813], device='cuda:0')
+Epoch 72, CE loss: 0.2231, CR loss: -0.2414
+Train acc: 0.9611, Val acc: 0.8125, Test acc: 0.8367
+[Epoch 73] Predicted label distribution: tensor([ 374, 6788], device='cuda:0')
+Epoch 73, CE loss: 0.2183, CR loss: -0.2522
+Train acc: 0.9793, Val acc: 0.8333, Test acc: 0.8776
+[Epoch 74] Predicted label distribution: tensor([ 388, 6774], device='cuda:0')
+Epoch 74, CE loss: 0.1555, CR loss: -0.2354
+Train acc: 0.9741, Val acc: 0.8542, Test acc: 0.8980
+[Epoch 75] Predicted label distribution: tensor([ 379, 6783], device='cuda:0')
+Epoch 75, CE loss: 0.1933, CR loss: -0.2541
+Train acc: 0.9793, Val acc: 0.8542, Test acc: 0.8776
+[Epoch 76] Predicted label distribution: tensor([ 366, 6796], device='cuda:0')
+Epoch 76, CE loss: 0.1853, CR loss: -0.2756
+Train acc: 0.9767, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 77] Predicted label distribution: tensor([ 368, 6794], device='cuda:0')
+Epoch 77, CE loss: 0.1580, CR loss: -0.2757
+Train acc: 0.9767, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 78] Predicted label distribution: tensor([ 386, 6776], device='cuda:0')
+Epoch 78, CE loss: 0.1590, CR loss: -0.2852
+Train acc: 0.9819, Val acc: 0.8333, Test acc: 0.8776
+[Epoch 79] Predicted label distribution: tensor([ 382, 6780], device='cuda:0')
+Epoch 79, CE loss: 0.1544, CR loss: -0.2838
+Train acc: 0.9819, Val acc: 0.8333, Test acc: 0.8776
+[Epoch 80] Predicted label distribution: tensor([ 366, 6796], device='cuda:0')
+Epoch 80, CE loss: 0.1486, CR loss: -0.3012
+Train acc: 0.9715, Val acc: 0.8125, Test acc: 0.8367
+------------------------------------------------------------
+[FOLD 2 BEST] val acc: 0.8958, test acc: 0.9184
+(Training KnowRGFD):   0%|          | 0/80 [00:00<?, ?it/s]/home/blueee/miniconda3/envs/knowrgfd/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/blueee/miniconda3/envs/knowrgfd/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+(Training KnowRGFD):   0%|          | 0/80 [00:00<?, ?it/s, loss=0.662](Training KnowRGFD):   1%|▏         | 1/80 [00:00<00:09,  8.25it/s, loss=0.662]/home/blueee/miniconda3/envs/knowrgfd/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+(Training KnowRGFD):   1%|▏         | 1/80 [00:00<00:09,  8.25it/s, loss=0.92] (Training KnowRGFD):   2%|▎         | 2/80 [00:00<00:09,  8.28it/s, loss=0.92](Training KnowRGFD):   2%|▎         | 2/80 [00:00<00:09,  8.28it/s, loss=0.726](Training KnowRGFD):   4%|▍         | 3/80 [00:00<00:09,  8.29it/s, loss=0.726](Training KnowRGFD):   4%|▍         | 3/80 [00:00<00:09,  8.29it/s, loss=0.523](Training KnowRGFD):   5%|▌         | 4/80 [00:00<00:09,  8.29it/s, loss=0.523](Training KnowRGFD):   5%|▌         | 4/80 [00:00<00:09,  8.29it/s, loss=0.565](Training KnowRGFD):   6%|▋         | 5/80 [00:00<00:09,  8.27it/s, loss=0.565](Training KnowRGFD):   6%|▋         | 5/80 [00:00<00:09,  8.27it/s, loss=0.587](Training KnowRGFD):   8%|▊         | 6/80 [00:00<00:08,  8.28it/s, loss=0.587](Training KnowRGFD):   8%|▊         | 6/80 [00:00<00:08,  8.28it/s, loss=0.524](Training KnowRGFD):   9%|▉         | 7/80 [00:00<00:08,  8.29it/s, loss=0.524](Training KnowRGFD):   9%|▉         | 7/80 [00:00<00:08,  8.29it/s, loss=0.466](Training KnowRGFD):  10%|█         | 8/80 [00:00<00:08,  8.29it/s, loss=0.466](Training KnowRGFD):  10%|█         | 8/80 [00:01<00:08,  8.29it/s, loss=0.446](Training KnowRGFD):  11%|█▏        | 9/80 [00:01<00:08,  8.29it/s, loss=0.446](Training KnowRGFD):  11%|█▏        | 9/80 [00:01<00:08,  8.29it/s, loss=0.44] (Training KnowRGFD):  12%|█▎        | 10/80 [00:01<00:08,  8.30it/s, loss=0.44](Training KnowRGFD):  12%|█▎        | 10/80 [00:01<00:08,  8.30it/s, loss=0.439](Training KnowRGFD):  14%|█▍        | 11/80 [00:01<00:08,  8.30it/s, loss=0.439](Training KnowRGFD):  14%|█▍        | 11/80 [00:01<00:08,  8.30it/s, loss=0.417](Training KnowRGFD):  15%|█▌        | 12/80 [00:01<00:08,  8.30it/s, loss=0.417](Training KnowRGFD):  15%|█▌        | 12/80 [00:01<00:08,  8.30it/s, loss=0.381](Training KnowRGFD):  16%|█▋        | 13/80 [00:01<00:08,  8.30it/s, loss=0.381](Training KnowRGFD):  16%|█▋        | 13/80 [00:01<00:08,  8.30it/s, loss=0.372](Training KnowRGFD):  18%|█▊        | 14/80 [00:01<00:07,  8.31it/s, loss=0.372](Training KnowRGFD):  18%|█▊        | 14/80 [00:01<00:07,  8.31it/s, loss=0.377](Training KnowRGFD):  19%|█▉        | 15/80 [00:01<00:07,  8.31it/s, loss=0.377](Training KnowRGFD):  19%|█▉        | 15/80 [00:01<00:07,  8.31it/s, loss=0.362](Training KnowRGFD):  20%|██        | 16/80 [00:01<00:07,  8.31it/s, loss=0.362](Training KnowRGFD):  20%|██        | 16/80 [00:02<00:07,  8.31it/s, loss=0.335](Training KnowRGFD):  21%|██▏       | 17/80 [00:02<00:07,  8.31it/s, loss=0.335](Training KnowRGFD):  21%|██▏       | 17/80 [00:02<00:07,  8.31it/s, loss=0.327](Training KnowRGFD):  22%|██▎       | 18/80 [00:02<00:07,  8.31it/s, loss=0.327](Training KnowRGFD):  22%|██▎       | 18/80 [00:02<00:07,  8.31it/s, loss=0.329](Training KnowRGFD):  24%|██▍       | 19/80 [00:02<00:07,  8.32it/s, loss=0.329](Training KnowRGFD):  24%|██▍       | 19/80 [00:02<00:07,  8.32it/s, loss=0.312](Training KnowRGFD):  25%|██▌       | 20/80 [00:02<00:07,  8.31it/s, loss=0.312](Training KnowRGFD):  25%|██▌       | 20/80 [00:02<00:07,  8.31it/s, loss=0.29] (Training KnowRGFD):  26%|██▋       | 21/80 [00:02<00:07,  8.32it/s, loss=0.29](Training KnowRGFD):  26%|██▋       | 21/80 [00:02<00:07,  8.32it/s, loss=0.289](Training KnowRGFD):  28%|██▊       | 22/80 [00:02<00:06,  8.31it/s, loss=0.289](Training KnowRGFD):  28%|██▊       | 22/80 [00:02<00:06,  8.31it/s, loss=0.282](Training KnowRGFD):  29%|██▉       | 23/80 [00:02<00:06,  8.31it/s, loss=0.282](Training KnowRGFD):  29%|██▉       | 23/80 [00:02<00:06,  8.31it/s, loss=0.268](Training KnowRGFD):  30%|███       | 24/80 [00:02<00:06,  8.32it/s, loss=0.268](Training KnowRGFD):  30%|███       | 24/80 [00:03<00:06,  8.32it/s, loss=0.26] (Training KnowRGFD):  31%|███▏      | 25/80 [00:03<00:06,  8.31it/s, loss=0.26](Training KnowRGFD):  31%|███▏      | 25/80 [00:03<00:06,  8.31it/s, loss=0.254](Training KnowRGFD):  32%|███▎      | 26/80 [00:03<00:06,  8.31it/s, loss=0.254](Training KnowRGFD):  32%|███▎      | 26/80 [00:03<00:06,  8.31it/s, loss=0.246](Training KnowRGFD):  34%|███▍      | 27/80 [00:03<00:06,  8.31it/s, loss=0.246](Training KnowRGFD):  34%|███▍      | 27/80 [00:03<00:06,  8.31it/s, loss=0.235](Training KnowRGFD):  35%|███▌      | 28/80 [00:03<00:06,  8.25it/s, loss=0.235](Training KnowRGFD):  35%|███▌      | 28/80 [00:03<00:06,  8.25it/s, loss=0.231](Training KnowRGFD):  36%|███▋      | 29/80 [00:03<00:06,  8.24it/s, loss=0.231](Training KnowRGFD):  36%|███▋      | 29/80 [00:03<00:06,  8.24it/s, loss=0.225](Training KnowRGFD):  38%|███▊      | 30/80 [00:03<00:06,  8.26it/s, loss=0.225](Training KnowRGFD):  38%|███▊      | 30/80 [00:03<00:06,  8.26it/s, loss=0.216](Training KnowRGFD):  39%|███▉      | 31/80 [00:03<00:05,  8.28it/s, loss=0.216](Training KnowRGFD):  39%|███▉      | 31/80 [00:03<00:05,  8.28it/s, loss=0.21] (Training KnowRGFD):  40%|████      | 32/80 [00:03<00:05,  8.29it/s, loss=0.21](Training KnowRGFD):  40%|████      | 32/80 [00:03<00:05,  8.29it/s, loss=0.205](Training KnowRGFD):  41%|████▏     | 33/80 [00:03<00:05,  8.30it/s, loss=0.205](Training KnowRGFD):  41%|████▏     | 33/80 [00:04<00:05,  8.30it/s, loss=0.197](Training KnowRGFD):  42%|████▎     | 34/80 [00:04<00:05,  8.30it/s, loss=0.197](Training KnowRGFD):  42%|████▎     | 34/80 [00:04<00:05,  8.30it/s, loss=0.191](Training KnowRGFD):  44%|████▍     | 35/80 [00:04<00:05,  8.30it/s, loss=0.191](Training KnowRGFD):  44%|████▍     | 35/80 [00:04<00:05,  8.30it/s, loss=0.187](Training KnowRGFD):  45%|████▌     | 36/80 [00:04<00:05,  8.31it/s, loss=0.187](Training KnowRGFD):  45%|████▌     | 36/80 [00:04<00:05,  8.31it/s, loss=0.179](Training KnowRGFD):  46%|████▋     | 37/80 [00:04<00:05,  8.31it/s, loss=0.179](Training KnowRGFD):  46%|████▋     | 37/80 [00:04<00:05,  8.31it/s, loss=0.176](Training KnowRGFD):  48%|████▊     | 38/80 [00:04<00:05,  8.31it/s, loss=0.176](Training KnowRGFD):  48%|████▊     | 38/80 [00:04<00:05,  8.31it/s, loss=0.17] (Training KnowRGFD):  49%|████▉     | 39/80 [00:04<00:04,  8.31it/s, loss=0.17](Training KnowRGFD):  49%|████▉     | 39/80 [00:04<00:04,  8.31it/s, loss=0.164](Training KnowRGFD):  50%|█████     | 40/80 [00:04<00:04,  8.31it/s, loss=0.164](Training KnowRGFD):  50%|█████     | 40/80 [00:04<00:04,  8.31it/s, loss=0.16] (Training KnowRGFD):  51%|█████▏    | 41/80 [00:04<00:04,  8.31it/s, loss=0.16](Training KnowRGFD):  51%|█████▏    | 41/80 [00:05<00:04,  8.31it/s, loss=0.155](Training KnowRGFD):  52%|█████▎    | 42/80 [00:05<00:04,  8.31it/s, loss=0.155](Training KnowRGFD):  52%|█████▎    | 42/80 [00:05<00:04,  8.31it/s, loss=0.15] (Training KnowRGFD):  54%|█████▍    | 43/80 [00:05<00:04,  8.31it/s, loss=0.15](Training KnowRGFD):  54%|█████▍    | 43/80 [00:05<00:04,  8.31it/s, loss=0.145](Training KnowRGFD):  55%|█████▌    | 44/80 [00:05<00:04,  8.31it/s, loss=0.145](Training KnowRGFD):  55%|█████▌    | 44/80 [00:05<00:04,  8.31it/s, loss=0.14] (Training KnowRGFD):  56%|█████▋    | 45/80 [00:05<00:04,  8.31it/s, loss=0.14](Training KnowRGFD):  56%|█████▋    | 45/80 [00:05<00:04,  8.31it/s, loss=0.136](Training KnowRGFD):  57%|█████▊    | 46/80 [00:05<00:04,  8.31it/s, loss=0.136][Epoch 1] Predicted label distribution: tensor([3566, 3596], device='cuda:0')
+Epoch 1, CE loss: 1.1131, CR loss: -0.0133
+Train acc: 0.3368, Val acc: 0.3958, Test acc: 0.2857
+[Epoch 2] Predicted label distribution: tensor([3820, 3342], device='cuda:0')
+Epoch 2, CE loss: 1.5377, CR loss: -0.0066
+Train acc: 0.3472, Val acc: 0.3958, Test acc: 0.3061
+[Epoch 3] Predicted label distribution: tensor([4366, 2796], device='cuda:0')
+Epoch 3, CE loss: 1.2227, CR loss: -0.0181
+Train acc: 0.7306, Val acc: 0.8750, Test acc: 0.7755
+[Epoch 4] Predicted label distribution: tensor([4993, 2169], device='cuda:0')
+Epoch 4, CE loss: 0.8979, CR loss: -0.0392
+Train acc: 0.7306, Val acc: 0.7083, Test acc: 0.7959
+[Epoch 5] Predicted label distribution: tensor([5450, 1712], device='cuda:0')
+Epoch 5, CE loss: 0.9473, CR loss: -0.0077
+Train acc: 0.7565, Val acc: 0.7292, Test acc: 0.7959
+[Epoch 6] Predicted label distribution: tensor([5677, 1485], device='cuda:0')
+Epoch 6, CE loss: 0.9884, CR loss: -0.0159
+Train acc: 0.8161, Val acc: 0.9375, Test acc: 0.7959
+[Epoch 7] Predicted label distribution: tensor([5734, 1428], device='cuda:0')
+Epoch 7, CE loss: 0.8984, CR loss: -0.0365
+Train acc: 0.7539, Val acc: 0.8542, Test acc: 0.7143
+[Epoch 8] Predicted label distribution: tensor([5675, 1487], device='cuda:0')
+Epoch 8, CE loss: 0.8042, CR loss: -0.0403
+Train acc: 0.6995, Val acc: 0.7500, Test acc: 0.5714
+[Epoch 9] Predicted label distribution: tensor([5625, 1537], device='cuda:0')
+Epoch 9, CE loss: 0.7477, CR loss: -0.0070
+Train acc: 0.7435, Val acc: 0.8125, Test acc: 0.6531
+[Epoch 10] Predicted label distribution: tensor([5557, 1605], device='cuda:0')
+Epoch 10, CE loss: 0.7459, CR loss: -0.0178
+Train acc: 0.8238, Val acc: 0.9167, Test acc: 0.7755
+[Epoch 11] Predicted label distribution: tensor([5567, 1595], device='cuda:0')
+Epoch 11, CE loss: 0.7666, CR loss: -0.0514
+Train acc: 0.8420, Val acc: 0.8333, Test acc: 0.7959
+[Epoch 12] Predicted label distribution: tensor([5750, 1412], device='cuda:0')
+Epoch 12, CE loss: 0.7204, CR loss: -0.0383
+Train acc: 0.8523, Val acc: 0.8958, Test acc: 0.8163
+[Epoch 13] Predicted label distribution: tensor([5966, 1196], device='cuda:0')
+Epoch 13, CE loss: 0.6394, CR loss: -0.0074
+Train acc: 0.8472, Val acc: 0.9167, Test acc: 0.7347
+[Epoch 14] Predicted label distribution: tensor([6036, 1126], device='cuda:0')
+Epoch 14, CE loss: 0.6316, CR loss: -0.0186
+Train acc: 0.7979, Val acc: 0.8750, Test acc: 0.6939
+[Epoch 15] Predicted label distribution: tensor([5916, 1246], device='cuda:0')
+Epoch 15, CE loss: 0.6527, CR loss: -0.0360
+Train acc: 0.7850, Val acc: 0.8750, Test acc: 0.6531
+[Epoch 16] Predicted label distribution: tensor([5597, 1565], device='cuda:0')
+Epoch 16, CE loss: 0.6169, CR loss: -0.0216
+Train acc: 0.8472, Val acc: 0.9167, Test acc: 0.7347
+[Epoch 17] Predicted label distribution: tensor([5005, 2157], device='cuda:0')
+Epoch 17, CE loss: 0.5621, CR loss: -0.0067
+Train acc: 0.8756, Val acc: 0.8958, Test acc: 0.8163
+[Epoch 18] Predicted label distribution: tensor([4831, 2331], device='cuda:0')
+Epoch 18, CE loss: 0.5515, CR loss: -0.0109
+Train acc: 0.8834, Val acc: 0.8958, Test acc: 0.8163
+[Epoch 19] Predicted label distribution: tensor([5083, 2079], device='cuda:0')
+Epoch 19, CE loss: 0.5567, CR loss: -0.0126
+Train acc: 0.8912, Val acc: 0.8958, Test acc: 0.8163
+[Epoch 20] Predicted label distribution: tensor([5564, 1598], device='cuda:0')
+Epoch 20, CE loss: 0.5249, CR loss: -0.0084
+Train acc: 0.8756, Val acc: 0.9167, Test acc: 0.8367
+[Epoch 21] Predicted label distribution: tensor([5911, 1251], device='cuda:0')
+Epoch 21, CE loss: 0.4865, CR loss: -0.0060
+Train acc: 0.8653, Val acc: 0.8542, Test acc: 0.7551
+[Epoch 22] Predicted label distribution: tensor([6022, 1140], device='cuda:0')
+Epoch 22, CE loss: 0.4874, CR loss: -0.0092
+Train acc: 0.8705, Val acc: 0.8542, Test acc: 0.7551
+[Epoch 23] Predicted label distribution: tensor([6037, 1125], device='cuda:0')
+Epoch 23, CE loss: 0.4796, CR loss: -0.0136
+Train acc: 0.8860, Val acc: 0.8958, Test acc: 0.7959
+[Epoch 24] Predicted label distribution: tensor([5998, 1164], device='cuda:0')
+Epoch 24, CE loss: 0.4539, CR loss: -0.0114
+Train acc: 0.8990, Val acc: 0.9167, Test acc: 0.8571
+[Epoch 25] Predicted label distribution: tensor([5934, 1228], device='cuda:0')
+Epoch 25, CE loss: 0.4373, CR loss: -0.0070
+Train acc: 0.8990, Val acc: 0.9167, Test acc: 0.8367
+[Epoch 26] Predicted label distribution: tensor([5912, 1250], device='cuda:0')
+Epoch 26, CE loss: 0.4307, CR loss: -0.0100
+Train acc: 0.9067, Val acc: 0.9167, Test acc: 0.8367
+[Epoch 27] Predicted label distribution: tensor([5959, 1203], device='cuda:0')
+Epoch 27, CE loss: 0.4171, CR loss: -0.0105
+Train acc: 0.9067, Val acc: 0.8958, Test acc: 0.8367
+[Epoch 28] Predicted label distribution: tensor([6003, 1159], device='cuda:0')
+Epoch 28, CE loss: 0.3974, CR loss: -0.0085
+Train acc: 0.9067, Val acc: 0.8958, Test acc: 0.8367
+[Epoch 29] Predicted label distribution: tensor([5986, 1176], device='cuda:0')
+Epoch 29, CE loss: 0.3939, CR loss: -0.0134
+Train acc: 0.9093, Val acc: 0.8958, Test acc: 0.8163
+[Epoch 30] Predicted label distribution: tensor([5940, 1222], device='cuda:0')
+Epoch 30, CE loss: 0.3838, CR loss: -0.0141
+Train acc: 0.9145, Val acc: 0.8958, Test acc: 0.8367
+[Epoch 31] Predicted label distribution: tensor([5878, 1284], device='cuda:0')
+Epoch 31, CE loss: 0.3657, CR loss: -0.0091
+Train acc: 0.9197, Val acc: 0.9167, Test acc: 0.8163
+[Epoch 32] Predicted label distribution: tensor([5890, 1272], device='cuda:0')
+Epoch 32, CE loss: 0.3560, CR loss: -0.0088
+Train acc: 0.9223, Val acc: 0.9583, Test acc: 0.8571
+[Epoch 33] Predicted label distribution: tensor([5988, 1174], device='cuda:0')
+Epoch 33, CE loss: 0.3468, CR loss: -0.0088
+Train acc: 0.9249, Val acc: 0.9583, Test acc: 0.8571
+[Epoch 34] Predicted label distribution: tensor([6094, 1068], device='cuda:0')
+Epoch 34, CE loss: 0.3334, CR loss: -0.0083
+Train acc: 0.9326, Val acc: 0.8958, Test acc: 0.8367
+[Epoch 35] Predicted label distribution: tensor([6136, 1026], device='cuda:0')
+Epoch 35, CE loss: 0.3257, CR loss: -0.0107
+Train acc: 0.9301, Val acc: 0.8542, Test acc: 0.7755
+[Epoch 36] Predicted label distribution: tensor([6119, 1043], device='cuda:0')
+Epoch 36, CE loss: 0.3196, CR loss: -0.0110
+Train acc: 0.9352, Val acc: 0.9167, Test acc: 0.8367
+[Epoch 37] Predicted label distribution: tensor([6098, 1064], device='cuda:0')
+Epoch 37, CE loss: 0.3046, CR loss: -0.0090
+Train acc: 0.9430, Val acc: 0.9583, Test acc: 0.8571
+[Epoch 38] Predicted label distribution: tensor([6102, 1060], device='cuda:0')
+Epoch 38, CE loss: 0.2986, CR loss: -0.0088
+Train acc: 0.9482, Val acc: 0.9583, Test acc: 0.8571
+[Epoch 39] Predicted label distribution: tensor([6133, 1029], device='cuda:0')
+Epoch 39, CE loss: 0.2895, CR loss: -0.0098
+Train acc: 0.9404, Val acc: 0.9167, Test acc: 0.8367
+[Epoch 40] Predicted label distribution: tensor([6146, 1016], device='cuda:0')
+Epoch 40, CE loss: 0.2805, CR loss: -0.0107
+Train acc: 0.9430, Val acc: 0.9167, Test acc: 0.8367
+[Epoch 41] Predicted label distribution: tensor([6091, 1071], device='cuda:0')
+Epoch 41, CE loss: 0.2754, CR loss: -0.0134
+Train acc: 0.9560, Val acc: 0.9375, Test acc: 0.8367
+[Epoch 42] Predicted label distribution: tensor([6019, 1143], device='cuda:0')
+Epoch 42, CE loss: 0.2671, CR loss: -0.0141
+Train acc: 0.9585, Val acc: 0.9375, Test acc: 0.8571
+[Epoch 43] Predicted label distribution: tensor([5987, 1175], device='cuda:0')
+Epoch 43, CE loss: 0.2586, CR loss: -0.0136
+Train acc: 0.9637, Val acc: 0.9375, Test acc: 0.8367
+[Epoch 44] Predicted label distribution: tensor([5997, 1165], device='cuda:0')
+Epoch 44, CE loss: 0.2527, CR loss: -0.0154
+Train acc: 0.9637, Val acc: 0.9167, Test acc: 0.8367
+[Epoch 45] Predicted label distribution: tensor([6021, 1141], device='cuda:0')
+Epoch 45, CE loss: 0.2449, CR loss: -0.0165
+Train acc: 0.9637, Val acc: 0.9167, Test acc: 0.8367
+[Epoch 46] Predicted label distribution: tensor([6035, 1127], device='cuda:0')
+Epoch 46, CE loss: 0.2394, CR loss: -0.0188
+Train acc: 0.9637, Val acc: 0.9167, Test acc: 0.8367
+[Epoch 47] Predicted label distribution: tensor([6027, 1135], device='cuda:0')
+(Training KnowRGFD):  57%|█████▊    | 46/80 [00:05<00:04,  8.31it/s, loss=0.132](Training KnowRGFD):  59%|█████▉    | 47/80 [00:05<00:03,  8.31it/s, loss=0.132](Training KnowRGFD):  59%|█████▉    | 47/80 [00:05<00:03,  8.31it/s, loss=0.127](Training KnowRGFD):  60%|██████    | 48/80 [00:05<00:03,  8.31it/s, loss=0.127](Training KnowRGFD):  60%|██████    | 48/80 [00:05<00:03,  8.31it/s, loss=0.123](Training KnowRGFD):  61%|██████▏   | 49/80 [00:05<00:03,  8.31it/s, loss=0.123](Training KnowRGFD):  61%|██████▏   | 49/80 [00:06<00:03,  8.31it/s, loss=0.119](Training KnowRGFD):  62%|██████▎   | 50/80 [00:06<00:03,  8.31it/s, loss=0.119](Training KnowRGFD):  62%|██████▎   | 50/80 [00:06<00:03,  8.31it/s, loss=0.115](Training KnowRGFD):  64%|██████▍   | 51/80 [00:06<00:03,  8.26it/s, loss=0.115](Training KnowRGFD):  64%|██████▍   | 51/80 [00:06<00:03,  8.26it/s, loss=0.111](Training KnowRGFD):  65%|██████▌   | 52/80 [00:06<00:03,  8.26it/s, loss=0.111](Training KnowRGFD):  65%|██████▌   | 52/80 [00:06<00:03,  8.26it/s, loss=0.106](Training KnowRGFD):  66%|██████▋   | 53/80 [00:06<00:03,  8.27it/s, loss=0.106](Training KnowRGFD):  66%|██████▋   | 53/80 [00:06<00:03,  8.27it/s, loss=0.102](Training KnowRGFD):  68%|██████▊   | 54/80 [00:06<00:03,  8.28it/s, loss=0.102](Training KnowRGFD):  68%|██████▊   | 54/80 [00:06<00:03,  8.28it/s, loss=0.0973](Training KnowRGFD):  69%|██████▉   | 55/80 [00:06<00:03,  8.29it/s, loss=0.0973](Training KnowRGFD):  69%|██████▉   | 55/80 [00:06<00:03,  8.29it/s, loss=0.0929](Training KnowRGFD):  70%|███████   | 56/80 [00:06<00:02,  8.29it/s, loss=0.0929](Training KnowRGFD):  70%|███████   | 56/80 [00:06<00:02,  8.29it/s, loss=0.0884](Training KnowRGFD):  71%|███████▏  | 57/80 [00:06<00:02,  8.29it/s, loss=0.0884](Training KnowRGFD):  71%|███████▏  | 57/80 [00:06<00:02,  8.29it/s, loss=0.0833](Training KnowRGFD):  72%|███████▎  | 58/80 [00:06<00:02,  8.30it/s, loss=0.0833](Training KnowRGFD):  72%|███████▎  | 58/80 [00:07<00:02,  8.30it/s, loss=0.0786](Training KnowRGFD):  74%|███████▍  | 59/80 [00:07<00:02,  8.30it/s, loss=0.0786](Training KnowRGFD):  74%|███████▍  | 59/80 [00:07<00:02,  8.30it/s, loss=0.0735](Training KnowRGFD):  75%|███████▌  | 60/80 [00:07<00:02,  8.31it/s, loss=0.0735](Training KnowRGFD):  75%|███████▌  | 60/80 [00:07<00:02,  8.31it/s, loss=0.0678](Training KnowRGFD):  76%|███████▋  | 61/80 [00:07<00:02,  8.31it/s, loss=0.0678](Training KnowRGFD):  76%|███████▋  | 61/80 [00:07<00:02,  8.31it/s, loss=0.0623](Training KnowRGFD):  78%|███████▊  | 62/80 [00:07<00:02,  8.31it/s, loss=0.0623](Training KnowRGFD):  78%|███████▊  | 62/80 [00:07<00:02,  8.31it/s, loss=0.0566](Training KnowRGFD):  79%|███████▉  | 63/80 [00:07<00:02,  8.31it/s, loss=0.0566](Training KnowRGFD):  79%|███████▉  | 63/80 [00:07<00:02,  8.31it/s, loss=0.0503](Training KnowRGFD):  80%|████████  | 64/80 [00:07<00:01,  8.31it/s, loss=0.0503](Training KnowRGFD):  80%|████████  | 64/80 [00:07<00:01,  8.31it/s, loss=0.0436](Training KnowRGFD):  81%|████████▏ | 65/80 [00:07<00:01,  8.31it/s, loss=0.0436](Training KnowRGFD):  81%|████████▏ | 65/80 [00:07<00:01,  8.31it/s, loss=0.0365](Training KnowRGFD):  82%|████████▎ | 66/80 [00:07<00:01,  8.31it/s, loss=0.0365](Training KnowRGFD):  82%|████████▎ | 66/80 [00:08<00:01,  8.31it/s, loss=0.0293](Training KnowRGFD):  84%|████████▍ | 67/80 [00:08<00:01,  8.31it/s, loss=0.0293](Training KnowRGFD):  84%|████████▍ | 67/80 [00:08<00:01,  8.31it/s, loss=0.0216](Training KnowRGFD):  85%|████████▌ | 68/80 [00:08<00:01,  8.31it/s, loss=0.0216](Training KnowRGFD):  85%|████████▌ | 68/80 [00:08<00:01,  8.31it/s, loss=0.0134](Training KnowRGFD):  86%|████████▋ | 69/80 [00:08<00:01,  8.31it/s, loss=0.0134](Training KnowRGFD):  86%|████████▋ | 69/80 [00:08<00:01,  8.31it/s, loss=0.00635](Training KnowRGFD):  88%|████████▊ | 70/80 [00:08<00:01,  8.31it/s, loss=0.00635](Training KnowRGFD):  88%|████████▊ | 70/80 [00:08<00:01,  8.31it/s, loss=0.00546](Training KnowRGFD):  89%|████████▉ | 71/80 [00:08<00:01,  8.32it/s, loss=0.00546](Training KnowRGFD):  89%|████████▉ | 71/80 [00:08<00:01,  8.32it/s, loss=-0.0113](Training KnowRGFD):  90%|█████████ | 72/80 [00:08<00:00,  8.32it/s, loss=-0.0113](Training KnowRGFD):  90%|█████████ | 72/80 [00:08<00:00,  8.32it/s, loss=-0.0226](Training KnowRGFD):  91%|█████████▏| 73/80 [00:08<00:00,  8.31it/s, loss=-0.0226](Training KnowRGFD):  91%|█████████▏| 73/80 [00:08<00:00,  8.31it/s, loss=-0.032] (Training KnowRGFD):  92%|█████████▎| 74/80 [00:08<00:00,  8.31it/s, loss=-0.032](Training KnowRGFD):  92%|█████████▎| 74/80 [00:09<00:00,  8.31it/s, loss=-0.0379](Training KnowRGFD):  94%|█████████▍| 75/80 [00:09<00:00,  8.32it/s, loss=-0.0379](Training KnowRGFD):  94%|█████████▍| 75/80 [00:09<00:00,  8.32it/s, loss=-0.0429](Training KnowRGFD):  95%|█████████▌| 76/80 [00:09<00:00,  8.32it/s, loss=-0.0429](Training KnowRGFD):  95%|█████████▌| 76/80 [00:09<00:00,  8.32it/s, loss=-0.064] (Training KnowRGFD):  96%|█████████▋| 77/80 [00:09<00:00,  8.30it/s, loss=-0.064](Training KnowRGFD):  96%|█████████▋| 77/80 [00:09<00:00,  8.30it/s, loss=-0.0583](Training KnowRGFD):  98%|█████████▊| 78/80 [00:09<00:00,  8.31it/s, loss=-0.0583](Training KnowRGFD):  98%|█████████▊| 78/80 [00:09<00:00,  8.31it/s, loss=-0.0864](Training KnowRGFD):  99%|█████████▉| 79/80 [00:09<00:00,  8.31it/s, loss=-0.0864](Training KnowRGFD):  99%|█████████▉| 79/80 [00:09<00:00,  8.31it/s, loss=-0.0877](Training KnowRGFD): 100%|██████████| 80/80 [00:09<00:00,  8.32it/s, loss=-0.0877](Training KnowRGFD): 100%|██████████| 80/80 [00:09<00:00,  8.30it/s, loss=-0.0877]
+Epoch 47, CE loss: 0.2335, CR loss: -0.0208
+Train acc: 0.9637, Val acc: 0.9167, Test acc: 0.8367
+[Epoch 48] Predicted label distribution: tensor([6005, 1157], device='cuda:0')
+Epoch 48, CE loss: 0.2265, CR loss: -0.0219
+Train acc: 0.9637, Val acc: 0.9167, Test acc: 0.8571
+[Epoch 49] Predicted label distribution: tensor([5997, 1165], device='cuda:0')
+Epoch 49, CE loss: 0.2216, CR loss: -0.0242
+Train acc: 0.9637, Val acc: 0.9167, Test acc: 0.8571
+[Epoch 50] Predicted label distribution: tensor([6039, 1123], device='cuda:0')
+Epoch 50, CE loss: 0.2159, CR loss: -0.0264
+Train acc: 0.9637, Val acc: 0.9167, Test acc: 0.8571
+[Epoch 51] Predicted label distribution: tensor([6030, 1132], device='cuda:0')
+Epoch 51, CE loss: 0.2117, CR loss: -0.0306
+Train acc: 0.9663, Val acc: 0.9167, Test acc: 0.8367
+[Epoch 52] Predicted label distribution: tensor([5946, 1216], device='cuda:0')
+Epoch 52, CE loss: 0.2069, CR loss: -0.0338
+Train acc: 0.9637, Val acc: 0.9167, Test acc: 0.8571
+[Epoch 53] Predicted label distribution: tensor([5909, 1253], device='cuda:0')
+Epoch 53, CE loss: 0.2008, CR loss: -0.0361
+Train acc: 0.9637, Val acc: 0.8958, Test acc: 0.8571
+[Epoch 54] Predicted label distribution: tensor([5944, 1218], device='cuda:0')
+Epoch 54, CE loss: 0.1968, CR loss: -0.0402
+Train acc: 0.9663, Val acc: 0.8958, Test acc: 0.7959
+[Epoch 55] Predicted label distribution: tensor([5906, 1256], device='cuda:0')
+Epoch 55, CE loss: 0.1928, CR loss: -0.0459
+Train acc: 0.9663, Val acc: 0.8958, Test acc: 0.7959
+[Epoch 56] Predicted label distribution: tensor([5814, 1348], device='cuda:0')
+Epoch 56, CE loss: 0.1892, CR loss: -0.0517
+Train acc: 0.9689, Val acc: 0.8542, Test acc: 0.7959
+[Epoch 57] Predicted label distribution: tensor([5790, 1372], device='cuda:0')
+Epoch 57, CE loss: 0.1850, CR loss: -0.0565
+Train acc: 0.9689, Val acc: 0.8542, Test acc: 0.7959
+[Epoch 58] Predicted label distribution: tensor([5811, 1351], device='cuda:0')
+Epoch 58, CE loss: 0.1812, CR loss: -0.0636
+Train acc: 0.9715, Val acc: 0.8542, Test acc: 0.7551
+[Epoch 59] Predicted label distribution: tensor([5745, 1417], device='cuda:0')
+Epoch 59, CE loss: 0.1790, CR loss: -0.0721
+Train acc: 0.9689, Val acc: 0.8333, Test acc: 0.7755
+[Epoch 60] Predicted label distribution: tensor([5762, 1400], device='cuda:0')
+Epoch 60, CE loss: 0.1752, CR loss: -0.0790
+Train acc: 0.9715, Val acc: 0.8333, Test acc: 0.7551
+[Epoch 61] Predicted label distribution: tensor([5792, 1370], device='cuda:0')
+Epoch 61, CE loss: 0.1719, CR loss: -0.0883
+Train acc: 0.9689, Val acc: 0.8333, Test acc: 0.7347
+[Epoch 62] Predicted label distribution: tensor([5759, 1403], device='cuda:0')
+Epoch 62, CE loss: 0.1698, CR loss: -0.0990
+Train acc: 0.9741, Val acc: 0.8333, Test acc: 0.7551
+[Epoch 63] Predicted label distribution: tensor([5813, 1349], device='cuda:0')
+Epoch 63, CE loss: 0.1670, CR loss: -0.1091
+Train acc: 0.9689, Val acc: 0.8333, Test acc: 0.7347
+[Epoch 64] Predicted label distribution: tensor([5770, 1392], device='cuda:0')
+Epoch 64, CE loss: 0.1665, CR loss: -0.1239
+Train acc: 0.9741, Val acc: 0.8333, Test acc: 0.7347
+[Epoch 65] Predicted label distribution: tensor([5769, 1393], device='cuda:0')
+Epoch 65, CE loss: 0.1628, CR loss: -0.1352
+Train acc: 0.9715, Val acc: 0.8333, Test acc: 0.7347
+[Epoch 66] Predicted label distribution: tensor([5753, 1409], device='cuda:0')
+Epoch 66, CE loss: 0.1612, CR loss: -0.1504
+Train acc: 0.9715, Val acc: 0.8333, Test acc: 0.7347
+[Epoch 67] Predicted label distribution: tensor([5689, 1473], device='cuda:0')
+Epoch 67, CE loss: 0.1596, CR loss: -0.1662
+Train acc: 0.9741, Val acc: 0.8333, Test acc: 0.7347
+[Epoch 68] Predicted label distribution: tensor([5660, 1502], device='cuda:0')
+Epoch 68, CE loss: 0.1580, CR loss: -0.1830
+Train acc: 0.9715, Val acc: 0.8333, Test acc: 0.7347
+[Epoch 69] Predicted label distribution: tensor([5535, 1627], device='cuda:0')
+Epoch 69, CE loss: 0.1581, CR loss: -0.2036
+Train acc: 0.9819, Val acc: 0.8333, Test acc: 0.7143
+[Epoch 70] Predicted label distribution: tensor([5644, 1518], device='cuda:0')
+Epoch 70, CE loss: 0.1576, CR loss: -0.2206
+Train acc: 0.9611, Val acc: 0.7917, Test acc: 0.6939
+[Epoch 71] Predicted label distribution: tensor([5392, 1770], device='cuda:0')
+Epoch 71, CE loss: 0.1789, CR loss: -0.2548
+Train acc: 0.9819, Val acc: 0.8125, Test acc: 0.7143
+[Epoch 72] Predicted label distribution: tensor([5397, 1765], device='cuda:0')
+Epoch 72, CE loss: 0.1547, CR loss: -0.2602
+Train acc: 0.9741, Val acc: 0.8333, Test acc: 0.6939
+[Epoch 73] Predicted label distribution: tensor([5361, 1801], device='cuda:0')
+Epoch 73, CE loss: 0.1520, CR loss: -0.2845
+Train acc: 0.9715, Val acc: 0.8333, Test acc: 0.6939
+[Epoch 74] Predicted label distribution: tensor([5182, 1980], device='cuda:0')
+Epoch 74, CE loss: 0.1533, CR loss: -0.3100
+Train acc: 0.9819, Val acc: 0.8125, Test acc: 0.7143
+[Epoch 75] Predicted label distribution: tensor([5348, 1814], device='cuda:0')
+Epoch 75, CE loss: 0.1571, CR loss: -0.3304
+Train acc: 0.9611, Val acc: 0.7917, Test acc: 0.6939
+[Epoch 76] Predicted label distribution: tensor([5152, 2010], device='cuda:0')
+Epoch 76, CE loss: 0.1768, CR loss: -0.3725
+Train acc: 0.9819, Val acc: 0.7917, Test acc: 0.6939
+[Epoch 77] Predicted label distribution: tensor([4867, 2295], device='cuda:0')
+Epoch 77, CE loss: 0.1517, CR loss: -0.3874
+Train acc: 0.9870, Val acc: 0.8125, Test acc: 0.7143
+[Epoch 78] Predicted label distribution: tensor([4978, 2184], device='cuda:0')
+Epoch 78, CE loss: 0.1751, CR loss: -0.4084
+Train acc: 0.9819, Val acc: 0.7708, Test acc: 0.6939
+[Epoch 79] Predicted label distribution: tensor([5045, 2117], device='cuda:0')
+Epoch 79, CE loss: 0.1510, CR loss: -0.4426
+Train acc: 0.9637, Val acc: 0.7708, Test acc: 0.6735
+[Epoch 80] Predicted label distribution: tensor([4756, 2406], device='cuda:0')
+Epoch 80, CE loss: 0.1758, CR loss: -0.4829
+Train acc: 0.9870, Val acc: 0.7917, Test acc: 0.6939
+------------------------------------------------------------
+[FOLD 3 BEST] val acc: 0.9583, test acc: 0.8571
+(Training KnowRGFD):   0%|          | 0/80 [00:00<?, ?it/s](Training KnowRGFD):   0%|          | 0/80 [00:00<?, ?it/s, loss=0.912](Training KnowRGFD):   1%|▏         | 1/80 [00:00<00:09,  8.16it/s, loss=0.912](Training KnowRGFD):   1%|▏         | 1/80 [00:00<00:09,  8.16it/s, loss=0.907](Training KnowRGFD):   2%|▎         | 2/80 [00:00<00:09,  8.17it/s, loss=0.907]/home/blueee/miniconda3/envs/knowrgfd/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+(Training KnowRGFD):   2%|▎         | 2/80 [00:00<00:09,  8.17it/s, loss=0.749](Training KnowRGFD):   4%|▍         | 3/80 [00:00<00:09,  8.21it/s, loss=0.749](Training KnowRGFD):   4%|▍         | 3/80 [00:00<00:09,  8.21it/s, loss=0.721](Training KnowRGFD):   5%|▌         | 4/80 [00:00<00:09,  8.25it/s, loss=0.721](Training KnowRGFD):   5%|▌         | 4/80 [00:00<00:09,  8.25it/s, loss=0.643](Training KnowRGFD):   6%|▋         | 5/80 [00:00<00:09,  8.27it/s, loss=0.643](Training KnowRGFD):   6%|▋         | 5/80 [00:00<00:09,  8.27it/s, loss=0.534](Training KnowRGFD):   8%|▊         | 6/80 [00:00<00:08,  8.28it/s, loss=0.534](Training KnowRGFD):   8%|▊         | 6/80 [00:00<00:08,  8.28it/s, loss=0.526](Training KnowRGFD):   9%|▉         | 7/80 [00:00<00:08,  8.29it/s, loss=0.526](Training KnowRGFD):   9%|▉         | 7/80 [00:00<00:08,  8.29it/s, loss=0.523](Training KnowRGFD):  10%|█         | 8/80 [00:00<00:08,  8.29it/s, loss=0.523](Training KnowRGFD):  10%|█         | 8/80 [00:01<00:08,  8.29it/s, loss=0.465](Training KnowRGFD):  11%|█▏        | 9/80 [00:01<00:08,  8.29it/s, loss=0.465](Training KnowRGFD):  11%|█▏        | 9/80 [00:01<00:08,  8.29it/s, loss=0.44] (Training KnowRGFD):  12%|█▎        | 10/80 [00:01<00:08,  8.29it/s, loss=0.44](Training KnowRGFD):  12%|█▎        | 10/80 [00:01<00:08,  8.29it/s, loss=0.437](Training KnowRGFD):  14%|█▍        | 11/80 [00:01<00:08,  8.30it/s, loss=0.437](Training KnowRGFD):  14%|█▍        | 11/80 [00:01<00:08,  8.30it/s, loss=0.406](Training KnowRGFD):  15%|█▌        | 12/80 [00:01<00:08,  8.30it/s, loss=0.406](Training KnowRGFD):  15%|█▌        | 12/80 [00:01<00:08,  8.30it/s, loss=0.385](Training KnowRGFD):  16%|█▋        | 13/80 [00:01<00:08,  8.30it/s, loss=0.385](Training KnowRGFD):  16%|█▋        | 13/80 [00:01<00:08,  8.30it/s, loss=0.38] (Training KnowRGFD):  18%|█▊        | 14/80 [00:01<00:07,  8.31it/s, loss=0.38](Training KnowRGFD):  18%|█▊        | 14/80 [00:01<00:07,  8.31it/s, loss=0.356](Training KnowRGFD):  19%|█▉        | 15/80 [00:01<00:07,  8.31it/s, loss=0.356](Training KnowRGFD):  19%|█▉        | 15/80 [00:01<00:07,  8.31it/s, loss=0.351](Training KnowRGFD):  20%|██        | 16/80 [00:01<00:07,  8.31it/s, loss=0.351](Training KnowRGFD):  20%|██        | 16/80 [00:02<00:07,  8.31it/s, loss=0.345](Training KnowRGFD):  21%|██▏       | 17/80 [00:02<00:07,  8.31it/s, loss=0.345](Training KnowRGFD):  21%|██▏       | 17/80 [00:02<00:07,  8.31it/s, loss=0.321](Training KnowRGFD):  22%|██▎       | 18/80 [00:02<00:07,  8.31it/s, loss=0.321](Training KnowRGFD):  22%|██▎       | 18/80 [00:02<00:07,  8.31it/s, loss=0.319](Training KnowRGFD):  24%|██▍       | 19/80 [00:02<00:07,  8.31it/s, loss=0.319](Training KnowRGFD):  24%|██▍       | 19/80 [00:02<00:07,  8.31it/s, loss=0.311](Training KnowRGFD):  25%|██▌       | 20/80 [00:02<00:07,  8.31it/s, loss=0.311](Training KnowRGFD):  25%|██▌       | 20/80 [00:02<00:07,  8.31it/s, loss=0.293](Training KnowRGFD):  26%|██▋       | 21/80 [00:02<00:07,  8.31it/s, loss=0.293](Training KnowRGFD):  26%|██▋       | 21/80 [00:02<00:07,  8.31it/s, loss=0.293](Training KnowRGFD):  28%|██▊       | 22/80 [00:02<00:06,  8.31it/s, loss=0.293](Training KnowRGFD):  28%|██▊       | 22/80 [00:02<00:06,  8.31it/s, loss=0.281](Training KnowRGFD):  29%|██▉       | 23/80 [00:02<00:06,  8.32it/s, loss=0.281](Training KnowRGFD):  29%|██▉       | 23/80 [00:02<00:06,  8.32it/s, loss=0.271](Training KnowRGFD):  30%|███       | 24/80 [00:02<00:06,  8.32it/s, loss=0.271](Training KnowRGFD):  30%|███       | 24/80 [00:03<00:06,  8.32it/s, loss=0.266](Training KnowRGFD):  31%|███▏      | 25/80 [00:03<00:06,  8.32it/s, loss=0.266](Training KnowRGFD):  31%|███▏      | 25/80 [00:03<00:06,  8.32it/s, loss=0.253](Training KnowRGFD):  32%|███▎      | 26/80 [00:03<00:06,  8.32it/s, loss=0.253](Training KnowRGFD):  32%|███▎      | 26/80 [00:03<00:06,  8.32it/s, loss=0.252](Training KnowRGFD):  34%|███▍      | 27/80 [00:03<00:06,  8.32it/s, loss=0.252](Training KnowRGFD):  34%|███▍      | 27/80 [00:03<00:06,  8.32it/s, loss=0.239](Training KnowRGFD):  35%|███▌      | 28/80 [00:03<00:06,  8.32it/s, loss=0.239](Training KnowRGFD):  35%|███▌      | 28/80 [00:03<00:06,  8.32it/s, loss=0.234](Training KnowRGFD):  36%|███▋      | 29/80 [00:03<00:06,  8.32it/s, loss=0.234](Training KnowRGFD):  36%|███▋      | 29/80 [00:03<00:06,  8.32it/s, loss=0.224](Training KnowRGFD):  38%|███▊      | 30/80 [00:03<00:06,  8.32it/s, loss=0.224](Training KnowRGFD):  38%|███▊      | 30/80 [00:03<00:06,  8.32it/s, loss=0.219](Training KnowRGFD):  39%|███▉      | 31/80 [00:03<00:05,  8.31it/s, loss=0.219](Training KnowRGFD):  39%|███▉      | 31/80 [00:03<00:05,  8.31it/s, loss=0.212](Training KnowRGFD):  40%|████      | 32/80 [00:03<00:05,  8.30it/s, loss=0.212](Training KnowRGFD):  40%|████      | 32/80 [00:03<00:05,  8.30it/s, loss=0.203](Training KnowRGFD):  41%|████▏     | 33/80 [00:03<00:05,  8.31it/s, loss=0.203](Training KnowRGFD):  41%|████▏     | 33/80 [00:04<00:05,  8.31it/s, loss=0.196](Training KnowRGFD):  42%|████▎     | 34/80 [00:04<00:05,  8.31it/s, loss=0.196](Training KnowRGFD):  42%|████▎     | 34/80 [00:04<00:05,  8.31it/s, loss=0.188](Training KnowRGFD):  44%|████▍     | 35/80 [00:04<00:05,  8.31it/s, loss=0.188](Training KnowRGFD):  44%|████▍     | 35/80 [00:04<00:05,  8.31it/s, loss=0.183](Training KnowRGFD):  45%|████▌     | 36/80 [00:04<00:05,  8.31it/s, loss=0.183](Training KnowRGFD):  45%|████▌     | 36/80 [00:04<00:05,  8.31it/s, loss=0.173](Training KnowRGFD):  46%|████▋     | 37/80 [00:04<00:05,  8.31it/s, loss=0.173](Training KnowRGFD):  46%|████▋     | 37/80 [00:04<00:05,  8.31it/s, loss=0.167](Training KnowRGFD):  48%|████▊     | 38/80 [00:04<00:05,  8.32it/s, loss=0.167](Training KnowRGFD):  48%|████▊     | 38/80 [00:04<00:05,  8.32it/s, loss=0.158](Training KnowRGFD):  49%|████▉     | 39/80 [00:04<00:04,  8.32it/s, loss=0.158](Training KnowRGFD):  49%|████▉     | 39/80 [00:04<00:04,  8.32it/s, loss=0.154](Training KnowRGFD):  50%|█████     | 40/80 [00:04<00:04,  8.32it/s, loss=0.154](Training KnowRGFD):  50%|█████     | 40/80 [00:04<00:04,  8.32it/s, loss=0.143](Training KnowRGFD):  51%|█████▏    | 41/80 [00:04<00:04,  8.32it/s, loss=0.143](Training KnowRGFD):  51%|█████▏    | 41/80 [00:05<00:04,  8.32it/s, loss=0.138](Training KnowRGFD):  52%|█████▎    | 42/80 [00:05<00:04,  8.32it/s, loss=0.138](Training KnowRGFD):  52%|█████▎    | 42/80 [00:05<00:04,  8.32it/s, loss=0.129](Training KnowRGFD):  54%|█████▍    | 43/80 [00:05<00:04,  8.32it/s, loss=0.129](Training KnowRGFD):  54%|█████▍    | 43/80 [00:05<00:04,  8.32it/s, loss=0.123](Training KnowRGFD):  55%|█████▌    | 44/80 [00:05<00:04,  8.32it/s, loss=0.123](Training KnowRGFD):  55%|█████▌    | 44/80 [00:05<00:04,  8.32it/s, loss=0.113](Training KnowRGFD):  56%|█████▋    | 45/80 [00:05<00:04,  8.32it/s, loss=0.113](Training KnowRGFD):  56%|█████▋    | 45/80 [00:05<00:04,  8.32it/s, loss=0.106](Training KnowRGFD):  57%|█████▊    | 46/80 [00:05<00:04,  8.32it/s, loss=0.106][Epoch 1] Predicted label distribution: tensor([4789, 2373], device='cuda:0')
+Epoch 1, CE loss: 1.6920, CR loss: -0.2569
+Train acc: 0.4870, Val acc: 0.5000, Test acc: 0.4898
+[Epoch 2] Predicted label distribution: tensor([4543, 2619], device='cuda:0')
+Epoch 2, CE loss: 1.6229, CR loss: -0.1676
+Train acc: 0.6813, Val acc: 0.6250, Test acc: 0.7143
+[Epoch 3] Predicted label distribution: tensor([4267, 2895], device='cuda:0')
+Epoch 3, CE loss: 1.4181, CR loss: -0.2539
+Train acc: 0.6632, Val acc: 0.6458, Test acc: 0.6939
+[Epoch 4] Predicted label distribution: tensor([4088, 3074], device='cuda:0')
+Epoch 4, CE loss: 1.2160, CR loss: -0.0222
+Train acc: 0.7047, Val acc: 0.6875, Test acc: 0.7755
+[Epoch 5] Predicted label distribution: tensor([4230, 2932], device='cuda:0')
+Epoch 5, CE loss: 1.0812, CR loss: -0.0142
+Train acc: 0.7435, Val acc: 0.7083, Test acc: 0.6939
+[Epoch 6] Predicted label distribution: tensor([4423, 2739], device='cuda:0')
+Epoch 6, CE loss: 0.9210, CR loss: -0.0469
+Train acc: 0.5855, Val acc: 0.6042, Test acc: 0.5510
+[Epoch 7] Predicted label distribution: tensor([4570, 2592], device='cuda:0')
+Epoch 7, CE loss: 0.8909, CR loss: -0.0220
+Train acc: 0.5933, Val acc: 0.6042, Test acc: 0.5918
+[Epoch 8] Predicted label distribution: tensor([4809, 2353], device='cuda:0')
+Epoch 8, CE loss: 0.8775, CR loss: -0.0088
+Train acc: 0.7098, Val acc: 0.6458, Test acc: 0.6531
+[Epoch 9] Predicted label distribution: tensor([5162, 2000], device='cuda:0')
+Epoch 9, CE loss: 0.7840, CR loss: -0.0147
+Train acc: 0.8135, Val acc: 0.7708, Test acc: 0.8776
+[Epoch 10] Predicted label distribution: tensor([5586, 1576], device='cuda:0')
+Epoch 10, CE loss: 0.7437, CR loss: -0.0164
+Train acc: 0.8212, Val acc: 0.8125, Test acc: 0.8571
+[Epoch 11] Predicted label distribution: tensor([5999, 1163], device='cuda:0')
+Epoch 11, CE loss: 0.7340, CR loss: -0.0085
+Train acc: 0.8394, Val acc: 0.7708, Test acc: 0.8367
+[Epoch 12] Predicted label distribution: tensor([6304,  858], device='cuda:0')
+Epoch 12, CE loss: 0.6835, CR loss: -0.0101
+Train acc: 0.7927, Val acc: 0.7708, Test acc: 0.7959
+[Epoch 13] Predicted label distribution: tensor([6455,  707], device='cuda:0')
+Epoch 13, CE loss: 0.6496, CR loss: -0.0119
+Train acc: 0.7902, Val acc: 0.7292, Test acc: 0.7143
+[Epoch 14] Predicted label distribution: tensor([6576,  586], device='cuda:0')
+Epoch 14, CE loss: 0.6394, CR loss: -0.0094
+Train acc: 0.8264, Val acc: 0.7500, Test acc: 0.8367
+[Epoch 15] Predicted label distribution: tensor([6687,  475], device='cuda:0')
+Epoch 15, CE loss: 0.6004, CR loss: -0.0105
+Train acc: 0.8731, Val acc: 0.8125, Test acc: 0.7959
+[Epoch 16] Predicted label distribution: tensor([6777,  385], device='cuda:0')
+Epoch 16, CE loss: 0.5927, CR loss: -0.0109
+Train acc: 0.8731, Val acc: 0.8125, Test acc: 0.7959
+[Epoch 17] Predicted label distribution: tensor([6829,  333], device='cuda:0')
+Epoch 17, CE loss: 0.5833, CR loss: -0.0115
+Train acc: 0.8860, Val acc: 0.8125, Test acc: 0.8367
+[Epoch 18] Predicted label distribution: tensor([6825,  337], device='cuda:0')
+Epoch 18, CE loss: 0.5437, CR loss: -0.0128
+Train acc: 0.8342, Val acc: 0.7708, Test acc: 0.7959
+[Epoch 19] Predicted label distribution: tensor([6835,  327], device='cuda:0')
+Epoch 19, CE loss: 0.5413, CR loss: -0.0137
+Train acc: 0.8368, Val acc: 0.7917, Test acc: 0.7959
+[Epoch 20] Predicted label distribution: tensor([6875,  287], device='cuda:0')
+Epoch 20, CE loss: 0.5288, CR loss: -0.0146
+Train acc: 0.8782, Val acc: 0.8750, Test acc: 0.8367
+[Epoch 21] Predicted label distribution: tensor([6879,  283], device='cuda:0')
+Epoch 21, CE loss: 0.4982, CR loss: -0.0156
+Train acc: 0.8834, Val acc: 0.8125, Test acc: 0.7959
+[Epoch 22] Predicted label distribution: tensor([6873,  289], device='cuda:0')
+Epoch 22, CE loss: 0.5002, CR loss: -0.0170
+Train acc: 0.8860, Val acc: 0.8333, Test acc: 0.7959
+[Epoch 23] Predicted label distribution: tensor([6842,  320], device='cuda:0')
+Epoch 23, CE loss: 0.4823, CR loss: -0.0206
+Train acc: 0.8756, Val acc: 0.8333, Test acc: 0.8571
+[Epoch 24] Predicted label distribution: tensor([6841,  321], device='cuda:0')
+Epoch 24, CE loss: 0.4672, CR loss: -0.0233
+Train acc: 0.8653, Val acc: 0.8542, Test acc: 0.8776
+[Epoch 25] Predicted label distribution: tensor([6866,  296], device='cuda:0')
+Epoch 25, CE loss: 0.4592, CR loss: -0.0243
+Train acc: 0.8964, Val acc: 0.8542, Test acc: 0.8163
+[Epoch 26] Predicted label distribution: tensor([6867,  295], device='cuda:0')
+Epoch 26, CE loss: 0.4396, CR loss: -0.0259
+Train acc: 0.9041, Val acc: 0.8333, Test acc: 0.8163
+[Epoch 27] Predicted label distribution: tensor([6841,  321], device='cuda:0')
+Epoch 27, CE loss: 0.4388, CR loss: -0.0282
+Train acc: 0.9016, Val acc: 0.8542, Test acc: 0.8163
+[Epoch 28] Predicted label distribution: tensor([6826,  336], device='cuda:0')
+Epoch 28, CE loss: 0.4196, CR loss: -0.0320
+Train acc: 0.9016, Val acc: 0.8542, Test acc: 0.8367
+[Epoch 29] Predicted label distribution: tensor([6810,  352], device='cuda:0')
+Epoch 29, CE loss: 0.4139, CR loss: -0.0359
+Train acc: 0.9016, Val acc: 0.8542, Test acc: 0.8367
+[Epoch 30] Predicted label distribution: tensor([6803,  359], device='cuda:0')
+Epoch 30, CE loss: 0.4017, CR loss: -0.0414
+Train acc: 0.9093, Val acc: 0.8750, Test acc: 0.7959
+[Epoch 31] Predicted label distribution: tensor([6789,  373], device='cuda:0')
+Epoch 31, CE loss: 0.3955, CR loss: -0.0461
+Train acc: 0.9093, Val acc: 0.8750, Test acc: 0.7959
+[Epoch 32] Predicted label distribution: tensor([6758,  404], device='cuda:0')
+Epoch 32, CE loss: 0.3840, CR loss: -0.0472
+Train acc: 0.9145, Val acc: 0.8542, Test acc: 0.8367
+[Epoch 33] Predicted label distribution: tensor([6694,  468], device='cuda:0')
+Epoch 33, CE loss: 0.3717, CR loss: -0.0502
+Train acc: 0.9171, Val acc: 0.8542, Test acc: 0.8367
+[Epoch 34] Predicted label distribution: tensor([6597,  565], device='cuda:0')
+Epoch 34, CE loss: 0.3644, CR loss: -0.0573
+Train acc: 0.9171, Val acc: 0.8958, Test acc: 0.7959
+[Epoch 35] Predicted label distribution: tensor([6538,  624], device='cuda:0')
+Epoch 35, CE loss: 0.3597, CR loss: -0.0684
+Train acc: 0.9249, Val acc: 0.8958, Test acc: 0.7755
+[Epoch 36] Predicted label distribution: tensor([6524,  638], device='cuda:0')
+Epoch 36, CE loss: 0.3517, CR loss: -0.0710
+Train acc: 0.9275, Val acc: 0.8750, Test acc: 0.8163
+[Epoch 37] Predicted label distribution: tensor([6487,  675], device='cuda:0')
+Epoch 37, CE loss: 0.3366, CR loss: -0.0715
+Train acc: 0.9275, Val acc: 0.8542, Test acc: 0.8163
+[Epoch 38] Predicted label distribution: tensor([6395,  767], device='cuda:0')
+Epoch 38, CE loss: 0.3307, CR loss: -0.0777
+Train acc: 0.9301, Val acc: 0.8750, Test acc: 0.7959
+[Epoch 39] Predicted label distribution: tensor([6349,  813], device='cuda:0')
+Epoch 39, CE loss: 0.3237, CR loss: -0.0896
+Train acc: 0.9378, Val acc: 0.8958, Test acc: 0.7959
+[Epoch 40] Predicted label distribution: tensor([6376,  786], device='cuda:0')
+Epoch 40, CE loss: 0.3224, CR loss: -0.0997
+Train acc: 0.9378, Val acc: 0.8958, Test acc: 0.7959
+[Epoch 41] Predicted label distribution: tensor([6379,  783], device='cuda:0')
+Epoch 41, CE loss: 0.3065, CR loss: -0.1010
+Train acc: 0.9404, Val acc: 0.8958, Test acc: 0.8163
+[Epoch 42] Predicted label distribution: tensor([6297,  865], device='cuda:0')
+Epoch 42, CE loss: 0.3008, CR loss: -0.1068
+Train acc: 0.9508, Val acc: 0.8958, Test acc: 0.8163
+[Epoch 43] Predicted label distribution: tensor([6212,  950], device='cuda:0')
+Epoch 43, CE loss: 0.2946, CR loss: -0.1195
+Train acc: 0.9456, Val acc: 0.9167, Test acc: 0.7959
+[Epoch 44] Predicted label distribution: tensor([6185,  977], device='cuda:0')
+Epoch 44, CE loss: 0.2937, CR loss: -0.1340
+Train acc: 0.9534, Val acc: 0.8958, Test acc: 0.8163
+[Epoch 45] Predicted label distribution: tensor([6148, 1014], device='cuda:0')
+Epoch 45, CE loss: 0.2813, CR loss: -0.1391
+Train acc: 0.9534, Val acc: 0.8958, Test acc: 0.8163
+[Epoch 46] Predicted label distribution: tensor([6092, 1070], device='cuda:0')
+Epoch 46, CE loss: 0.2749, CR loss: -0.1473
+Train acc: 0.9508, Val acc: 0.8958, Test acc: 0.8163
+[Epoch 47] Predicted label distribution: tensor([6048, 1114], device='cuda:0')
+(Training KnowRGFD):  57%|█████▊    | 46/80 [00:05<00:04,  8.32it/s, loss=0.0994](Training KnowRGFD):  59%|█████▉    | 47/80 [00:05<00:03,  8.32it/s, loss=0.0994](Training KnowRGFD):  59%|█████▉    | 47/80 [00:05<00:03,  8.32it/s, loss=0.09]  (Training KnowRGFD):  60%|██████    | 48/80 [00:05<00:03,  8.32it/s, loss=0.09](Training KnowRGFD):  60%|██████    | 48/80 [00:05<00:03,  8.32it/s, loss=0.082](Training KnowRGFD):  61%|██████▏   | 49/80 [00:05<00:03,  8.32it/s, loss=0.082](Training KnowRGFD):  61%|██████▏   | 49/80 [00:06<00:03,  8.32it/s, loss=0.0741](Training KnowRGFD):  62%|██████▎   | 50/80 [00:06<00:03,  8.32it/s, loss=0.0741](Training KnowRGFD):  62%|██████▎   | 50/80 [00:06<00:03,  8.32it/s, loss=0.0654](Training KnowRGFD):  64%|██████▍   | 51/80 [00:06<00:03,  8.32it/s, loss=0.0654](Training KnowRGFD):  64%|██████▍   | 51/80 [00:06<00:03,  8.32it/s, loss=0.0558](Training KnowRGFD):  65%|██████▌   | 52/80 [00:06<00:03,  8.31it/s, loss=0.0558](Training KnowRGFD):  65%|██████▌   | 52/80 [00:06<00:03,  8.31it/s, loss=0.0463](Training KnowRGFD):  66%|██████▋   | 53/80 [00:06<00:03,  8.31it/s, loss=0.0463](Training KnowRGFD):  66%|██████▋   | 53/80 [00:06<00:03,  8.31it/s, loss=0.0357](Training KnowRGFD):  68%|██████▊   | 54/80 [00:06<00:03,  8.31it/s, loss=0.0357](Training KnowRGFD):  68%|██████▊   | 54/80 [00:06<00:03,  8.31it/s, loss=0.0254](Training KnowRGFD):  69%|██████▉   | 55/80 [00:06<00:03,  8.31it/s, loss=0.0254](Training KnowRGFD):  69%|██████▉   | 55/80 [00:06<00:03,  8.31it/s, loss=0.014] (Training KnowRGFD):  70%|███████   | 56/80 [00:06<00:02,  8.31it/s, loss=0.014](Training KnowRGFD):  70%|███████   | 56/80 [00:06<00:02,  8.31it/s, loss=0.00259](Training KnowRGFD):  71%|███████▏  | 57/80 [00:06<00:02,  8.31it/s, loss=0.00259](Training KnowRGFD):  71%|███████▏  | 57/80 [00:06<00:02,  8.31it/s, loss=-0.00496](Training KnowRGFD):  72%|███████▎  | 58/80 [00:06<00:02,  8.32it/s, loss=-0.00496](Training KnowRGFD):  72%|███████▎  | 58/80 [00:07<00:02,  8.32it/s, loss=-0.0197] (Training KnowRGFD):  74%|███████▍  | 59/80 [00:07<00:02,  8.31it/s, loss=-0.0197](Training KnowRGFD):  74%|███████▍  | 59/80 [00:07<00:02,  8.31it/s, loss=-0.0352](Training KnowRGFD):  75%|███████▌  | 60/80 [00:07<00:02,  8.32it/s, loss=-0.0352](Training KnowRGFD):  75%|███████▌  | 60/80 [00:07<00:02,  8.32it/s, loss=-0.0506](Training KnowRGFD):  76%|███████▋  | 61/80 [00:07<00:02,  8.31it/s, loss=-0.0506](Training KnowRGFD):  76%|███████▋  | 61/80 [00:07<00:02,  8.31it/s, loss=-0.0634](Training KnowRGFD):  78%|███████▊  | 62/80 [00:07<00:02,  8.29it/s, loss=-0.0634](Training KnowRGFD):  78%|███████▊  | 62/80 [00:07<00:02,  8.29it/s, loss=-0.0745](Training KnowRGFD):  79%|███████▉  | 63/80 [00:07<00:02,  8.29it/s, loss=-0.0745](Training KnowRGFD):  79%|███████▉  | 63/80 [00:07<00:02,  8.29it/s, loss=-0.0926](Training KnowRGFD):  80%|████████  | 64/80 [00:07<00:01,  8.30it/s, loss=-0.0926](Training KnowRGFD):  80%|████████  | 64/80 [00:07<00:01,  8.30it/s, loss=-0.109] (Training KnowRGFD):  81%|████████▏ | 65/80 [00:07<00:01,  8.30it/s, loss=-0.109](Training KnowRGFD):  81%|████████▏ | 65/80 [00:07<00:01,  8.30it/s, loss=-0.123](Training KnowRGFD):  82%|████████▎ | 66/80 [00:07<00:01,  8.31it/s, loss=-0.123](Training KnowRGFD):  82%|████████▎ | 66/80 [00:08<00:01,  8.31it/s, loss=-0.142](Training KnowRGFD):  84%|████████▍ | 67/80 [00:08<00:01,  8.31it/s, loss=-0.142](Training KnowRGFD):  84%|████████▍ | 67/80 [00:08<00:01,  8.31it/s, loss=-0.158](Training KnowRGFD):  85%|████████▌ | 68/80 [00:08<00:01,  8.31it/s, loss=-0.158](Training KnowRGFD):  85%|████████▌ | 68/80 [00:08<00:01,  8.31it/s, loss=-0.178](Training KnowRGFD):  86%|████████▋ | 69/80 [00:08<00:01,  8.32it/s, loss=-0.178](Training KnowRGFD):  86%|████████▋ | 69/80 [00:08<00:01,  8.32it/s, loss=-0.197](Training KnowRGFD):  88%|████████▊ | 70/80 [00:08<00:01,  8.32it/s, loss=-0.197](Training KnowRGFD):  88%|████████▊ | 70/80 [00:08<00:01,  8.32it/s, loss=-0.213](Training KnowRGFD):  89%|████████▉ | 71/80 [00:08<00:01,  8.32it/s, loss=-0.213](Training KnowRGFD):  89%|████████▉ | 71/80 [00:08<00:01,  8.32it/s, loss=-0.237](Training KnowRGFD):  90%|█████████ | 72/80 [00:08<00:00,  8.32it/s, loss=-0.237](Training KnowRGFD):  90%|█████████ | 72/80 [00:08<00:00,  8.32it/s, loss=-0.257](Training KnowRGFD):  91%|█████████▏| 73/80 [00:08<00:00,  8.32it/s, loss=-0.257](Training KnowRGFD):  91%|█████████▏| 73/80 [00:08<00:00,  8.32it/s, loss=-0.282](Training KnowRGFD):  92%|█████████▎| 74/80 [00:08<00:00,  8.32it/s, loss=-0.282](Training KnowRGFD):  92%|█████████▎| 74/80 [00:09<00:00,  8.32it/s, loss=-0.304](Training KnowRGFD):  94%|█████████▍| 75/80 [00:09<00:00,  8.32it/s, loss=-0.304](Training KnowRGFD):  94%|█████████▍| 75/80 [00:09<00:00,  8.32it/s, loss=-0.327](Training KnowRGFD):  95%|█████████▌| 76/80 [00:09<00:00,  8.32it/s, loss=-0.327]/home/blueee/miniconda3/envs/knowrgfd/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/blueee/miniconda3/envs/knowrgfd/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/blueee/miniconda3/envs/knowrgfd/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+(Training KnowRGFD):  95%|█████████▌| 76/80 [00:09<00:00,  8.32it/s, loss=-0.356](Training KnowRGFD):  96%|█████████▋| 77/80 [00:09<00:00,  8.50it/s, loss=-0.356](Training KnowRGFD):  96%|█████████▋| 77/80 [00:09<00:00,  8.25it/s, loss=-0.356]
+Epoch 47, CE loss: 0.2740, CR loss: -0.1624
+Train acc: 0.9508, Val acc: 0.8750, Test acc: 0.8163
+[Epoch 48] Predicted label distribution: tensor([6032, 1130], device='cuda:0')
+Epoch 48, CE loss: 0.2664, CR loss: -0.1747
+Train acc: 0.9534, Val acc: 0.8750, Test acc: 0.8163
+[Epoch 49] Predicted label distribution: tensor([5984, 1178], device='cuda:0')
+Epoch 49, CE loss: 0.2613, CR loss: -0.1870
+Train acc: 0.9560, Val acc: 0.8542, Test acc: 0.8163
+[Epoch 50] Predicted label distribution: tensor([5981, 1181], device='cuda:0')
+Epoch 50, CE loss: 0.2603, CR loss: -0.2052
+Train acc: 0.9560, Val acc: 0.8125, Test acc: 0.8163
+[Epoch 51] Predicted label distribution: tensor([5964, 1198], device='cuda:0')
+Epoch 51, CE loss: 0.2535, CR loss: -0.2168
+Train acc: 0.9508, Val acc: 0.8125, Test acc: 0.8163
+[Epoch 52] Predicted label distribution: tensor([5900, 1262], device='cuda:0')
+Epoch 52, CE loss: 0.2487, CR loss: -0.2337
+Train acc: 0.9611, Val acc: 0.7917, Test acc: 0.7959
+[Epoch 53] Predicted label distribution: tensor([5924, 1238], device='cuda:0')
+Epoch 53, CE loss: 0.2529, CR loss: -0.2636
+Train acc: 0.9560, Val acc: 0.7917, Test acc: 0.8163
+[Epoch 54] Predicted label distribution: tensor([5912, 1250], device='cuda:0')
+Epoch 54, CE loss: 0.2426, CR loss: -0.2746
+Train acc: 0.9585, Val acc: 0.7708, Test acc: 0.8163
+[Epoch 55] Predicted label distribution: tensor([5860, 1302], device='cuda:0')
+Epoch 55, CE loss: 0.2400, CR loss: -0.2964
+Train acc: 0.9611, Val acc: 0.7708, Test acc: 0.7959
+[Epoch 56] Predicted label distribution: tensor([5836, 1326], device='cuda:0')
+Epoch 56, CE loss: 0.2412, CR loss: -0.3269
+Train acc: 0.9585, Val acc: 0.7917, Test acc: 0.7959
+[Epoch 57] Predicted label distribution: tensor([5732, 1430], device='cuda:0')
+Epoch 57, CE loss: 0.2356, CR loss: -0.3469
+Train acc: 0.9637, Val acc: 0.7708, Test acc: 0.7959
+[Epoch 58] Predicted label distribution: tensor([5756, 1406], device='cuda:0')
+Epoch 58, CE loss: 0.2517, CR loss: -0.3899
+Train acc: 0.9611, Val acc: 0.7500, Test acc: 0.7755
+[Epoch 59] Predicted label distribution: tensor([5615, 1547], device='cuda:0')
+Epoch 59, CE loss: 0.2327, CR loss: -0.3983
+Train acc: 0.9637, Val acc: 0.7500, Test acc: 0.7755
+[Epoch 60] Predicted label distribution: tensor([5579, 1583], device='cuda:0')
+Epoch 60, CE loss: 0.2377, CR loss: -0.4446
+Train acc: 0.9611, Val acc: 0.7500, Test acc: 0.7755
+[Epoch 61] Predicted label distribution: tensor([5484, 1678], device='cuda:0')
+Epoch 61, CE loss: 0.2300, CR loss: -0.4714
+Train acc: 0.9637, Val acc: 0.7500, Test acc: 0.7755
+[Epoch 62] Predicted label distribution: tensor([5450, 1712], device='cuda:0')
+Epoch 62, CE loss: 0.2374, CR loss: -0.5147
+Train acc: 0.9585, Val acc: 0.7292, Test acc: 0.7347
+[Epoch 63] Predicted label distribution: tensor([5277, 1885], device='cuda:0')
+Epoch 63, CE loss: 0.2326, CR loss: -0.5351
+Train acc: 0.9637, Val acc: 0.7500, Test acc: 0.7755
+[Epoch 64] Predicted label distribution: tensor([5197, 1965], device='cuda:0')
+Epoch 64, CE loss: 0.2429, CR loss: -0.5957
+Train acc: 0.9611, Val acc: 0.7292, Test acc: 0.7347
+[Epoch 65] Predicted label distribution: tensor([4965, 2197], device='cuda:0')
+Epoch 65, CE loss: 0.2303, CR loss: -0.6185
+Train acc: 0.9663, Val acc: 0.7500, Test acc: 0.7551
+[Epoch 66] Predicted label distribution: tensor([4835, 2327], device='cuda:0')
+Epoch 66, CE loss: 0.2481, CR loss: -0.6804
+Train acc: 0.9611, Val acc: 0.7292, Test acc: 0.7143
+[Epoch 67] Predicted label distribution: tensor([4565, 2597], device='cuda:0')
+Epoch 67, CE loss: 0.2282, CR loss: -0.6964
+Train acc: 0.9689, Val acc: 0.7500, Test acc: 0.7551
+[Epoch 68] Predicted label distribution: tensor([4438, 2724], device='cuda:0')
+Epoch 68, CE loss: 0.2460, CR loss: -0.7648
+Train acc: 0.9663, Val acc: 0.7292, Test acc: 0.7143
+[Epoch 69] Predicted label distribution: tensor([4182, 2980], device='cuda:0')
+Epoch 69, CE loss: 0.2282, CR loss: -0.7867
+Train acc: 0.9715, Val acc: 0.7500, Test acc: 0.7347
+[Epoch 70] Predicted label distribution: tensor([4083, 3079], device='cuda:0')
+Epoch 70, CE loss: 0.2410, CR loss: -0.8536
+Train acc: 0.9715, Val acc: 0.7292, Test acc: 0.7143
+[Epoch 71] Predicted label distribution: tensor([3835, 3327], device='cuda:0')
+Epoch 71, CE loss: 0.2302, CR loss: -0.8774
+Train acc: 0.9715, Val acc: 0.7500, Test acc: 0.7143
+[Epoch 72] Predicted label distribution: tensor([3709, 3453], device='cuda:0')
+Epoch 72, CE loss: 0.2402, CR loss: -0.9536
+Train acc: 0.9689, Val acc: 0.7292, Test acc: 0.7143
+[Epoch 73] Predicted label distribution: tensor([3449, 3713], device='cuda:0')
+Epoch 73, CE loss: 0.2327, CR loss: -0.9905
+Train acc: 0.9689, Val acc: 0.7500, Test acc: 0.7143
+[Epoch 74] Predicted label distribution: tensor([3352, 3810], device='cuda:0')
+Epoch 74, CE loss: 0.2500, CR loss: -1.0802
+Train acc: 0.9689, Val acc: 0.7292, Test acc: 0.7143
+[Epoch 75] Predicted label distribution: tensor([3080, 4082], device='cuda:0')
+Epoch 75, CE loss: 0.2349, CR loss: -1.1114
+Train acc: 0.9715, Val acc: 0.7500, Test acc: 0.7143
+[Epoch 76] Predicted label distribution: tensor([2968, 4194], device='cuda:0')
+Epoch 76, CE loss: 0.2613, CR loss: -1.2106
+Train acc: 0.9689, Val acc: 0.7292, Test acc: 0.7143
+[Epoch 77] Predicted label distribution: tensor([7162], device='cuda:0')
+[WARNING] Fold 4: y_test contains NaN, skipping ROC curve
+[WARNING] Fold 4: y_test contains NaN, skipping ROC curve
+[WARNING] Fold 4: y_test contains NaN, skipping ROC curve
+Epoch 77, CE loss: 0.2405, CR loss: -1.2511
+Train acc: 0.6606, Val acc: 0.6458, Test acc: 0.6735
+[ERROR] Epoch 78: Loss became NaN!
+log_prob_local: tensor([[nan, nan],
+        [nan, nan],
+        [nan, nan],
+        ...,
+        [nan, nan],
+        [nan, nan],
+        [nan, nan]], device='cuda:0', grad_fn=<LogSoftmaxBackward0>)
+log_prob_global: tensor([[nan, nan],
+        [nan, nan],
+        [nan, nan],
+        ...,
+        [nan, nan],
+        [nan, nan],
+        [nan, nan]], device='cuda:0', grad_fn=<LogSoftmaxBackward0>)
+labels: tensor([1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1,
+        1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0,
+        1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0,
+        1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0,
+        0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0,
+        0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0,
+        1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1,
+        1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1,
+        1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0,
+        1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0,
+        1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1,
+        1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0,
+        0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1,
+        0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+        1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1,
+        0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0,
+        1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0,
+        1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1,
+        0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0,
+        1, 1, 1], device='cuda:0')
+Traceback (most recent call last):
+  File "/home/blueee/KnowRGFD/main.py", line 124, in <module>
+    run_ours()
+  File "/home/blueee/KnowRGFD/main.py", line 58, in run_ours
+    loss_list, train_acc_list, val_acc_list, test_acc_list = train(
+TypeError: cannot unpack non-iterable NoneType object

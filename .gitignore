@@ -10,3 +10,4 @@ knowledge_results.xlsx
 *.csv
 .env
 *.npy
+*.log

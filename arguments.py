@@ -68,6 +68,9 @@ def arg_parser():
     parser.add_argument('--fold', type=int, default=10)
     parser.add_argument('--seed', type=int, default=123)
 
+    parser.add_argument('--local_layers', type=int, default=2, help='Number of layers for local view')
+    parser.add_argument('--global_layers', type=int, default=4, help='Number of layers for global view')
+
 
     args = parser.parse_args()
     

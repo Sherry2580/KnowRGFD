@@ -35,19 +35,19 @@ class KnowRGFD(nn.Module):
             hidden_dim=args.hidden,
             out_dim=dataset.num_classes,
             num_relations=args.num_relations,
-            num_layers=2  # local 視圖
+            num_layers=args.local_layers  # local 視圖
         )
         self.G_RGCN = RGCNBlock(
             in_dim=dataset.num_features,
             hidden_dim=args.hidden,
             out_dim=dataset.num_classes,
             num_relations=args.num_relations,
-            num_layers=4  # global 視圖
+            num_layers=args.global_layers  # global 視圖
         )
 
     def forward(self, data):
         x, edge_index, edge_type = data.x, data.edge_index, data.edge_type
-        # ✅ 保證都在相同 device
+        # 保證都在相同 device
         edge_index = edge_index.to(x.device)
         edge_type = edge_type.to(x.device)
 

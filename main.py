@@ -89,26 +89,33 @@ def run_ours():
     lr = args.lr
     dropout = args.dropout
     lambda_ce = args.lambda_ce
+    local_layers = args.local_layers
+    global_layers = args.global_layers
 
     # Loss
     plt.figure()
     plt.plot(loss_avg, label='Loss')
-    plt.title(f'Loss (lr={lr}, dropout={dropout}, lambda_ce={lambda_ce})')
+    #plt.title(f'Loss (lr={lr}, dropout={dropout}, lambda_ce={lambda_ce})')
+    plt.title(f'Loss (local layer={local_layers}, global layer={global_layers})')
     plt.xlabel('Epoch')
     plt.ylabel('Loss')
     plt.legend()
-    plt.savefig(f'./results/avg_loss_lr{lr}_do{dropout}_lce{lambda_ce}.png')
+    #plt.savefig(f'./results/avg_loss_lr{lr}_do{dropout}_lce{lambda_ce}.png')
+    plt.savefig(f'./results/avg_loss_local{local_layers}_global{global_layers}.png')
+
 
     # Accuracy
     plt.figure()
     plt.plot(train_acc_avg, label='Train Acc')
     plt.plot(val_acc_avg, label='Val Acc')
     plt.plot(test_acc_avg, label='Test Acc')
-    plt.title(f'Accuracy (lr={lr}, dropout={dropout}, lambda_ce={lambda_ce})')
+    # plt.title(f'Accuracy (lr={lr}, dropout={dropout}, lambda_ce={lambda_ce})')
+    plt.title(f'Accuracy (local layer={local_layers}, global layer={global_layers})')
     plt.xlabel('Epoch')
     plt.ylabel('Accuracy')
     plt.legend()
-    plt.savefig(f'./results/avg_acc_lr{lr}_do{dropout}_lce{lambda_ce}.png')
+    #plt.savefig(f'./results/avg_acc_lr{lr}_do{dropout}_lce{lambda_ce}.png')
+    plt.savefig(f'./results/avg_acc_local{local_layers}_global{global_layers}.png')
 
     plt.close('all')
     print('[FINAL RESULTS]')

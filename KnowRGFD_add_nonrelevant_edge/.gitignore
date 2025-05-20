@@ -1,0 +1,16 @@
+__pycache__/
+splits/
+log/
+image/
+final_result_GossipCop-0514/
+final_result_PolitiFact-0514/
+entity_responses.xlsx
+Entity_Embeddings.xlsx
+knowledge_results.xlsx
+*.out
+*.pt
+*.edgelist
+*.csv
+.env
+*.npy
+*.log

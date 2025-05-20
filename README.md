@@ -2,6 +2,8 @@
 
 - Pipeline
 ![alt text](image.png)
+- KnowRGFD : RGCN + External Knowledge Positive
+- KnowRGFD_add_nonrelevant_edge : RGCN + External Knowledge Positive / Negative + node-wise layer gating
 
 ## Acknowledgements & Reference
 - [LESS4FD/LESS4FD](https://github.com/LESS4FD/LESS4FD)

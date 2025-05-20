@@ -6,7 +6,7 @@ dropouts=(0.5 0.6 0.7)
 dataset="Knowledge_more15_GossipCop_nontrun"
 num_topics=30
 lambda_ce=0.8
-epochs=80
+epochs=200
 
 mkdir -p results
 
@@ -24,5 +24,5 @@ done
 
 echo "All runs completed! Now parsing logs..."
 
-# 跑完後自動呼叫整理log的程式
+# 整理log的程式
 python parse_logs.py --dataset $dataset

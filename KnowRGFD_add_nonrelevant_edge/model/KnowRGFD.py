@@ -133,8 +133,8 @@ def train(model, data, optimizer, idx_train, idx_val, idx_test, labels, args,
             min_layers = min(local_attn_score.shape[1], global_attn_score.shape[1])
             local_attn_overlap = local_attn_score[:, :min_layers]
             global_attn_overlap = global_attn_score[:, :min_layers]
-            gating_kl = F.kl_div(local_attn_overlap.log(), global_attn_overlap, reduction='batchmean') + \
-                        F.kl_div(global_attn_overlap.log(), local_attn_overlap, reduction='batchmean')
+            gating_kl = -(F.kl_div(local_attn_overlap.log(), global_attn_overlap, reduction='batchmean') + \
+                        F.kl_div(global_attn_overlap.log(), local_attn_overlap, reduction='batchmean'))
             loss += getattr(args, 'lambda_gating_div', 0.1) * gating_kl
 
             # 檢查 loss 是否為 NaN
@@ -145,6 +145,7 @@ def train(model, data, optimizer, idx_train, idx_val, idx_test, labels, args,
                 print("labels:", labels)
                 print("loss_ce:", loss_ce)
                 print("loss_cr:", loss_cr)
+                print("loss_gd:", gating_kl)
                 print("weights:", weights)
                 return None
 
@@ -180,7 +181,7 @@ def train(model, data, optimizer, idx_train, idx_val, idx_test, labels, args,
  
             
             if epoch % args.eval_freq == 0 and args.verbose:
-                print(f"Epoch {epoch}, CE loss: {loss_ce.item():.4f}, CR loss: {loss_cr.item():.4f}")
+                print(f"Epoch {epoch}, CE loss: {loss_ce.item():.4f}, CR loss: {loss_cr.item():.4f}, GD loss: {gating_kl.item():.4f}")
                 print('Train acc: {:.4f}, Val acc: {:.4f}, Test acc: {:.4f}'.format(
                     train_metrics.metrics['accs'][f'fold{fold+1}'][-1],
                     val_metrics.metrics['accs'][f'fold{fold+1}'][-1],

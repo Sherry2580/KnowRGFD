@@ -2,6 +2,7 @@ __pycache__/
 splits/
 log/
 image/
+results/
 final_result_GossipCop-0514/
 final_result_PolitiFact-0514/
 entity_responses.xlsx

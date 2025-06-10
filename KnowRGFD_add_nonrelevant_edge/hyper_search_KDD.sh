@@ -1,21 +1,22 @@
 #!/bin/bash
 
-learning_rates=(0.001 0.0002 0.0005)
-dropouts=(0.5 0.6 0.7)
+# 超參數組合
+learning_rates=(0.0001 0.0002 0.0005)
+dropouts=(0.5 0.7 0.8)
 lambda_ces=(0.5 0.7)
 
-dataset="Knowledge_more15_GossipCop_nontrun"
+dataset="KDD2020"
 num_topics=30
-epochs=700
+epochs=350
 
 mkdir -p results
 
 for lr in "${learning_rates[@]}"; do
     for dropout in "${dropouts[@]}"; do
         for lambda_ce in "${lambda_ces[@]}"; do
-            out_dir="node-wise_GossipCop_lr${lr}_dro${dropout}_lce${lambda_ce}"
+            out_dir="node-wise_KDD2020_lr${lr}_dro${dropout}_lce${lambda_ce}"
             mkdir -p $out_dir
-            log_name="results/node-wise_GossipCop_lr${lr}_dro${dropout}_lce${lambda_ce}.log"
+            log_name="results/node-wise_KDD2020_lr${lr}_dro${dropout}_lce${lambda_ce}.log"
 
             echo "Running: lr=$lr, dropout=$dropout, lambda_ce=$lambda_ce"
 
@@ -32,5 +33,5 @@ done
 
 echo "All runs completed! Now parsing logs..."
 
-# 整理log
-nohup python parse_logs.py --dataset $dataset &
+#整理結果
+python parse_logs.py --dataset $dataset

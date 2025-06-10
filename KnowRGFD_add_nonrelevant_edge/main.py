@@ -80,6 +80,7 @@ def run_ours():
         print('-' * 60)
         print(f'[FOLD {fold} BEST] val acc: {val_best:.4f}, test acc: {test_best:.4f}')
 
+        '''
         # ========== Gating 可視化 =============
         model.eval()
         with torch.no_grad():
@@ -96,7 +97,8 @@ def run_ours():
             # 只畫 gating histogram
             utils.plot_gating_histogram(news_local_attn_score, layer_name="Local Layer", save_path=f"./results/local_gating_hist_fold{fold}.png")
             utils.plot_gating_histogram(news_global_attn_score, layer_name="Global Layer", save_path=f"./results/global_gating_hist_fold{fold}.png")
-
+        '''
+            
     # 將每個 fold 的 list -> tensor for averaging
     loss_avg = np.mean(np.array(all_loss), axis=0)
     train_acc_avg = np.mean(np.array(all_train_acc), axis=0)
@@ -114,16 +116,16 @@ def run_ours():
     plt.figure()
     plt.plot(loss_avg, label='Loss')
     # 跑不同參數
-    plt.title(f'Loss (lr={lr}, dropout={dropout}, lambda_ce={lambda_ce})')
+    # plt.title(f'Loss (lr={lr}, dropout={dropout}, lambda_ce={lambda_ce})')
     # 跑不同層數
-    #plt.title(f'Loss (local layer={local_layers}, global layer={global_layers})')
+    plt.title(f'Loss (local layer={local_layers}, global layer={global_layers})')
     plt.xlabel('Epoch')
     plt.ylabel('Loss')
     plt.legend()
     # 跑不同參數
-    plt.savefig(f'./results/avg_loss_lr{lr}_do{dropout}_lce{lambda_ce}.png')
+    # plt.savefig(f'./results/avg_loss_lr{lr}_do{dropout}_lce{lambda_ce}.png')
     # 跑不同層數
-    # plt.savefig(f'./results/avg_loss_local{local_layers}_global{global_layers}.png')
+    plt.savefig(f'./results/avg_loss_local{local_layers}_global{global_layers}.png')
 
 
     # Accuracy
